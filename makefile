@@ -6,3 +6,6 @@ build:
 
 # build-sw:
 # 	workbox generateSW workbox-config.js;
+
+genGM:
+	node genGM.js

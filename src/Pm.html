@@ -1,94 +1,98 @@
 <script>
-  import { pmName } from './stores.js';
+  // import { pokemon } from './stores.js';
   import Move from './Move.html';
   import { calPmCP, calPmWOWCP } from './u.js';
 
   export let pm;
-  let mmm;
+  let ppp;
+  console.log(222, pm);
 
-  $: {
-    if (pm.info) {
-      console.log(222, pm);
+  let listview = true;
 
-      mmm = { ... pm.info };
-      let baseADS = {
-        atk: mmm.atk,
-        def: mmm.def,
-        sta: mmm.sta,
-      };
+  // let moves = [
+  //   pm.fastMoves,
+  //   pm.chargedMoves,
+  // ];
 
-      // cp for rocket
-      mmm.rcp = [
-        {
-          lv: 8,
-          ooo: calPmCP(baseADS, [0, 0, 0, 8]),
-          min: calPmCP(baseADS, [0, 0, 0, 8]),
-          ccc: calPmCP(baseADS, [12, 12, 12, 8]),
-          max: calPmCP(baseADS, [15, 15, 15, 8]),
-          wow: calPmWOWCP(baseADS, 8),
-        },
-        {
-          lv: 13,
-          ooo: calPmCP(baseADS, [0, 0, 0, 13]),
-          min: calPmCP(baseADS, [4, 4, 4, 13]),
-          ccc: calPmCP(baseADS, [12, 12, 12, 13]),
-          max: calPmCP(baseADS, [15, 15, 15, 13]),
-          wow: calPmWOWCP(baseADS, 13),
-        },
-      ];
+  ppp = { ... pm.baseStats };
+  let baseADS = {
+    atk: ppp.atk,
+    def: ppp.def,
+    sta: ppp.sta,
+  };
 
-      console.log('mmm', mmm);
-    }
-  }
+  // cp for rocket
+  ppp.rcp = [
+    {
+      lv: 8,
+      ooo: calPmCP(baseADS, [0, 0, 0, 8]),
+      min: calPmCP(baseADS, [0, 0, 0, 8]),
+      ccc: calPmCP(baseADS, [12, 12, 12, 8]),
+      max: calPmCP(baseADS, [15, 15, 15, 8]),
+      wow: calPmWOWCP(baseADS, 8),
+    },
+    {
+      lv: 13,
+      ooo: calPmCP(baseADS, [0, 0, 0, 13]),
+      min: calPmCP(baseADS, [4, 4, 4, 13]),
+      ccc: calPmCP(baseADS, [12, 12, 12, 13]),
+      max: calPmCP(baseADS, [15, 15, 15, 13]),
+      wow: calPmWOWCP(baseADS, 13),
+    },
+  ];
 
 </script>
 
 <div>
-  #{pm.dex} - {pm.title}
+  #{pm.dex} - {pm.name}
 
-  {#if mmm}
+  {#each pm.types as type}
+    {type}
+  {/each}
 
-    {mmm.type1}
-    {mmm.type2}
 
-    <div class="df">
-      <fieldset>
-        <legend>A</legend>
-        {mmm.atk}
-      </fieldset>
-      <fieldset>
-        <legend>D</legend>
-        {mmm.def}
-      </fieldset>
-      <fieldset>
-        <legend>S</legend>
-        {mmm.sta}
-      </fieldset>
-    </div>
+  <div class="df">
+    <fieldset>
+      <legend>A</legend>
+      {ppp.atk}
+    </fieldset>
+    <fieldset>
+      <legend>D</legend>
+      {ppp.def}
+    </fieldset>
+    <fieldset>
+      <legend>S</legend>
+      {ppp.sta}
+    </fieldset>
+  </div>
 
-    <h3>Shadow CP:</h3>
-    {#each mmm.rcp as rcp }
-    <div class="cp-baar"
-      data-lv="{rcp.lv}"
-      data-ooo="{rcp.ooo}"
-      data-ccc="{rcp.ccc}"
-      data-wow="{rcp.wow}"
-      data-max="{rcp.max}"
-    >
-      {rcp.ooo}
-      {rcp.ooo !== rcp.min ? ` - ${rcp.min}` : ''}
-    </div>
+  <h3>Shadow CP:</h3>
+  {#each ppp.rcp as rcp }
+  <div class="cp-baar"
+    data-lv="{rcp.lv}"
+    data-ooo="{rcp.ooo}"
+    data-ccc="{rcp.ccc}"
+    data-wow="{rcp.wow}"
+    data-max="{rcp.max}"
+  >
+    {rcp.ooo}
+    {rcp.ooo !== rcp.min ? ` - ${rcp.min}` : ''}
+  </div>
+  {/each}
+
+  <br>
+  <section class="moves">
+    <h3>Fast Moves</h3>
+    {#each pm.fastMoves as m }
+      <Move mname={m} lmoves={pm.legacyMoves} isfast={ true } />
     {/each}
-
-    <br>
-    {#each mmm.moves.q as m }
-      <Move mdata={m} />
+    <div class="cf"></div>
+    <h3>Charged Moves</h3>
+    {#each pm.chargedMoves as m }
+      <Move mname={m} lmoves={pm.legacyMoves} isfast={ false } />
     {/each}
-    <hr>
-    {#each mmm.moves.c as m }
-      <Move mdata={m} />
-    {/each}
-  {/if}
+    <div class="cf"></div>
+  </section>
 </div>
 
 <style>
@@ -129,4 +133,9 @@ fieldset {
   content: '… ' attr(data-ccc) ' - ' attr(data-wow) ' - ' attr(data-max);
   margin-left: auto;
 }
+
+.cf {
+  clear: both;
+}
+
 </style>

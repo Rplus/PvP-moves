@@ -1,32 +1,157 @@
 <script>
-  import { moveName } from './stores.js';
-  export let mdata;
+  import { moves, listview } from './stores.js';
+  import { copy, fixNum, introEffect } from './u.js';
+  export let mname;
+  export let lmoves;
+  export let isfast;
 
-  function getMoveName(move) {
-    return $moveName[move.id] || move.name;
+  let mmm = copy($moves.find(m => m.moveId === mname));
+
+  mmm.lmark = (lmoves && lmoves.includes(mname)) ? '*' : '';
+
+  if (isfast) {
+    mmm.ept = fixNum(mmm.energyGain / mmm.turn);
+    mmm.dpt = fixNum(mmm.power / mmm.turn);
+    mmm.eptxdpt = fixNum(mmm.ept * mmm.dpt);
+  } else {
+    mmm.dpe = fixNum(mmm.power / mmm.energy);
+    if (mmm.buffs) {
+      mmm.buffsDes = introEffect(mmm);
+    }
   }
+  // console.log(mmm);
 
 </script>
-<div class="move-item">
-  {getMoveName(mdata)}({mdata.name}) [{mdata.type}]
-  <details>
-    <summary>{mdata.id}</summary>
-    <pre>{JSON.stringify(mdata, null, 2)}</pre>
-  </details>
+<div class="{ $listview ? 'move-item list-view' : 'move-item'}">
+  <div class="m-info m-grid" grid-size="full" title={mmm.moveId} data-title={mmm.moveId}>
+    <div class="m-name">
+      {mmm.name}
+      {mmm.lmark}
+    </div>
+    <div class="m-icon" data-type={mmm.type}></div>
+  </div>
+
+  {#if isfast}
+    <div class="m-power m-grid" grid-offest="1" title="power">{mmm.power}</div>
+    <div class="m-energy m-grid" title="energy">{mmm.energyGain}</div>
+    <div class="m-turn m-grid" grid-offest="1" title="turn">{mmm.turn}</div>
+    <div class="m-ept m-grid" title="ept">{mmm.ept}</div>
+    <div class="m-eptxdpt m-grid" title="ept x dpt" data-title="x">{mmm.eptxdpt}</div>
+    <div class="m-dpt m-grid" title="dpt">{mmm.dpt}</div>
+  {:else}
+    <div class="m-power m-grid" title="power">{mmm.power}</div>
+    <div class="m-energy m-energy_c m-grid" title="energy" style="--bgzx: {mmm.energy}%">-{mmm.energy}</div>
+    <div class="m-dpe m-grid" title="dpe">{mmm.dpe}</div>
+    {#if mmm.buffs}
+    <div class="m-effect m-grid" grid-size="full" title="effect">{mmm.buffsDes}</div>
+    {/if}
+  {/if}
+
 </div>
 
 <style>
 .move-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 15em;
+  margin-bottom: 1em;
+  text-align: center;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
-.move-item pre {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+.move-item.list-view {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  width: unset;
+  margin-bottom: .5em;
+  margin-right: unset;
+}
+
+.m-grid {
+  position: relative;
+  box-shadow: 0 1px var(--shadow-color, #ddd);
+  padding: .5em .5em .25em;
+  grid-column: auto / span var(--span, 2);
+}
+.list-view .m-grid {
+  width: 2.7em;
+  display: inline-flex;
+  flex-direction: column;
+  place-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.m-grid[grid-size="3"] {
+  --span: 3;
+}
+
+.m-grid[grid-size="full"] {
+  grid-column: 1 / -1;
+}
+
+.m-grid[grid-offest="1"] {
+  grid-column-start: 2;
+}
+
+.m-turn {
+  grid-column: 2 / span 4;
+}
+
+.m-grid[title]::after {
+  content: attr(title);
+  display: block;
+  transform: scaleY(.85);
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: smaller;
+  color: #999;
+}
+.m-grid[data-title]::after {
+  content: attr(data-title);
+}
+.list-view + .list-view .m-grid[title]:not(.m-info)::after {
+  opacity: 0;
+  transition: opacity .3s;
+}
+.list-view + .list-view:hover .m-grid[title]:not(.m-info)::after {
+  opacity: 1;
+}
+
+.m-info {
+  border-bottom: 1px dashed #ccc;
+}
+.list-view .m-info {
+  width: 4.5em;
+  border-bottom: unset;
+}
+
+.m-energy_c::before {
+  content: '';
+  position: absolute;
+  left: 0;
   right: 0;
   bottom: 0;
-  overflow: auto;
-  background-color: #fff;
-  box-shadow: 0 0 0 50vmax #0005;
+  height: 3px;
+  background-color: #ddd;
+  background-image: linear-gradient(90deg, transparent 80%, #aaa);
+  background-size: var(--bgzx, 100%) 100%;
 }
+
+.list-view .m-energy_c {
+  width: 4em;
+}
+
+.m-effect {
+  font-size: smaller;
+  padding: .5em;
+  color: #666;
+}
+.list-view .m-effect {
+  width: unset;
+}
+
 </style>

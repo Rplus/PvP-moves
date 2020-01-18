@@ -2,9 +2,35 @@ export function ddex(dex) {
   return `00${dex}`.slice(-3);
 }
 
+export function toJSON(res) {
+  return res.json();
+}
+
 export function genOptions(v, l = v) {
   return `<option value="${v}" label="${l}"></option>`;
 };
+
+export function copy(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
+
+export function fixNum(num, d = 2) {
+  return +(+num).toFixed(d);
+}
+
+const buffTypes = ['攻', '防'];
+const buffTargets = {
+  opponent: '敵',
+  self: '己',
+};
+
+export function introEffect(move) {
+  let buffs = move.buffs.map((b, index) => {
+    if (!b) { return ''}
+    return `${b > 0 ? '+' : ''}${b} 階${buffTypes[index]}`;
+  }).filter(Boolean).join(', ');
+  return `${move.buffApplyChance * 100}%, ${buffs}, [${buffTargets[move.buffTarget]}]`;
+}
 
 
 const STORAGE_KEY = 'PvP-Moves';
@@ -27,31 +53,6 @@ export function getItem(key) {
   return key ? data[key] : data;
 };
 
-
-
-const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
-function moveUrl(pm) {
-  pm = {... { dex: 1, form: '' }, ...pm};
-  return `./${pm.dex}-m.json`;
-  // return `${CORS_URL}https://db.pokemongohub.net/api/moves/with-pokemon/${pm.dex}?form=${pm.form}`;
-}
-
-function pmUrl(pm) {
-  pm = {... { dex: 1, form: '' }, ...pm};
-  return `./${pm.dex}.json`;
-  // return `${CORS_URL}https://db.pokemongohub.net/api/pokemon/${pm.dex}?form=${pm.form}`;
-}
-
-export function getUrl(type = 'move', option) {
-  switch (type) {
-    case 'move':
-      return moveUrl(option);
-    case 'pm':
-      return pmUrl(option);
-    default:
-      break;
-  }
-};
 
 
 const CPM = {
@@ -80,7 +81,7 @@ export function calPmWOWCP(base, lv) {
         if (c <= max) {
           continue;
         } else if (ia < 12 || id < 12 || is < 12) {
-          max = c
+          max = c;
           ngiv = `${ia}-${id}-${is}`;
         }
       }
