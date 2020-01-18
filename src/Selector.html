@@ -1,0 +1,98 @@
+<script>
+  import Pm from './Pm.html';
+  import { dex, defaultDex, datalist, pmName, moveName } from './stores.js';
+  import { saveItem, getItem, getUrl } from './u.js';
+
+  let dexInput;
+  $: pms = [];
+
+  // DEBUG
+  let btn;
+  window.xx = () => {
+    console.log({pms, pmName, moveName: $moveName});
+  };
+  setTimeout(() => {
+    btn.click();
+  }, 100);
+
+  function dexValidator(dex) {
+    return !!$pmName[dex];
+  }
+
+  function findCache(dex) {
+    return false;
+  }
+
+  function fetchPmData(_dex) {
+    console.warn(`fetching info: ${_dex}`);
+    Promise.all(
+      ['move', 'pm'].map(_type =>
+        fetch(getUrl(_type, { dex: _dex })).then(d => d.json())
+      )
+    )
+    .then(d => {
+      let pmIndex = pms.findIndex(pm => pm.dex === _dex);
+      let [d_move, d_pm] = d;
+      console.warn('fetched', _dex, d, pmIndex);
+
+      pms[pmIndex].info = d_pm;
+      pms[pmIndex].info.moves = {
+        q: d_move.filter(m => m.isQuickMove),
+        c: d_move.filter(m => !m.isQuickMove),
+      };
+    });
+  }
+
+  function addPm() {
+    if (!dexValidator(dexInput.value)) {
+      console.error(`Wrong Dex: ${dexInput.value}`);
+      $dex = defaultDex;
+      return;
+    }
+    getPmData($dex);
+    pms = pms.concat({
+      dex: $dex,
+      title: $pmName[$dex].zh,
+    });
+    // pms.push()
+  }
+
+  function getPmData(_dex) {
+    let data = findCache(_dex);
+    if (!data) {
+      // fetchPmMoves(_dex);
+      fetchPmData(_dex);
+    }
+  }
+</script>
+
+<label for="pm-name-selector">Choose a pm:</label>
+<input
+  list="pm-names"
+  id="pm-name-selector"
+  name="pm-name-selector"
+  bind:value="{$dex}"
+  bind:this={dexInput}
+  autofocus
+/>
+<button on:click={ addPm } bind:this={btn}>+</button>
+
+<datalist id="pm-names">
+  {@html $datalist }
+</datalist>
+
+<hr>
+<hr>
+
+{#each pms as pm, index (index) }
+  <div class="moves">
+    {index}:
+    <Pm pm={pm} />
+  </div>
+  <hr>
+  <hr>
+  <hr>
+{/each}
+
+<style>
+</style>

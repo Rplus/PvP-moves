@@ -1,0 +1,32 @@
+<script>
+  import { moveName } from './stores.js';
+  export let mdata;
+
+  function getMoveName(move) {
+    return $moveName[move.id] || move.name;
+  }
+
+</script>
+<div class="move-item">
+  {getMoveName(mdata)}({mdata.name}) [{mdata.type}]
+  <details>
+    <summary>{mdata.id}</summary>
+    <pre>{JSON.stringify(mdata, null, 2)}</pre>
+  </details>
+</div>
+
+<style>
+.move-item {
+}
+
+.move-item pre {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 0 0 50vmax #0005;
+}
+</style>

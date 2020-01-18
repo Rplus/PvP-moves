@@ -1,0 +1,132 @@
+<script>
+  import { pmName } from './stores.js';
+  import Move from './Move.html';
+  import { calPmCP, calPmWOWCP } from './u.js';
+
+  export let pm;
+  let mmm;
+
+  $: {
+    if (pm.info) {
+      console.log(222, pm);
+
+      mmm = { ... pm.info };
+      let baseADS = {
+        atk: mmm.atk,
+        def: mmm.def,
+        sta: mmm.sta,
+      };
+
+      // cp for rocket
+      mmm.rcp = [
+        {
+          lv: 8,
+          ooo: calPmCP(baseADS, [0, 0, 0, 8]),
+          min: calPmCP(baseADS, [0, 0, 0, 8]),
+          ccc: calPmCP(baseADS, [12, 12, 12, 8]),
+          max: calPmCP(baseADS, [15, 15, 15, 8]),
+          wow: calPmWOWCP(baseADS, 8),
+        },
+        {
+          lv: 13,
+          ooo: calPmCP(baseADS, [0, 0, 0, 13]),
+          min: calPmCP(baseADS, [4, 4, 4, 13]),
+          ccc: calPmCP(baseADS, [12, 12, 12, 13]),
+          max: calPmCP(baseADS, [15, 15, 15, 13]),
+          wow: calPmWOWCP(baseADS, 13),
+        },
+      ];
+
+      console.log('mmm', mmm);
+    }
+  }
+
+</script>
+
+<div>
+  #{pm.dex} - {pm.title}
+
+  {#if mmm}
+
+    {mmm.type1}
+    {mmm.type2}
+
+    <div class="df">
+      <fieldset>
+        <legend>A</legend>
+        {mmm.atk}
+      </fieldset>
+      <fieldset>
+        <legend>D</legend>
+        {mmm.def}
+      </fieldset>
+      <fieldset>
+        <legend>S</legend>
+        {mmm.sta}
+      </fieldset>
+    </div>
+
+    <h3>Shadow CP:</h3>
+    {#each mmm.rcp as rcp }
+    <div class="cp-baar"
+      data-lv="{rcp.lv}"
+      data-ooo="{rcp.ooo}"
+      data-ccc="{rcp.ccc}"
+      data-wow="{rcp.wow}"
+      data-max="{rcp.max}"
+    >
+      {rcp.ooo}
+      {rcp.ooo !== rcp.min ? ` - ${rcp.min}` : ''}
+    </div>
+    {/each}
+
+    <br>
+    {#each mmm.moves.q as m }
+      <Move mdata={m} />
+    {/each}
+    <hr>
+    {#each mmm.moves.c as m }
+      <Move mdata={m} />
+    {/each}
+  {/if}
+</div>
+
+<style>
+.df {
+  display: flex;
+}
+
+legend {
+  color: #aaa;
+}
+
+fieldset {
+  border-color: #ccc;
+  border-style: solid;
+}
+
+.cp-baar {
+  position: relative;
+  display: flex;
+  padding: .25em .5em;
+  max-width: 300px;
+  margin-top: .5em;
+  margin-left: 2em;
+  margin-bottom: .5em;
+  box-shadow: 0 0 0 1px;
+}
+
+.cp-baar::before {
+  content: 'Lv' attr(data-lv);
+  position: absolute;
+  top: 0;
+  right: 100%;
+  padding-right: .35em;
+  font-size: smaller;
+  color: #999;
+}
+.cp-baar::after {
+  content: '… ' attr(data-ccc) ' - ' attr(data-wow) ' - ' attr(data-max);
+  margin-left: auto;
+}
+</style>
