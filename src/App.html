@@ -1,27 +1,20 @@
 <script>
 import Selector from './Selector.html';
 import PM from './PM.html';
-import Info from './Info.html';
-
-import { dex, pokemon } from './stores.js';
-
-$: pm = $pokemon.find(pm => pm.dex === +$dex);
-
+import Footer from './Footer.html';
+import { darktheme, gridview } from './stores.js';
 </script>
 
 
 
-<h1>Hello~ {$dex}!</h1>
-<Selector />
-
-
-<hr>
-
-{#if pm}
-  <PM pm={pm} />
-{/if}
-
-<Info />
+<div class="workspace"
+  class:darktheme={$darktheme}
+  class:gridview={$gridview}
+>
+  <Selector />
+  <PM />
+  <Footer />
+</div>
 
 
 

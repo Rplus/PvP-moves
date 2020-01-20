@@ -1,56 +1,84 @@
 <script>
-  // import PM from './PM.html';
-  import { dex, defaultDex, datalist, pokemon, moves } from './stores.js';
-  import { saveItem, getItem, toJSON } from './u.js';
+  import { dex, datalist, pokemon,  } from './stores.js';
+  import { saveItem, getItem, toJSON, getDexFromUrl } from './u.js';
 
-
-  let _dex = defaultDex;
+  let dexValue = $dex;
   let dexInput;
-  // let pms = [];
-  // let pm;
+  let pmName = '';
 
-  // DEBUG
-  let btn;
-  window.xx = () => {
-    console.log({
-      pms,
-    });
-  };
-  setTimeout(() => {
-    // btn.click();
-  }, 100);
-
-  function addPm() {
-    let _dex = +dexInput.value;
-    let pmData = $pokemon.find(pm => pm.dex === _dex);
-    if (!pmData) {
-      console.error(`Wrong Dex: ${_dex}`);
-      // TODO: will be array
-      $dex = defaultDex;
+  $: {
+    if ($pokemon) {
+      let target = $pokemon.find(pm => pm.dex === +dexValue);
+      pmName = target && target.name || 'NG';
     }
-    console.log($dex);
-    // $dex.set(_dex);
-    // pms = pms.concat(pmData).slice(-2);
-    // console.log(pmData);
-    // pm = pmData;
+  }
+
+  window.addEventListener('popstate', (e) => {
+    let dexOnUrl = getDexFromUrl();
+    if ($dex !== dexOnUrl) {
+      $dex = dexOnUrl;
+    }
+  });
+
+
+  function updateDex(_dex) {
+    $dex = _dex;
+    history.pushState({}, _dex, `?dex=${_dex}`);
+  }
+
+  function onSubmit(e) {
+    // validate
+    if (!$pokemon.length) { return; }
+
+    let _dexValue = +e.target.dex.value;
+    let pm = $pokemon.find(pm => pm.dex === _dexValue);
+    if (!pm) {
+      console.error(`Wrong Dex: ${_dexValue}`);
+      return;
+    }
+    console.info('submit', _dexValue, $dex);
+    updateDex(_dexValue);
   }
 </script>
 
-<label for="pm-name-selector">Choose a pm:</label>
-<input
-  list="pm-names"
-  id="pm-name-selector"
-  name="pm-name-selector"
-  bind:value="{$dex}"
-  bind:this={dexInput}
-/>
-<button on:click={ addPm } bind:this={btn}>+</button>
 
-<datalist id="pm-names">
-  {@html $datalist }
-</datalist>
 
-<hr>
+<form class="selector L1-box df ai-b" on:submit|preventDefault={onSubmit}>
+  <label class="mr-2" for="dex">Dex: #</label>
+  <div class="input-wrapper mr-1">
+    <input
+      list="pm-names"
+      class="pm-dex-selector mr-2"
+      id="dex"
+      name="dex"
+      required
+      pattern="\d+"
+      title="Should be a Number."
+      bind:value={dexValue}
+      bind:this={dexInput}
+    />
+  </div>
+  <button type="submit">🤜 {pmName} 🤛</button>
+  <datalist id="pm-names">
+    {@html $datalist }
+  </datalist>
+</form>
+
+
 
 <style>
+.selector {
+  max-width: 35rem;
+  margin: 0 2.5vw;
+  padding: 1rem 0 .5rem;
+}
+.input-wrapper {
+  flex-grow: 1;
+}
+.pm-dex-selector {
+  width: 100%;
+}
+.pm-dex-selector:invalid {
+  box-shadow: inset 1px 1px 3px #900;
+}
 </style>

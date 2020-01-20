@@ -40,44 +40,43 @@
 
 <style>
 .move-item {
-  display: grid;
-  grid-template-columns: repeat(var(--grid-column, 2), 1fr);
-  width: 12em;
-  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .5em;
+  margin-right: unset;
   text-align: center;
-  margin-right: 2em;
-  margin-bottom: 2em;
 }
 .is-charged {
   --grid-column: 3;
 }
 
 
-:global(.listview) .move-item {
-  display: flex;
-  flex-wrap: wrap;
-  float: none;
-  width: unset;
-  margin-bottom: .5em;
-  margin-right: unset;
+:global(.gridview) .move-item {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-column, 2), 1fr);
+  width: 12em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 .m-grid {
   position: relative;
-  padding: .5em .5em .25em;
-  grid-column: auto / span var(--span, 1);
-  box-shadow: 0 1px var(--shadow-color, #ddd);
-}
-:global(.listview) .m-grid {
-  width: calc(2em + 2vw);
+  width: calc(2.5em + 1vmin);
   display: inline-flex;
   flex-direction: column;
   place-content: center;
   padding-left: 0;
   padding-right: 0;
+  grid-column: auto / span var(--span, 1);
+  box-shadow: 0 1px var(--shadow-color, var(--color-6));
+}
+:global(.gridview) .m-grid {
+  width: unset !important;
+  padding: .5em .5em .25em;
 }
 
-.m-grid[grid-size="full"] {
+:global(.gridview) .m-grid[grid-size="full"] {
   grid-column: 1 / -1;
 }
 
@@ -87,13 +86,13 @@
   position: absolute;
   left: 0;
   transform: translateX(-50%);
-  background-image: linear-gradient(#ccc, #ccc);
+  background-image: linear-gradient(--color-5, --color-5);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding-left: .5em;
   padding-right: .5em;
-  color: #aaa;
+  color: var(--color-4);
   font-size: smaller;
 }
 
@@ -104,14 +103,17 @@
   font-family: monospace;
   text-transform: uppercase;
   font-size: smaller;
-  color: #999;
+  color: var(--color-3);
 }
 .m-grid[data-title]::after {
   content: attr(data-title);
 }
-:global(.listview) .move-item:not(:first-child) .m-grid[title]:not(.m-info)::after {
+.move-item:not(:first-child) .m-grid[title]:not(.m-info)::after {
   opacity: 0;
   transition: opacity .3s;
+}
+:global(.gridview) .m-grid[title]::after {
+  opacity: unset !important;
 }
 .move-item:hover .m-grid[title]::after {
   opacity: 1 !important;
@@ -134,47 +136,57 @@
   left: 100%;
   padding-left: .1em;
   font-size: smaller;
-  color: #999;
+  color: var(--color-3);
 }
 .is-stab .m-name {
-  text-shadow: 1px 1px 0 #f99;
+  text-shadow: var(--glow-text, 1px 1px 0 #f99);
+}
+:global(.darktheme) {
+  --glow-text: 0 0 2px #990;
 }
 
 .m-info {
-  border-bottom: 1px dashed #ccc;
-}
-:global(.listview) .m-info {
   width: 6em;
   border-bottom: unset;
 }
+:global(.gridview) .m-info {
+  border-bottom: 1px dashed var(--color-5);
+}
+
+.m-energy_c {
+  width: 4em;
+}
 
 .m-energy_c::before {
+  --bar-bgc: var(--color-6);
+  --bar-dotcolor: var(--color-3);
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 2px;
-  background-color: #ddd;
-  background-image: linear-gradient(90deg, transparent 80%, #999);
+  background-color: var(--bar-bgc);
+  background-image: linear-gradient(90deg, transparent 80%, var(--bar-dotcolor));
   background-size: var(--bgzx, 100%) 100%;
 }
 
-:global(.listview) .m-energy_c {
-  width: 4em;
+:global(.darktheme) .m-energy_c::before {
+  --bar-bgc: var(--color-5);
+  --bar-dotcolor: var(--color-1);
 }
 
 .m-effect {
   font-size: smaller;
+  width: unset;
   padding: .5em;
-  color: #666;
+  padding-left: 1em;
+  color: var(--color-2);
+  --shadow-color: var(--color-6);
+}
+:global(.gridview) .m-effect {
   align-self: flex-end;
   --shadow-color: transparent;
-}
-:global(.listview) .m-effect {
-  width: unset;
-  padding-left: 1em;
-  --shadow-color: #ddd;
 }
 
 </style>

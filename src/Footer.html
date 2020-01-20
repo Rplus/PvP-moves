@@ -1,11 +1,11 @@
 <script>
-import Switcher from './Switcher.html';
+import Settings from './Settings.html';
 </script>
 
 
 
-<footer class="info">
-  <Switcher />
+<footer class="footer df ai-fe">
+  <Settings />
 
   <div class="page-intro">
     GitHub repo:
@@ -18,19 +18,12 @@ import Switcher from './Switcher.html';
 
 
 <style>
-.info {
-  max-width: max-content;
-  margin-left: auto;
-  margin-top: 2rem;
-  padding-right: 1rem;
-  padding-bottom: .5rem;
-  font-family: serif;
-  font-style: italic;
-  font-size: smaller;
-  color: #666;
+.footer {
+  margin-top: auto;
+  padding: 4rem 1rem .5rem;
 }
 
-.info a {
+.page-intro a {
   display: block;
   margin-left: 2em;
   margin-bottom: .5em;
@@ -38,7 +31,12 @@ import Switcher from './Switcher.html';
 }
 
 .page-intro {
-  margin-top: .5em;
+  max-width: max-content;
+  margin-left: auto;
+  font-family: serif;
+  font-style: italic;
+  font-size: smaller;
+  color: var(--color-2);
 }
 
 </style>

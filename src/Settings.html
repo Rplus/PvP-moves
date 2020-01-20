@@ -1,0 +1,32 @@
+<script>
+import { gridview, darktheme } from './stores.js';
+</script>
+
+
+
+<div class="settings">
+  <!-- <Switcher /> -->
+
+  <label class="gridview-switcher switcher mb-2">
+    List
+    <input class="switcher-checkbox" type="checkbox" bind:checked={$gridview}>
+    <div class="switcher-icon"></div>
+    Grid
+  </label>
+
+  <label class="darktheme-switcher switcher mb-2">
+    Light
+    <input class="switcher-checkbox" type="checkbox" bind:checked={$darktheme}>
+    <div class="switcher-icon"></div>
+    Dark
+  </label>
+</div>
+
+
+
+<style>
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+</style>

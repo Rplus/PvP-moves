@@ -1,12 +1,11 @@
 <script>
-  import { moves, listview } from './stores.js';
+  import { moves } from './stores.js';
   import { copy, fixNum, introEffect } from './u.js';
 
   import Move from './Move.html';
   import TTFA from './TTFA.html';
 
   export let pm;
-  console.log(222, pm);
 
   function queryMove(mname) {
     return copy($moves.find(m => m.moveId === mname));
@@ -35,30 +34,36 @@
 
   let lmoves = pm.legacyMoves;
 
-  let mdata = [
-    {
-      title: 'Fast Moves',
-      data: pm.fastMoves.map(m => genMove(m, true)),
-    },
-    {
-      title: 'Charged Moves',
-      data: pm.chargedMoves.map(m => genMove(m, false)),
-    }
-  ];
+  let mdata;
+
+  $: {
+    mdata = [
+      {
+        title: 'Fast Moves',
+        data: pm.fastMoves.map(m => genMove(m, true)),
+      },
+      {
+        title: 'Charged Moves',
+        data: pm.chargedMoves.map(m => genMove(m, false)),
+      }
+    ];
+  }
 </script>
 
 
 
-<section class="moves" class:listview={$listview}>
+<section class="moves">
   {#each mdata as mmm}
-    <details open>
-      <summary><h3 class="moveset-title d-ib">{mmm.title}</h3></summary>
-      <div class="moveset">
-        {#each mmm.data as m }
-          <Move mdata={m} />
-        {/each}
-      </div>
-    </details>
+    <div class="card">
+      <details open>
+        <summary><h3 class="moveset-title d-ib">{mmm.title}</h3></summary>
+        <div class="moveset">
+          {#each mmm.data as m }
+            <Move mdata={m} />
+          {/each}
+        </div>
+      </details>
+    </div>
   {/each}
 </section>
 
@@ -69,12 +74,13 @@
 <style>
 .moveset {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-left: 1em;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
-.listview .moveset {
-  flex-direction: column;
+:global(.gridview) .moveset {
+  flex-direction: row;
 }
 </style>

@@ -1,3 +1,7 @@
+export function getDexFromUrl() {
+  return new URLSearchParams(location.search).get('dex');
+}
+
 export function ddex(dex) {
   return `00${dex}`.slice(-3);
 }

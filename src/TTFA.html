@@ -5,11 +5,7 @@ export let mdata;
 let fmoves = mdata[0].data;
 let cmoves = mdata[1].data;
 
-console.log('f', fmoves);
-console.log('c', cmoves);
-
 let pairs = [];
-
 
 let sortTypes = [
   ['turns', 1],
@@ -17,11 +13,11 @@ let sortTypes = [
 ];
 let o_ths = [
   {
-    title: 'turns',
+    title: 't',
     value: 'turns',
   },
   {
-    title: 'hits',
+    title: 'H',
     value: 'hits',
   },
   // {
@@ -90,7 +86,7 @@ function genMoveTitle(move) {
   ]
 }
 
-function tNum(num, d = 2) {
+function tNum(num, d = 1) {
   let n = fixNum(num, d, true).split('.');
   n[1] = `<small class="decimal">.${n[1]}</small>`;
   return n.join('');
@@ -125,50 +121,51 @@ let updateSortTypes = (type) => (e) => {
 
 
 <section class="pairs-section">
-  <details open>
-    <summary><h3 class="d-ib">Move Pairs</h3></summary>
+  <div class="card">
+    <details open>
+      <summary><h3 class="d-ib">Move Pairs</h3></summary>
 
-    <div class="move-pairs">
-      <div class="tr">
-        {#each ths as th, index (th.title)}
-          <div
-            class="td th"
-            class:mname={!th.value}
-            class:sort-th={th.value}
-            on:click={updateSortTypes(th.value)}
-            data-order={th.order}
-            data-dir={ th.dir
-              ? (th.dir > 0 ? '▲' : '▼')
-              : null
-            }
-          >
-            {th.title}
+      <div class="move-pairs">
+        <div class="tr thead">
+          {#each ths as th, index (th.title)}
+            <div
+              class="td th"
+              class:mname={!th.value}
+              class:sort-th={th.value}
+              on:click={updateSortTypes(th.value)}
+              data-order={th.order}
+              data-dir={ th.dir
+                ? (th.dir > 0 ? '▲' : '▼')
+                : null
+              }
+            >
+              {th.title}
+            </div>
+          {/each}
+        </div>
+
+        {#each pairs as pair}
+          <div class="tr">
+            <div class="td">{pair.turns}</div>
+            <div class="td">{pair.hits}</div>
+            <!-- <div class="td">{@html tNum(pair.dmg_f)}</div> -->
+            <div class="td">{@html tNum(pair.dmg_t)}</div>
+            <div class="td">{@html tNum(pair.dpt)}</div>
+            <div class="td mname" title={pair.f}>{pair.f.name}</div>
+            <div class="td mname">{pair.c.name}</div>
           </div>
         {/each}
       </div>
-
-      {#each pairs as pair}
-        <div class="tr">
-          <div class="td">{pair.turns}</div>
-          <div class="td">{pair.hits}</div>
-          <!-- <div class="td">{@html tNum(pair.dmg_f)}</div> -->
-          <div class="td">{@html tNum(pair.dmg_t)}</div>
-          <div class="td">{@html tNum(pair.dpt)}</div>
-          <div class="td mname" title={pair.f}>{pair.f.name}</div>
-          <div class="td mname">{pair.c.name}</div>
-        </div>
-      {/each}
-    </div>
-  </details>
+    </details>
+  </div>
 </section>
 
 
 
 <style>
-
 .move-pairs {
   display: table;
-  margin-left: 1em;
+  margin-left: 2vmin;
   text-align: right;
 }
 
@@ -176,24 +173,25 @@ let updateSortTypes = (type) => (e) => {
   display: table-row;
 }
 
-.tr:hover {
-  background-color: #eee;
+.tr:not(.thead):hover {
+  background-color: var(--color-7);
 }
 
 .tr:nth-of-type(3n + 1) .td {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-6);
 }
 
 .th {
   font-family: monospace;
   text-transform: capitalize;
   color: #aaa;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid var(--color-4);
 }
 
 .sort-th {
   position: relative;
   cursor: pointer;
+  user-select: none;
 }
 .sort-th::before {
   content: '0▲';
@@ -206,25 +204,37 @@ let updateSortTypes = (type) => (e) => {
 }
 .sort-th[data-order]::before {
   content: attr(data-order) attr(data-dir);
-  box-shadow: 0 0 0 1px #ccf;
-  color: #99f;
+  box-shadow: 0 0 0 1px var(--sort-label-border, #ccf);
+  color: var(--sort-label, #99f);
 }
+
 
 .td {
   display: table-cell;
-  width: 2em;
-  padding: .2em .5em;
+  width: var(--td-w, 2em);
+  padding: .2em var(--td-px, calc(.4em + 1vw));
+}
+
+.td:nth-of-type(-n + 2) {
+  --td-w: 1em;
 }
 
 .td.mname {
-  /* width: 4em; */
-  width: unset;
+  --td-w: fit-content;
+  /* --td-px: 3vw; */
   text-align: left;
 }
 
 :global(.decimal) {
   color: #999;
   font-size: smaller;
+}
+
+@media (max-width: 600px) {
+  .td {
+    --td-px: .5em;
+    font-size: smaller;
+  }
 }
 
 </style>

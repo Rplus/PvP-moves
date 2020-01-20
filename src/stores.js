@@ -1,16 +1,11 @@
 import { writable, derived } from 'svelte/store';
-import { toJSON, genOptions } from './u.js';
-
-let qDex = new URLSearchParams(location.search).get('pm');
+import { getDexFromUrl, toJSON, genOptions, saveItem, getItem } from './u.js';
 
 export const defaultDex = 371;
-export const dex = writable(qDex || defaultDex);
+export const dex = writable(getDexFromUrl() || defaultDex);
 
 export const pokemon = writable([]);
 export const moves = writable([]);
-export const listview = writable(true);
-console.log('store');
-
 
 export const gmUrl = 'gm.json' || 'https://cors-anywhere.herokuapp.com/https://pvpoketw.com/data/gamemaster.json?v=206';
 
@@ -28,3 +23,52 @@ export const datalist = derived(
     $pokemon.map(pm =>
       genOptions(pm.dex, `${pm.name}, ${pm.id}`.toUpperCase())).join('')
 );
+
+
+
+//
+//
+//
+//
+//
+
+
+export const gridview = createGridview();
+export const darktheme = createDarktheme();
+
+function createGridview() {
+  let b = Boolean(getItem('gridview'));
+  const { subscribe, set, update } = writable(b);
+
+  return {
+    subscribe,
+    set: (n) => {
+      set(n);
+      saveItem({
+        key: 'gridview',
+        value: n,
+      });
+    },
+  };
+}
+
+function createDarktheme() {
+  // detect for css
+  let os_settings = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let b = getItem('darktheme');
+  if (b === null) {
+    b = os_settings;
+  }
+  const { subscribe, set, update } = writable(Boolean(b));
+
+  return {
+    subscribe,
+    set: (n) => {
+      set(n);
+      saveItem({
+        key: 'darktheme',
+        value: n,
+      });
+    },
+  };
+}
