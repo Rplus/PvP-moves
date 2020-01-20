@@ -1,0 +1,79 @@
+<script>
+import Moveset from './Moveset.html';
+import CP from './CP.html';
+import { calPmCP, calPmWOWCP, copy } from './u.js';
+import { pokemon } from './stores.js';
+
+export let pm;
+
+</script>
+
+
+
+<section class="pm-section">
+  <header class="pm-info mb-4">
+    <div class="df mb-4">
+      <span class="pm-name">{pm.name}</span>
+      <small class="pm-dex">#{pm.dex}</small>
+
+      <div class="pm-types df">
+        {#each pm.types as type}
+          <div class="pm-type type-icon" data-type={type} title={type}></div>
+        {/each}
+      </div>
+
+      <div class="pm-stats">
+        <div class="base" data-base="a">{pm.baseStats.atk}</div>
+        <div class="base" data-base="d">{pm.baseStats.def}</div>
+        <div class="base" data-base="s">{pm.baseStats.sta}</div>
+      </div>
+    </div>
+
+    <CP ads={pm.baseStats} />
+  </header>
+
+  <Moveset pm={pm} />
+</section>
+
+
+
+<style>
+
+.pm-section {
+}
+
+.pm-name {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.pm-dex {
+  margin: 0 .25em;
+}
+
+.pm-info {
+  max-width: 24em;
+}
+
+.pm-stats {
+  margin-left: auto;
+}
+
+.base {
+  position: relative;
+  text-align: right;
+  width: 3em;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.base::after {
+  content: attr(data-base);
+  padding-left: .5em;
+}
+
+.pm-type {
+  font-size: 1.5em;
+  margin: 0 .25rem;
+}
+</style>

@@ -1,11 +1,13 @@
 <script>
-  import Pm from './Pm.html';
-  import Switcher from './Switcher.html';
+  // import PM from './PM.html';
   import { dex, defaultDex, datalist, pokemon, moves } from './stores.js';
   import { saveItem, getItem, toJSON } from './u.js';
 
+
+  let _dex = defaultDex;
   let dexInput;
-  $: pms = [];
+  // let pms = [];
+  // let pm;
 
   // DEBUG
   let btn;
@@ -15,7 +17,7 @@
     });
   };
   setTimeout(() => {
-    btn.click();
+    // btn.click();
   }, 100);
 
   function addPm() {
@@ -25,9 +27,12 @@
       console.error(`Wrong Dex: ${_dex}`);
       // TODO: will be array
       $dex = defaultDex;
-      return;
     }
-    pms = pms.concat(pmData);
+    console.log($dex);
+    // $dex.set(_dex);
+    // pms = pms.concat(pmData).slice(-2);
+    // console.log(pmData);
+    // pm = pmData;
   }
 </script>
 
@@ -46,18 +51,6 @@
 </datalist>
 
 <hr>
-<Switcher />
-<hr>
-
-{#each pms as pm, index (index) }
-  <section class="pm-section">
-    {index}:
-    <Pm pm={pm} />
-  </section>
-{/each}
 
 <style>
-.pm-section {
-  /* max-width: 600px; */
-}
 </style>

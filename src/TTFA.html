@@ -1,0 +1,230 @@
+<script>
+import { fixNum, copy } from './u.js';
+export let mdata;
+
+let fmoves = mdata[0].data;
+let cmoves = mdata[1].data;
+
+console.log('f', fmoves);
+console.log('c', cmoves);
+
+let pairs = [];
+
+
+let sortTypes = [
+  ['turns', 1],
+  ['dmg_t', -1],
+];
+let o_ths = [
+  {
+    title: 'turns',
+    value: 'turns',
+  },
+  {
+    title: 'hits',
+    value: 'hits',
+  },
+  // {
+  //   title: 'ΣDf',
+  //   value: 'dmg_f',
+  // },
+  {
+    title: 'Σdmg',
+    value: 'dmg_t',
+  },
+  {
+    title: 'DPT',
+    value: 'dpt',
+  },
+  {
+    title: 'f.name',
+  },
+  {
+    title: 'c.name',
+  },
+];
+let ths;
+
+for (let f of fmoves) {
+  for (let c of cmoves) {
+    let hits = Math.ceil(c.energy / f.energyGain);
+    let turns = hits * f.turn;
+    let dmg_f = f.power * hits * f.stabFactor;
+    let dmg_t = dmg_f + c.power * c.stabFactor;
+    let dpt = dmg_t / turns;
+
+    pairs = pairs.concat({
+      f,
+      c,
+      turns,
+      hits,
+      dmg_f,
+      dmg_t,
+      dpt,
+    });
+  }
+}
+
+$: {
+  sortTypes;
+  pairs = pairs.sort(sortPair);
+  ths = genTHs();
+}
+
+function sortPair(a, b) {
+  let [[st1, st1d], [st2, st2d]] = sortTypes;
+
+  if (a[st1] > b[st1]) { return st1d; }
+  if (a[st1] < b[st1]) { return -st1d; }
+
+  return a[st2] > b[st2] ? st2d : -st2d ;
+}
+
+function genMoveTitle(move) {
+  return [
+    move.name,
+    move.moveId,
+    move.type,
+    move.power,
+    move.energy,
+  ]
+}
+
+function tNum(num, d = 2) {
+  let n = fixNum(num, d, true).split('.');
+  n[1] = `<small class="decimal">.${n[1]}</small>`;
+  return n.join('');
+}
+
+function genTHs() {
+  return copy(o_ths).map(th => {
+    if (!th.value) { return th; }
+
+    let sortIndex = sortTypes.findIndex(t => t[0] === th.value);
+    if (sortIndex === -1) { return th; }
+
+    th.dir = sortTypes[sortIndex][1];
+    th.order = sortIndex + 1;
+    return th;
+  });
+}
+
+let updateSortTypes = (type) => (e) => {
+  if (!type) { return; }
+
+  let idx = sortTypes.findIndex(t => t[0] === type);
+  if (idx === -1) {
+    sortTypes.push([type, 1]);
+    sortTypes = sortTypes.slice(-2);
+  } else {
+    sortTypes[idx][1] = sortTypes[idx][1] * -1;
+  }
+}
+
+</script>
+
+
+<section class="pairs-section">
+  <details open>
+    <summary><h3 class="d-ib">Move Pairs</h3></summary>
+
+    <div class="move-pairs">
+      <div class="tr">
+        {#each ths as th, index (th.title)}
+          <div
+            class="td th"
+            class:mname={!th.value}
+            class:sort-th={th.value}
+            on:click={updateSortTypes(th.value)}
+            data-order={th.order}
+            data-dir={ th.dir
+              ? (th.dir > 0 ? '▲' : '▼')
+              : null
+            }
+          >
+            {th.title}
+          </div>
+        {/each}
+      </div>
+
+      {#each pairs as pair}
+        <div class="tr">
+          <div class="td">{pair.turns}</div>
+          <div class="td">{pair.hits}</div>
+          <!-- <div class="td">{@html tNum(pair.dmg_f)}</div> -->
+          <div class="td">{@html tNum(pair.dmg_t)}</div>
+          <div class="td">{@html tNum(pair.dpt)}</div>
+          <div class="td mname" title={pair.f}>{pair.f.name}</div>
+          <div class="td mname">{pair.c.name}</div>
+        </div>
+      {/each}
+    </div>
+  </details>
+</section>
+
+
+
+<style>
+
+.move-pairs {
+  display: table;
+  margin-left: 1em;
+  text-align: right;
+}
+
+.tr {
+  display: table-row;
+}
+
+.tr:hover {
+  background-color: #eee;
+}
+
+.tr:nth-of-type(3n + 1) .td {
+  border-bottom: 1px solid #eee;
+}
+
+.th {
+  font-family: monospace;
+  text-transform: capitalize;
+  color: #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.sort-th {
+  position: relative;
+  cursor: pointer;
+}
+.sort-th::before {
+  content: '0▲';
+  position: relative;
+  top: -.25em;
+  left: -.2em;
+  white-space: nowrap;
+  color: transparent;
+  padding: 0 2px;
+}
+.sort-th[data-order]::before {
+  content: attr(data-order) attr(data-dir);
+  box-shadow: 0 0 0 1px #ccf;
+  color: #99f;
+}
+
+.td {
+  display: table-cell;
+  width: 2em;
+  padding: .2em .5em;
+}
+
+.td.mname {
+  /* width: 4em; */
+  width: unset;
+  text-align: left;
+}
+
+:global(.decimal) {
+  color: #999;
+  font-size: smaller;
+}
+
+</style>

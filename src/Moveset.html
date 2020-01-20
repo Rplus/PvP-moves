@@ -1,0 +1,80 @@
+<script>
+  import { moves, listview } from './stores.js';
+  import { copy, fixNum, introEffect } from './u.js';
+
+  import Move from './Move.html';
+  import TTFA from './TTFA.html';
+
+  export let pm;
+  console.log(222, pm);
+
+  function queryMove(mname) {
+    return copy($moves.find(m => m.moveId === mname));
+  }
+
+  function genMove(mname, isFast) {
+    let mmm = queryMove(mname);
+    mmm.isLegacy = (lmoves && lmoves.includes(mname));
+    mmm.isFast = isFast;
+    mmm.stab = (pm.types.includes(mmm.type));
+    mmm.stabFactor = mmm.stab ? 1.2 : 1;
+
+    if (isFast) {
+      mmm.ept = fixNum(mmm.energyGain / mmm.turn);
+      mmm.dpt = fixNum(mmm.power / mmm.turn);
+      mmm.eptxdpt = fixNum(mmm.ept * mmm.dpt);
+    } else {
+      mmm.dpe = fixNum(mmm.power / mmm.energy);
+      if (mmm.buffs) {
+        mmm.buffsDes = introEffect(mmm);
+      }
+    }
+
+    return mmm;
+  }
+
+  let lmoves = pm.legacyMoves;
+
+  let mdata = [
+    {
+      title: 'Fast Moves',
+      data: pm.fastMoves.map(m => genMove(m, true)),
+    },
+    {
+      title: 'Charged Moves',
+      data: pm.chargedMoves.map(m => genMove(m, false)),
+    }
+  ];
+</script>
+
+
+
+<section class="moves" class:listview={$listview}>
+  {#each mdata as mmm}
+    <details open>
+      <summary><h3 class="moveset-title d-ib">{mmm.title}</h3></summary>
+      <div class="moveset">
+        {#each mmm.data as m }
+          <Move mdata={m} />
+        {/each}
+      </div>
+    </details>
+  {/each}
+</section>
+
+<TTFA mdata={mdata} />
+
+
+
+<style>
+.moveset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-left: 1em;
+}
+.listview .moveset {
+  flex-direction: column;
+}
+</style>

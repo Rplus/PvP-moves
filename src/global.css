@@ -1,0 +1,119 @@
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: rgb(0,100,200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0,80,160);
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+input[type="range"] {
+  height: 0;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.df {
+  display: flex;
+}
+
+.df-c {
+  place-content: center;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.mr-1 { margin-right: .25rem; }
+.mb-2 { margin-right: .5rem; }
+.mb-4 { margin-bottom: 1rem; }
+
+.op-20 { opacity: .2; }
+.op-60 { opacity: .6; }
+.op-80 { opacity: .8; }
+
+.type-icon {
+  /* si: sprite index, 18 types */
+  width: 1em;
+  height: 1em;
+  background-image: url('./type-image/sprite.png');
+  background-size: cover;
+  background-position: calc(100% * var(--si, 0) / 17) 50%;
+}
+
+.type-icon[data-type='bug'] { --si: 0; }
+.type-icon[data-type='dark'] { --si: 1; }
+.type-icon[data-type='dragon'] { --si: 2; }
+.type-icon[data-type='electric'] { --si: 3; }
+.type-icon[data-type='fairy'] { --si: 4; }
+.type-icon[data-type='fighting'] { --si: 5; }
+.type-icon[data-type='fire'] { --si: 6; }
+.type-icon[data-type='flying'] { --si: 7; }
+.type-icon[data-type='ghost'] { --si: 8; }
+.type-icon[data-type='grass'] { --si: 9; }
+.type-icon[data-type='ground'] { --si: 10; }
+.type-icon[data-type='ice'] { --si: 11; }
+.type-icon[data-type='normal'] { --si: 12; }
+.type-icon[data-type='poison'] { --si: 13; }
+.type-icon[data-type='psychic'] { --si: 14; }
+.type-icon[data-type='rock'] { --si: 15; }
+.type-icon[data-type='steel'] { --si: 16; }
+.type-icon[data-type='water'] { --si: 17; }

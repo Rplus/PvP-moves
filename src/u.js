@@ -14,8 +14,9 @@ export function copy(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
 
-export function fixNum(num, d = 2) {
-  return +(+num).toFixed(d);
+export function fixNum(num, d = 2, toStr) {
+  let op = (+num).toFixed(d);
+  return toStr ? op : +op;
 }
 
 const buffTypes = ['攻', '防'];
@@ -27,7 +28,7 @@ const buffTargets = {
 export function introEffect(move) {
   let buffs = move.buffs.map((b, index) => {
     if (!b) { return ''}
-    return `${b > 0 ? '+' : ''}${b} 階${buffTypes[index]}`;
+    return `${b > 0 ? '+' : ''}${b}階${buffTypes[index]}`;
   }).filter(Boolean).join(', ');
   return `${move.buffApplyChance * 100}%, ${buffs}, [${buffTargets[move.buffTarget]}]`;
 }

@@ -1,14 +1,28 @@
 <script>
 import Selector from './Selector.html';
-let name = 'world';
-import { dex } from './stores.js';
-import { genOptions } from './u.js';
+import PM from './PM.html';
+import Info from './Info.html';
 
-// $: datalist = $pmName.map((n, dex) => {
-//   genOptions(dex, n.zh);
-// }).join('');
+import { dex, pokemon } from './stores.js';
+
+$: pm = $pokemon.find(pm => pm.dex === +$dex);
 
 </script>
 
+
+
 <h1>Hello~ {$dex}!</h1>
 <Selector />
+
+
+<hr>
+
+{#if pm}
+  <PM pm={pm} />
+{/if}
+
+<Info />
+
+
+
+<style src="./global.css" global></style>

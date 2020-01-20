@@ -1,0 +1,78 @@
+<script>
+  import { calPmCP, calPmWOWCP } from './u.js';
+
+  export let ads;
+
+  let cps = [
+    {
+      lv: 8,
+      ooo: calPmCP(ads, [0, 0, 0, 8]),
+      min: calPmCP(ads, [0, 0, 0, 8]),
+      ccc: calPmCP(ads, [13, 13, 13, 8]),
+      max: calPmCP(ads, [15, 15, 15, 8]),
+      wow: calPmWOWCP(ads, 8),
+    },
+    {
+      lv: 13,
+      ooo: calPmCP(ads, [0, 0, 0, 13]),
+      min: calPmCP(ads, [4, 4, 4, 13]),
+      ccc: calPmCP(ads, [13, 13, 13, 13]),
+      max: calPmCP(ads, [15, 15, 15, 13]),
+      wow: calPmWOWCP(ads, 13),
+    },
+  ];
+</script>
+
+
+
+<table class="pm-cp">
+  <thead>
+    <tr>
+      <th>IV/CP</th>
+      <th>0-0-0</th>
+      <th>4-4-4</th>
+      <th title="might be 100% after purified">13-13-13</th>
+      <th title="should be 100% after purified">☆☆☆☆</th>
+      <th>15-15-15</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each cps as cp }
+      <tr>
+        <th>Lv{cp.lv}</th>
+        <td>{cp.ooo}</td>
+        <td>{cp.ooo !== cp.min ? cp.min : ''}</td>
+        <td>{cp.ccc}</td>
+        <td>{cp.wow}</td>
+        <td>{cp.max}</td>
+      </tr>
+    {/each}
+  </tbody>
+</table>
+
+
+
+<style>
+.pm-cp {
+  text-align: right;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: smaller;
+}
+
+.pm-cp th,
+.pm-cp td {
+  padding: .5em .5em .25em;
+  vertical-align: baseline;
+}
+.pm-cp th {
+  font-weight: normal;
+  color: #aaa;
+  font-family: monospace;
+}
+
+.pm-cp tr td {
+  width: 20%;
+  border-bottom: 1px solid #ccc;
+}
+</style>
