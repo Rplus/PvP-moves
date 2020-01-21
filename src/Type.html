@@ -1,0 +1,23 @@
+<script>
+export let type;
+export let klass;
+import { typeTarget } from './stores.js';
+
+
+let onClick = (type) => () => {
+  console.log('onClick', type);
+  $typeTarget = type;
+}
+</script>
+
+
+
+<div
+  class="type-icon {klass || ''}"
+  data-type={type} title={type}
+  on:click|preventDefault={onClick(type)}
+/>
+
+
+
+<style></style>
