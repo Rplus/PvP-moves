@@ -1,5 +1,6 @@
-import { writable, derived } from 'svelte/store';
+import { writable, readable, derived } from 'svelte/store';
 import { getDexFromUrl, toJSON, genOptions, saveItem, getItem } from './u.js';
+import { typesEff } from './types-eff.js';
 
 export const defaultDex = 371;
 export const dex = writable(getDexFromUrl() || defaultDex);
@@ -16,6 +17,16 @@ window.addEventListener('popstate', (e) => {
   let dexOnUrl = getDexFromUrl();
   dex.set(dexOnUrl);
 });
+
+
+
+//
+//
+//
+//
+//
+
+
 
 export const pokemon = writable([]);
 export const moves = writable([]);
@@ -46,6 +57,7 @@ export const datalist = derived(
 //
 
 
+
 const isOsDarktheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 const localSettings = getItem('settings') || {};
 const _settings = {
@@ -57,9 +69,21 @@ const _settings = {
 
 export const settings = writable(_settings);
 settings.subscribe(value => {
-  console.log(value);
   saveItem({
     key: 'settings',
     value,
   });
 });
+
+
+
+//
+//
+//
+//
+//
+
+
+
+export const eff = readable(typesEff);
+export const typeTarget = writable(null);

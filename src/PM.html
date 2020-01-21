@@ -1,6 +1,7 @@
 <script>
 import Moveset from './Moveset.html';
 import CP from './CP.html';
+import Type from './Type.html';
 import { calPmCP, calPmWOWCP, copy } from './u.js';
 import { dex, pokemon } from './stores.js';
 
@@ -13,26 +14,31 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
 {#if pm}
   <section class="pm-section L1-box">
     <header class="pm-info card">
-      <div class="df mb-4 mt-4">
-        <span class="pm-name">{pm.name}</span>
-        <small class="pm-dex">#{pm.dex}</small>
+      <details open>
+        <summary>
+          <div class="summary-title d-if mb-4 mt-4">
+            <span class="pm-name">{pm.name}</span>
+            <small class="pm-dex">#{pm.dex}</small>
 
-        <div class="pm-types df">
-          {#each pm.types as type}
-            <div class="pm-type type-icon" data-type={type} title={type}></div>
-          {/each}
+            <div class="pm-types df">
+              {#each pm.types as type}
+                <Type klass="pm-type" type={type} />
+              {/each}
+            </div>
+
+            <div class="pm-stats">
+              <div class="base" data-base="a">{pm.baseStats.atk}</div>
+              <div class="base" data-base="d">{pm.baseStats.def}</div>
+              <div class="base" data-base="s">{pm.baseStats.sta}</div>
+            </div>
+          </div>
+        </summary>
+
+        <div>
+          <CP ads={pm.baseStats} />
         </div>
+      </details>
 
-        <div class="pm-stats">
-          <div class="base" data-base="a">{pm.baseStats.atk}</div>
-          <div class="base" data-base="d">{pm.baseStats.def}</div>
-          <div class="base" data-base="s">{pm.baseStats.sta}</div>
-        </div>
-      </div>
-
-      <div class="mb-5">
-        <CP ads={pm.baseStats} />
-      </div>
     </header>
 
     <Moveset pm={pm} />
@@ -75,7 +81,7 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
   padding-left: .5em;
 }
 
-.pm-type {
+:global(.pm-type) {
   font-size: 1.5em;
   margin: 0 .25rem;
 }

@@ -1,5 +1,6 @@
 <script>
-  export let mdata;
+import Type from './Type.html';
+export let mdata;
 </script>
 
 
@@ -13,7 +14,7 @@
 >
   <div class="m-info m-grid" grid-size="full" title={mdata.moveId} data-title={mdata.moveId}>
     <div class="m-title df df-c ai-c">
-      <div class="m-icon type-icon mr-1" data-type={mdata.type}></div>
+      <Type klass="m-icon mr-1" type={mdata.type} />
       <div class="m-name">{mdata.name}</div>
     </div>
   </div>
