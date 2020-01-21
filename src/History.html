@@ -32,7 +32,7 @@ function getTitle(dex) {
 <div class="card history">
   <details open>
     <summary><h3 class="d-ib">History</h3></summary>
-    <div>
+    <div class="links whs-nw pl-4">
       <div class="df fd-c fd-cr" on:click|preventDefault={setDex}>
         {#each footprints as footprint (footprint.dex)}
           <a class="mb-1"
@@ -45,7 +45,7 @@ function getTitle(dex) {
       </div>
 
       <hr>
-      <a href="./?{shareLink}" style="margin-left: 5em">Share 🔗</a>
+      <a href="./?{shareLink}" style="margin-left: 3em">Share 🔗</a>
     </div>
   </details>
 </div>
@@ -55,7 +55,6 @@ function getTitle(dex) {
 <style>
 .history {
   z-index: 1;
-  margin-left: 2.5vw;
 }
 
 @media (min-width: 750px) {
@@ -66,4 +65,7 @@ function getTitle(dex) {
   }
 }
 
+.links {
+  font-family: monospace;
+}
 </style>

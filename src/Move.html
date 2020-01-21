@@ -62,12 +62,13 @@
 
 .m-grid {
   position: relative;
-  width: calc(2.5em + 1vmin);
+  width: calc(1.5em + 4vmin);
   display: inline-flex;
   flex-direction: column;
   place-content: center;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: .25em;
   grid-column: auto / span var(--span, 1);
   box-shadow: 0 1px var(--shadow-color, var(--color-6));
 }
@@ -139,7 +140,7 @@
   color: var(--color-3);
 }
 .is-stab .m-name {
-  text-shadow: var(--glow-text, 1px 1px 0 #f99);
+  text-shadow: var(--glow-text, 0 1px 1px #66c);
 }
 :global(.darktheme) {
   --glow-text: 0 0 2px #990;
@@ -179,13 +180,9 @@
 .m-effect {
   font-size: smaller;
   width: unset;
-  padding: .5em;
+  padding: 0 .5em;
   padding-left: 1em;
   color: var(--color-2);
-  --shadow-color: var(--color-6);
-}
-:global(.gridview) .m-effect {
-  align-self: flex-end;
   --shadow-color: transparent;
 }
 

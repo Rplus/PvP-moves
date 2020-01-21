@@ -10,6 +10,7 @@
   --color-7: #f4f4f4;
   --card-bgc: #fff;
   --card-shadow: var(--color-5);
+  --card-shadow: rgba(0, 0, 0, .2);
   --link-color: rgb(0, 100, 200);
   --link-color-visted: rgb(0, 80, 160);
 }
@@ -18,11 +19,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-.L1-box {
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
 }
 
 html, body {
@@ -125,6 +121,7 @@ button:focus {
 }
 
 .d-ib { display: inline-block; }
+.d-if { display: inline-flex; }
 .df { display: flex; }
 .fd-r { flex-direction: row; }
 .fd-c { flex-direction: column; }
@@ -143,24 +140,12 @@ button:focus {
 .mb-2 { margin-bottom: .5rem; }
 .mb-4 { margin-bottom: 1rem; }
 .mb-5 { margin-bottom: 1.5rem; }
+.pl-4 { padding-left: 1rem; }
 .pt-4 { padding-top: 1rem; }
 .pb-4 { padding-bottom: 1rem; }
 
-.op-20 { opacity: .2; }
-.op-60 { opacity: .6; }
-.op-80 { opacity: .8; }
-
-.card {
-  max-width: 35rem;
-  padding: .1rem 1em;
-  margin-bottom: 1em;
-  box-shadow: 0 .25em .5em var(--card-shadow);
-  background-color: var(--card-bgc);
-}
-
-.card details > :last-child {
-  margin-bottom: 1.5rem;
-  /* padding-bottom: 1.5rem; */
+.whs-nw {
+  white-space: nowrap;
 }
 
 .type-icon {
@@ -170,6 +155,7 @@ button:focus {
   background-image: url('./type-image/sprite.png');
   background-size: cover;
   background-position: calc(100% * var(--si, 0) / 17) 50%;
+  cursor: pointer;
 }
 
 .type-icon[data-type='bug'] { --si: 0; }
@@ -190,6 +176,22 @@ button:focus {
 .type-icon[data-type='rock'] { --si: 15; }
 .type-icon[data-type='steel'] { --si: 16; }
 .type-icon[data-type='water'] { --si: 17; }
+
+.card {
+  max-width: 35rem;
+  padding: .1rem 1em;
+
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  margin-bottom: 1em;
+  box-shadow: 0 .25em .5em var(--card-shadow);
+  background-color: var(--card-bgc);
+}
+
+.card details > :last-child {
+  margin-bottom: 1.5rem;
+  /* padding-bottom: 1.5rem; */
+}
 
 .switcher {
   position: relative;
