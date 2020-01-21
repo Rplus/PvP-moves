@@ -48,11 +48,9 @@ let ths;
 $: {
   mdata;
   sortTypes;
-  console.log('ttfa', mdata, pairs);
   genPairs();
   pairs = pairs.sort(sortPair);
   ths = genTHs();
-  console.log('ttfa', mdata, pairs);
 }
 
 function genPairs() {
@@ -116,7 +114,7 @@ function genTHs() {
   });
 }
 
-let updateSortTypes = (type) => (e) => {
+let updateSortTypes = (type) => () => {
   if (!type) { return; }
 
   let idx = sortTypes.findIndex(t => t[0] === type);
