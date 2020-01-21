@@ -1,6 +1,7 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import autoPreprocess from 'svelte-preprocess';
@@ -16,6 +17,9 @@ export default {
 		file: 'public/bundle.js'
 	},
 	plugins: [
+    json({
+      exclude: [ 'node_modules/foo/**', 'node_modules/bar/**' ],
+    }),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
