@@ -1,4 +1,4 @@
-deploy: build
+deploy: copy-assets build
 	sh deploy.sh
 
 build:
@@ -9,3 +9,7 @@ build:
 
 genGM:
 	node genGM.js
+
+copy-assets:
+	mkdir -p public; \
+	cp -r ./assets/* ./public/

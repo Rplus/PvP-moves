@@ -1,10 +1,10 @@
 {
-  "name": "Pokémon Go Search String Generator",
-  "short_name": "Search String Generator",
+  "name": "Pokémon Go PvP Moves",
+  "short_name": "PMGO PvP Moves",
   "theme_color": "#333333",
   "background_color": "#ffffff",
   "display": "standalone",
-  "scope": "/Search-String/",
+  "scope": "/PvP-moves/",
   "start_url": "/",
   "icons": [
     {
