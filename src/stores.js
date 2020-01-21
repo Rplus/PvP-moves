@@ -46,42 +46,20 @@ export const datalist = derived(
 //
 
 
-export const gridview = createGridview();
-export const darktheme = createDarktheme();
+const isOsDarktheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+const localSettings = getItem('settings') || {};
+const _settings = {
+  gridview: localSettings.gridview,
+  darktheme: localSettings.darktheme === undefined
+    ? isOsDarktheme
+    : localSettings.darktheme,
+};
 
-function createGridview() {
-  let b = Boolean(getItem('gridview'));
-  const { subscribe, set, update } = writable(b);
-
-  return {
-    subscribe,
-    set: (n) => {
-      set(n);
-      saveItem({
-        key: 'gridview',
-        value: n,
-      });
-    },
-  };
-}
-
-function createDarktheme() {
-  // detect for css
-  let os_settings = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  let b = getItem('darktheme');
-  if (b === null) {
-    b = os_settings;
-  }
-  const { subscribe, set, update } = writable(Boolean(b));
-
-  return {
-    subscribe,
-    set: (n) => {
-      set(n);
-      saveItem({
-        key: 'darktheme',
-        value: n,
-      });
-    },
-  };
-}
+export const settings = writable(_settings);
+settings.subscribe(value => {
+  console.log(value);
+  saveItem({
+    key: 'settings',
+    value,
+  });
+});
