@@ -12,28 +12,35 @@ let o_ths = [
   {
     title: 't',
     value: 'turns',
+    intro: '回合數',
   },
   {
     title: 'H',
     value: 'hits',
+    intro: '小招攻擊次數',
   },
   // {
   //   title: 'ΣDf',
   //   value: 'dmg_f',
+  //   intro: '小招累積傷害',
   // },
   {
-    title: 'Σdmg',
+    title: 'Σ傷',
     value: 'dmg_t',
+    intro: '循環傷害/累積傷害 (w/STAB)',
   },
   {
     title: 'DPT',
     value: 'dpt',
+    intro: '平均每回合傷害 (w/STAB)',
   },
   {
-    title: 'f.name',
+    // title: 'f.name',
+    title: '小招',
   },
   {
-    title: 'c.name',
+    // title: 'c.name',
+    title: '大招',
   },
 ];
 let ths;
@@ -136,6 +143,7 @@ let updateSortTypes = (type) => (e) => {
               class="td th"
               class:mname={!th.value}
               class:sort-th={th.value}
+              title={th.intro}
               on:click={updateSortTypes(th.value)}
               data-order={th.order}
               data-dir={ th.dir
