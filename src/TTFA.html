@@ -2,10 +2,7 @@
 import { fixNum, copy } from './u.js';
 export let mdata;
 
-let fmoves = mdata[0].data;
-let cmoves = mdata[1].data;
-
-let pairs = [];
+let pairs;
 
 let sortTypes = [
   ['turns', 1],
@@ -41,31 +38,38 @@ let o_ths = [
 ];
 let ths;
 
-for (let f of fmoves) {
-  for (let c of cmoves) {
-    let hits = Math.ceil(c.energy / f.energyGain);
-    let turns = hits * f.turn;
-    let dmg_f = f.power * hits * f.stabFactor;
-    let dmg_t = dmg_f + c.power * c.stabFactor;
-    let dpt = dmg_t / turns;
-
-    pairs = pairs.concat({
-      f,
-      c,
-      turns,
-      hits,
-      dmg_f,
-      dmg_t,
-      dpt,
-    });
-  }
-}
-
 $: {
+  mdata;
   sortTypes;
+  pairs = [];
+  console.log('ttfa', mdata, pairs);
+  genPairs();
   pairs = pairs.sort(sortPair);
   ths = genTHs();
+  console.log('ttfa', mdata, pairs);
 }
+
+function genPairs() {
+  for (let f of mdata[0].data) {
+    for (let c of mdata[1].data) {
+      let hits = Math.ceil(c.energy / f.energyGain);
+      let turns = hits * f.turn;
+      let dmg_f = f.power * hits * f.stabFactor;
+      let dmg_t = dmg_f + c.power * c.stabFactor;
+      let dpt = dmg_t / turns;
+
+      pairs = pairs.concat({
+        f,
+        c,
+        turns,
+        hits,
+        dmg_f,
+        dmg_t,
+        dpt,
+      });
+    }
+  }
+};
 
 function sortPair(a, b) {
   let [[st1, st1d], [st2, st2d]] = sortTypes;
@@ -206,6 +210,7 @@ let updateSortTypes = (type) => (e) => {
   content: attr(data-order) attr(data-dir);
   box-shadow: 0 0 0 1px var(--sort-label-border, #ccf);
   color: var(--sort-label, #99f);
+  letter-spacing: -1px;
 }
 
 
@@ -230,7 +235,7 @@ let updateSortTypes = (type) => (e) => {
   font-size: smaller;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .td {
     --td-px: .5em;
     font-size: smaller;

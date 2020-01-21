@@ -1,5 +1,5 @@
 <script>
-  import { dex, datalist, pokemon,  } from './stores.js';
+  import { dex, datalist, pokemon } from './stores.js';
   import { saveItem, getItem, toJSON, getDexFromUrl } from './u.js';
 
   let dexValue = $dex;
@@ -7,24 +7,10 @@
   let pmName = '';
 
   $: {
-    if ($pokemon) {
-      let target = $pokemon.find(pm => pm.dex === +dexValue);
-      pmName = target && target.name || 'NG';
-    }
+    let target = $pokemon.find(pm => pm.dex === +dexValue);
+    pmName = target && target.name || 'NG';
   }
 
-  window.addEventListener('popstate', (e) => {
-    let dexOnUrl = getDexFromUrl();
-    if ($dex !== dexOnUrl) {
-      $dex = dexOnUrl;
-    }
-  });
-
-
-  function updateDex(_dex) {
-    $dex = _dex;
-    history.pushState({}, _dex, `?dex=${_dex}`);
-  }
 
   function onSubmit(e) {
     // validate
@@ -37,13 +23,13 @@
       return;
     }
     console.info('submit', _dexValue, $dex);
-    updateDex(_dexValue);
+    $dex = _dexValue;
   }
 </script>
 
 
 
-<form class="selector L1-box df ai-b" on:submit|preventDefault={onSubmit}>
+<form class="selector card L1-box df ai-b" on:submit|preventDefault={onSubmit}>
   <label class="mr-2" for="dex">Dex: #</label>
   <div class="input-wrapper mr-1">
     <input
@@ -68,9 +54,14 @@
 
 <style>
 .selector {
-  max-width: 35rem;
-  margin: 0 2.5vw;
-  padding: 1rem 0 .5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  margin-top: 1rem;
+  padding-top: .5rem;
+  white-space: nowrap;
 }
 .input-wrapper {
   flex-grow: 1;
@@ -80,5 +71,7 @@
 }
 .pm-dex-selector:invalid {
   box-shadow: inset 1px 1px 3px #900;
+}
+button {
 }
 </style>

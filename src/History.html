@@ -1,0 +1,69 @@
+<script>
+import { queryHistory, dex, pokemon } from './stores.js';
+import { getDexFromUrl } from './u.js';
+
+let footprints = [];
+let shareLink = '';
+
+$: {
+  $pokemon;
+  footprints = $queryHistory.map(q => {
+    return {
+      dex: q,
+      title: getTitle(q),
+    }
+  });
+  shareLink = $queryHistory.map(n => `dex=${n}`).reverse().join('&');
+}
+
+function setDex(e) {
+  if (!e.target.href) { return; }
+  $dex = +e.target.dataset.dex;
+}
+
+function getTitle(dex) {
+  let _pm = $pokemon.find(pm => pm.dex === dex);
+  return `#${dex} ${_pm && _pm.name || '-'}`;
+}
+</script>
+
+
+
+<div class="card history">
+  <details open>
+    <summary><h3 class="d-ib">History</h3></summary>
+    <div>
+      <div class="df fd-c fd-cr" on:click|preventDefault={setDex}>
+        {#each footprints as footprint (footprint.dex)}
+          <a class="mb-1"
+            href="./?dex={footprint.dex}"
+            data-dex={footprint.dex}
+          >
+            {footprint.title}
+          </a>
+        {/each}
+      </div>
+
+      <hr>
+      <a href="./?{shareLink}" style="margin-left: 5em">Share 🔗</a>
+    </div>
+  </details>
+</div>
+
+
+
+<style>
+.history {
+  z-index: 1;
+  margin-left: 2.5vw;
+}
+
+@media (min-width: 750px) {
+  .history {
+    position: fixed;
+    top: 1rem;
+    left: 36rem;
+  }
+}
+
+</style>

@@ -92,7 +92,7 @@ input, button, select, textarea {
   margin: 0 0 .5em 0;
   box-sizing: border-box;
   border: 1px solid var(--color-5);
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: var(--card-bgc);
   color: inherit;
 }
@@ -126,6 +126,9 @@ button:focus {
 
 .d-ib { display: inline-block; }
 .df { display: flex; }
+.fd-r { flex-direction: row; }
+.fd-c { flex-direction: column; }
+.fd-cr { flex-direction: column-reverse; }
 
 .ai-c { align-items: center; }
 .ai-b { align-items: baseline; }
@@ -136,6 +139,7 @@ button:focus {
 .mr-2 { margin-right: .5rem; }
 .mt-2 { margin-top: .5rem; }
 .mt-4 { margin-top: 1rem; }
+.mb-1 { margin-bottom: .25rem; }
 .mb-2 { margin-bottom: .5rem; }
 .mb-4 { margin-bottom: 1rem; }
 .mb-5 { margin-bottom: 1.5rem; }

@@ -1,5 +1,8 @@
-export function getDexFromUrl() {
-  return new URLSearchParams(location.search).get('dex');
+export function getDexFromUrl(all = false) {
+  let dexs = new URLSearchParams(location.search).getAll('dex').map(Number);
+  if (all) {
+  }
+  return all ? dexs : dexs[0];
 }
 
 export function ddex(dex) {
