@@ -45,7 +45,7 @@ export const datalist = derived(
   pokemon,
   $pokemon =>
     $pokemon.map(pm =>
-      genOptions(pm.dex, `${pm.name}, ${pm.id}`.toUpperCase())).join('')
+      genOptions(pm.dex, `${pm.name}, ${pm.id.slice(0, 1).toUpperCase()}${pm.id.slice(1)}`)).join('')
 );
 
 
