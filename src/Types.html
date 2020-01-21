@@ -85,7 +85,7 @@ function changeType(e) {
     'def-p . atk-p' 1fr
     '. c .'         .75em
     'def-n . atk-n' 1fr / 1fr 1.2em 1fr;
-  font-size: 2rem;
+  font-size: calc(1rem + 2vmin);
   background-image: linear-gradient(#cfc 50%, #fcc 0);
 }
 
@@ -116,7 +116,6 @@ function changeType(e) {
 }
 
 .type-title {
-  /* content: '/ ' attr(data-type) ' /'; */
   position: absolute;
   top: .5em;
   left: 50%;
@@ -130,7 +129,7 @@ function changeType(e) {
 .type-center {
   position: relative;
   grid-area: c;
-  font-size: 3rem;
+  font-size: 1.4em;
 }
 
 .type-center .type-icon {
