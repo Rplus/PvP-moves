@@ -31,7 +31,7 @@ function getTitle(dex) {
 
 
 <div class="card history">
-  <details>
+  <details open>
     <summary><h3 class="d-ib">History</h3></summary>
     <div class="links whs-nw pl-4">
       <div class="df fd-c fd-cr" on:click|preventDefault={setDex}>
@@ -62,7 +62,7 @@ function getTitle(dex) {
   .history {
     position: fixed;
     top: 1rem;
-    left: 36rem;
+    right: calc(50vw - var(--max-w) / 2);
   }
 }
 
