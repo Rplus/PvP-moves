@@ -1,5 +1,5 @@
 <script>
-import { gridview, darktheme } from './stores.js';
+import { settings } from './stores.js';
 </script>
 
 
@@ -7,14 +7,14 @@ import { gridview, darktheme } from './stores.js';
 <div class="settings">
   <label class="gridview-switcher switcher mb-2">
     List
-    <input class="switcher-checkbox" type="checkbox" bind:checked={$gridview}>
+    <input class="switcher-checkbox" type="checkbox" bind:checked={$settings.gridview}>
     <div class="switcher-icon"></div>
     Grid
   </label>
 
   <label class="darktheme-switcher switcher mb-2">
     Light
-    <input class="switcher-checkbox" type="checkbox" bind:checked={$darktheme}>
+    <input class="switcher-checkbox" type="checkbox" bind:checked={$settings.darktheme}>
     <div class="switcher-icon"></div>
     Dark
   </label>
