@@ -32,11 +32,11 @@
     return mmm;
   }
 
-  let lmoves = pm.legacyMoves;
-
+  let lmoves;
   let mdata;
 
   $: {
+    lmoves = pm.legacyMoves;
     mdata = [
       {
         title: 'Fast Moves',
