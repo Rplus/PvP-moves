@@ -2,6 +2,8 @@
 import { queryHistory, dex, pokemon } from './stores.js';
 import { getDexFromUrl } from './u.js';
 
+import Details from './Details.html';
+
 let footprints = [];
 let shareLink = '';
 
@@ -31,7 +33,7 @@ function getTitle(dex) {
 
 
 <div class="card history">
-  <details open>
+  <Details type="history">
     <summary><h3 class="d-ib">History</h3></summary>
     <div class="links whs-nw pl-4">
       <div class="df fd-c fd-cr" on:click|preventDefault={setDex}>
@@ -48,7 +50,7 @@ function getTitle(dex) {
       <hr>
       <a href="./?{shareLink}" style="margin-left: 3em">Share 🔗</a>
     </div>
-  </details>
+  </Details>
 </div>
 
 

@@ -2,6 +2,8 @@
 import Moveset from './Moveset.html';
 import CP from './CP.html';
 import Type from './Type.html';
+import Details from './Details.html';
+
 import { calPmCP, calPmWOWCP, copy } from './u.js';
 import { dex, pokemon } from './stores.js';
 
@@ -14,7 +16,7 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
 {#if pm}
   <section class="pm-section L1-box">
     <header class="pm-info card">
-      <details open>
+      <Details type="head">
         <summary>
           <div class="summary-title d-if mb-4 mt-4">
             <span class="pm-name">{pm.name}</span>
@@ -37,7 +39,7 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
         <div>
           <CP ads={pm.baseStats} />
         </div>
-      </details>
+      </Details>
 
     </header>
 
