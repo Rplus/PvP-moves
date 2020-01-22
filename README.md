@@ -5,6 +5,7 @@ This is a web app for query Pokemon's moves in Pokemon GO PvP battle.
 
 ## Query:
 
++ You could use `pokedex`, `pokemon name(en/中)` in input, and click button to query pokemon data.
 + fast moves: power, energy, truns, DPT, EPT
 + charged moves: power, energy, DPE
 + move pairs: TTFA(time to first activation), total damage, DPT  
