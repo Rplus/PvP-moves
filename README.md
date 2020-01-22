@@ -10,6 +10,13 @@ This is a web app for query Pokemon's moves in Pokemon GO PvP battle.
 + move pairs: TTFA(time to first activation), total damage, DPT  
   and you could sort different columns.
 
+## History:
+
+In the History part, you could quickly switch to the previous pokemon.  
+And you could share the query history with friends.
+like this:  
+Team GO Rocket Giovanni pokemons:
+[https://rplus.github.io/PvP-moves/?dex=53&dex=146&dex=445&dex=91&dex=115](https://rplus.github.io/PvP-moves/?dex=53&dex=146&dex=445&dex=91&dex=115)
 
 ---
 
