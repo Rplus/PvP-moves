@@ -1,5 +1,5 @@
 <script>
-  import { dex, datalist, pokemon } from './stores.js';
+  import { dex, formId, datalist, pokemon } from './stores.js';
   import { saveItem, getItem, toJSON, getDexFromUrl } from './u.js';
 
   let dexValue = $dex;
@@ -7,8 +7,8 @@
   let pmName = '';
 
   $: {
-    let target = $pokemon.find(pm => pm.dex === +dexValue);
-    pmName = target && target.name || 'NG';
+    let target = $pokemon.length && $pokemon.find(pm => pm.uid === dexValue);
+    pmName = target ? target.name : 'NG';
   }
 
 
@@ -16,14 +16,14 @@
     // validate
     if (!$pokemon.length) { return; }
 
-    let _dexValue = +e.target.dex.value;
-    let pm = $pokemon.find(pm => pm.dex === _dexValue);
+    let _inputValue = e.target.dex.value;
+    let pm = $pokemon.find(pm => pm.uid === _inputValue);
     if (!pm) {
-      console.error(`Wrong Dex: ${_dexValue}`);
+      console.error(`Wrong Dex: ${_inputValue}`);
       return;
     }
-    console.info('submit', _dexValue, $dex);
-    $dex = _dexValue;
+    console.info('submit', _inputValue, $dex);
+    $dex = _inputValue;
   }
 </script>
 
@@ -38,8 +38,8 @@
       id="dex"
       name="dex"
       required
-      pattern="\d+"
-      title="Should be a Number."
+      pattern="\d+(_\D+)?"
+      title="GG"
       bind:value={dexValue}
       bind:this={dexInput}
     />

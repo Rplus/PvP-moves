@@ -24,7 +24,7 @@ function setDex(e) {
 }
 
 function getTitle(dex) {
-  let _pm = $pokemon.find(pm => pm.dex === dex);
+  let _pm = $pokemon.find(pm => pm.uid === dex);
   dex = `.. ${dex}`.slice(-4);
   return `#${dex} ${_pm && _pm.name || '-'}`;
 }

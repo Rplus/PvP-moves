@@ -7,7 +7,7 @@ import Details from './Details.html';
 import { calPmCP, calPmWOWCP, copy } from './u.js';
 import { dex, pokemon } from './stores.js';
 
-$: pm = $pokemon.find(pm => pm.dex === +$dex);
+$: pm = $pokemon.find(pm => pm.uid === $dex);
 
 </script>
 
