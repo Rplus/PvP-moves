@@ -12,7 +12,7 @@ let o_ths = [
   {
     title: 't',
     value: 'turns',
-    intro: '回合數',
+    intro: '回合',
   },
   {
     title: 'H',
@@ -25,14 +25,14 @@ let o_ths = [
   //   intro: '小招累積傷害',
   // },
   {
-    title: 'Σ傷',
+    title: 'ΣD',
     value: 'dmg_t',
-    intro: '循環傷害/累積傷害 (w/STAB)',
+    intro: '循環傷害 (+STAB)',
   },
   {
     title: 'DPT',
     value: 'dpt',
-    intro: '平均每回合傷害 (w/STAB)',
+    intro: '回合均傷 (+STAB)',
   },
   {
     // title: 'f.name',
@@ -134,7 +134,7 @@ let updateSortTypes = (type) => () => {
     <details open>
       <summary><h3 class="d-ib">Move Pairs</h3></summary>
 
-      <div class="move-pairs">
+      <div class="move-pairs whs-nw">
         <div class="tr thead">
           {#each ths as th, index (th.title)}
             <div
@@ -165,6 +165,11 @@ let updateSortTypes = (type) => () => {
             <div class="td mname">{pair.c.name}</div>
           </div>
         {/each}
+        <div class="tr tfoot">
+          {#each ths as th, index (th.title)}
+            <div class="td th">{th.intro || ''}</div>
+          {/each}
+        </div>
       </div>
     </details>
   </div>
@@ -190,11 +195,13 @@ let updateSortTypes = (type) => () => {
 .tr:nth-of-type(3n + 1) .td {
   border-bottom: 1px solid var(--color-6);
 }
-
 .th {
   font-family: monospace;
   text-transform: capitalize;
   color: #aaa;
+}
+
+.thead .th {
   border-bottom: 1px solid var(--color-4);
 }
 
@@ -246,6 +253,13 @@ let updateSortTypes = (type) => () => {
     --td-px: .5em;
     font-size: smaller;
   }
+}
+
+.tfoot .th {
+  white-space: normal;
+  border-top: 1px solid var(--color-5);
+  padding: .5em 0 0;
+  text-align: center;
 }
 
 </style>
