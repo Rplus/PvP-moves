@@ -61,7 +61,7 @@ export const datalist = derived(
 const isOsDarktheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 const localSettings = getItem('settings') || {};
 const _details = localSettings.details || {
-  head: true,
+  head: false,
   fmove: true,
   cmove: true,
   pairs: true,

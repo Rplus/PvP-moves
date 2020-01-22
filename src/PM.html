@@ -18,7 +18,7 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
     <header class="pm-info card">
       <Details type="head">
         <summary>
-          <div class="summary-title d-if mb-4 mt-4">
+          <h2 class="summary-title d-if mb-4 mt-4">
             <span class="pm-name">{pm.name}</span>
             <small class="pm-dex">#{pm.dex}</small>
 
@@ -33,7 +33,7 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
               <div class="base" data-base="d">{pm.baseStats.def}</div>
               <div class="base" data-base="s">{pm.baseStats.sta}</div>
             </div>
-          </div>
+          </h2>
         </summary>
 
         <div>
@@ -52,6 +52,7 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
 <style>
 .summary-title {
   width: calc(100% - 2em);
+  font-size: inherit;
 }
 
 .pm-name {
@@ -63,11 +64,10 @@ $: pm = $pokemon.find(pm => pm.dex === +$dex);
   margin: 0 .25em;
 }
 
-.pm-info {
-}
-
 .pm-stats {
   margin-left: auto;
+  font-weight: 100;
+  font-size: smaller;
 }
 
 .base {
