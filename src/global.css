@@ -13,6 +13,7 @@
   --card-shadow: rgba(0, 0, 0, .2);
   --link-color: rgb(0, 100, 200);
   --link-color-visted: rgb(0, 80, 160);
+  --card-mx-w: 35rem;
 }
 
 *,
@@ -185,7 +186,7 @@ button:focus {
 .type-icon[data-type='water'] { --si: 17; }
 
 .card {
-  max-width: 35rem;
+  max-width: var(--card-mx-w);
   padding: .1rem 1em;
 
   margin-left: 2.5vw;
@@ -237,4 +238,14 @@ button:focus {
 }
 .switcher-checkbox:checked + .switcher-icon::before {
   transform: translateX(100%);
+}
+
+.h1 {
+  max-width: var(--card-mx-w);
+  margin: 0;
+  line-height: 1;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--bgc);
+  text-shadow: 0 .075em .15em var(--color-2);
 }
