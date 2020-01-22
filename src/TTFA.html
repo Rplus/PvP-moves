@@ -143,13 +143,17 @@ let updateSortTypes = (type) => () => {
               class:sort-th={th.value}
               title={th.intro}
               on:click={updateSortTypes(th.value)}
-              data-order={th.order}
-              data-dir={ th.dir
-                ? (th.dir > 0 ? '▲' : '▼')
-                : null
-              }
             >
-              {th.title}
+              <span
+                class="sort-ind"
+                data-order={th.order}
+                data-dir={ th.dir
+                  ? (th.dir > 0 ? '▲' : '▼')
+                  : null
+                }
+              >
+                {th.title}
+              </span>
             </div>
           {/each}
         </div>
@@ -210,22 +214,24 @@ let updateSortTypes = (type) => () => {
   cursor: pointer;
   user-select: none;
 }
-.sort-th::before {
-  content: '0▲';
+.sort-ind {
   position: relative;
-  top: -.25em;
-  left: -.2em;
-  white-space: nowrap;
-  color: transparent;
-  padding: 0 2px;
 }
-.sort-th[data-order]::before {
+
+.sort-ind[data-order]::before {
   content: attr(data-order) attr(data-dir);
-  box-shadow: 0 0 0 1px var(--sort-label-border, #ccf);
+  position: absolute;
+  top: -.5em;
+  left: -1.7em;
+  padding: 0 .2em;
+  line-height: 1.3;
+  transform: scale(.85);
+  font-size: 10px;
+  font-family: serif;
+  box-shadow: inset 0 0 0 1px var(--sort-label-border, #ddf);
   color: var(--sort-label, #99f);
   letter-spacing: -1px;
 }
-
 
 .td {
   display: table-cell;
