@@ -56,7 +56,7 @@ https.get(gmUrl, (res) => {
         // remove some moves
         moves = moves.filter(move => {
           return (
-            (move.moveId !== 'TRANSFORM') &&
+            // (move.moveId !== 'TRANSFORM') &&
             (move.moveId.indexOf('BLASTOISE') === -1) &&
             (move.moveId.indexOf('HIDDEN_POWER_') === -1)
           );
