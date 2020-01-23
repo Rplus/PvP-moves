@@ -4,7 +4,7 @@ import CP from './CP.html';
 import Type from './Type.html';
 import Details from './Details.html';
 
-import { calPmCP, calPmWOWCP, copy } from './u.js';
+import { calPmCP, calPmWOWCP } from './u.js';
 import { dex, pokemon } from './stores.js';
 
 $: pm = $pokemon.find(pm => pm.uid === $dex);
