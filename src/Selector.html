@@ -8,7 +8,7 @@
 
   $: {
     let target = $pokemon.length && $pokemon.find(pm => pm.uid === dexValue);
-    pmName = target ? target.name : 'NG';
+    pmName = target ? target.name : '';
   }
 
 
@@ -44,7 +44,7 @@
       bind:this={dexInput}
     />
   </div>
-  <button type="submit">🤜 {pmName} 🤛</button>
+  <button class="submit" type="submit">{pmName}</button>
   <datalist id="pm-names">
     {@html $datalist }
   </datalist>
@@ -68,6 +68,36 @@
 .pm-dex-selector:invalid {
   box-shadow: inset 1px 1px 3px #900;
 }
-button {
+
+.submit::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: .25em;
+  border-radius: 1em;
+  background-color: #f00;
+  background-image:
+    radial-gradient(
+      #fff 10%,
+      #000 0,
+      #000 calc(10% + 1px),
+      #fff 0,
+      #fff 15%,
+      #000 0,
+      #000 25%,
+      transparent calc(25% + 1px)
+    ),
+    linear-gradient(transparent 45%, #000 0, #000 55%, transparent 0),
+    linear-gradient(#f00 50%, #fff 0);
+  box-shadow: 0 0 0 .08em #000;
+  vertical-align: text-bottom;
 }
+.submit:empty::after {
+  display: none;
+}
+.submit:empty::before {
+  content: '>"<';
+}
+
 </style>
