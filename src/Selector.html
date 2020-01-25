@@ -92,6 +92,10 @@
     linear-gradient(#f00 50%, #fff 0);
   box-shadow: 0 0 0 .08em #000;
   vertical-align: text-bottom;
+  transition: transform .1s cubic-bezier(0.25, -.5, 0.75, 1.5);
+}
+.submit:active::after {
+  transform: rotate(30deg);
 }
 .submit:empty::after {
   display: none;
