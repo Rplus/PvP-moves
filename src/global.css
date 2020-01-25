@@ -135,9 +135,12 @@ button:focus {
 .d-ib { display: inline-block; }
 .d-if { display: inline-flex; }
 .df { display: flex; }
+.fwx-w { flex-wrap: wrap;; }
 .fd-r { flex-direction: row; }
 .fd-c { flex-direction: column; }
 .fd-cr { flex-direction: column-reverse; }
+.fd-rr { flex-direction: row-reverse; }
+.jc-se { justify-content: space-evenly; }
 
 .ai-c { align-items: center; }
 .ai-b { align-items: baseline; }
@@ -154,6 +157,7 @@ button:focus {
 .mb-5 { margin-bottom: 1.5rem; }
 .pl-4 { padding-left: 1rem; }
 .pt-4 { padding-top: 1rem; }
+.pb-1 { padding-bottom: .25rem; }
 .pb-4 { padding-bottom: 1rem; }
 
 .whs-nw {

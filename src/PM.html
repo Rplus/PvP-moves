@@ -3,6 +3,7 @@ import Moveset from './Moveset.html';
 import CP from './CP.html';
 import Type from './Type.html';
 import Details from './Details.html';
+import Typefactor from './Typefactor.html';
 
 import { calPmCP, calPmWOWCP } from './u.js';
 import { dex, pokemon } from './stores.js';
@@ -42,6 +43,8 @@ $: pm = $pokemon.find(pm => pm.uid === $dex);
       </Details>
 
     </header>
+
+    <Typefactor types={pm.types} />
 
     <Moveset pm={pm} />
   </section>
