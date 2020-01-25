@@ -8,9 +8,9 @@ export const queryHistory = writable(getDexFromUrl(true));
 
 dex.subscribe(_dex => {
   queryHistory.update(arr => {
-    return [...new Set([...arr, _dex].reverse())].reverse().slice(-10);
+    return [...new Set([_dex, ...arr])].slice(-10);
   });
-  history.pushState({dex: _dex}, null, `?dex=${_dex}`);
+  history.pushState(null, null, `?dex=${_dex}`);
 });
 
 window.addEventListener('popstate', (e) => {

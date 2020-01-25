@@ -15,7 +15,7 @@ $: {
       title: getTitle(q),
     }
   });
-  shareLink = $queryHistory.map(n => `dex=${n}`).reverse().join('&');
+  shareLink = $queryHistory.map(n => `dex=${n}`).join('&');
 }
 
 function setDex(e) {
@@ -36,7 +36,7 @@ function getTitle(uid) {
   <Details type="history">
     <summary><h3 class="d-ib">History</h3></summary>
     <div class="links whs-nw pl-4">
-      <div class="df fd-c fd-cr" on:click|preventDefault={setDex}>
+      <div class="df fd-c" on:click|preventDefault={setDex}>
         {#each footprints as footprint (footprint.uid)}
           <a class="mb-1"
             href="./?dex={footprint.uid}"
