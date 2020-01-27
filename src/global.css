@@ -134,6 +134,7 @@ button:focus {
 
 .d-ib { display: inline-block; }
 .d-if { display: inline-flex; }
+.db { display: block; }
 .df { display: flex; }
 .fwx-w { flex-wrap: wrap;; }
 .fd-r { flex-direction: row; }
