@@ -81,23 +81,8 @@ export const datalist = derived(
 
 const isOsDarktheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 const localSettings = getItem('settings') || {};
-const _details = localSettings.details || {
-  head: false,
-  types: false,
-  fmove: true,
-  cmove: true,
-  pairs: true,
-  history: true,
-};
 const _settings = {
-  details: {
-    head: _details.head,
-    types: _details.types,
-    fmove: _details.fmove,
-    cmove: _details.cmove,
-    pairs: _details.pairs,
-    history: _details.history,
-  },
+  details: localSettings.details || defaultSettings,
   gridview: localSettings.gridview,
   darktheme: localSettings.darktheme === undefined
     ? isOsDarktheme
