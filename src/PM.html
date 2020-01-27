@@ -6,15 +6,13 @@ import Details from './Details.html';
 import Typefactor from './Typefactor.html';
 
 import { calPmCP, calPmWOWCP } from './u.js';
-import { dex, pokemon } from './stores.js';
 
-$: pm = $pokemon.find(pm => pm.uid === $dex);
+export let pm;
 
 </script>
 
 
 
-{#if pm}
   <section class="pm-section L1-box">
     <header class="pm-info card">
       <Details type="head">
@@ -48,7 +46,6 @@ $: pm = $pokemon.find(pm => pm.uid === $dex);
 
     <Moveset pm={pm} />
   </section>
-{/if}
 
 
 
