@@ -83,7 +83,7 @@ const isOsDarktheme = window.matchMedia && window.matchMedia('(prefers-color-sch
 const localSettings = getItem('settings') || {};
 const defaultSettings = {
   head: false,
-  types: false,
+  types: true,
   fmove: true,
   cmove: true,
   pairs: true,
