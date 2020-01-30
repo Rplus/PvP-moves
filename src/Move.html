@@ -14,8 +14,10 @@ export let mdata;
 >
   <div class="m-info m-grid" grid-size="full" title={mdata.moveId} data-title={mdata.moveId}>
     <div class="m-title df df-c ai-c">
-      <Type klass="m-icon mr-1" type={mdata.type} />
-      <div class="m-name">{mdata.name}</div>
+      <div class="m-name">
+        <Type klass="m-icon mr-1" type={mdata.type} />
+        {mdata.name}
+      </div>
     </div>
   </div>
 
@@ -121,11 +123,10 @@ export let mdata;
   opacity: 1 !important;
 }
 
-.m-icon {
-  position: relative;
-  left: -1.3em;
-  font-size: smaller;
-  margin-right: -1em;
+:global(.m-icon) {
+  position: absolute;
+  top: .1em;
+  left: -1.2em;
 }
 
 .m-name {
