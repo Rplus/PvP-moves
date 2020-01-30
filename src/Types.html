@@ -1,4 +1,5 @@
 <script>
+import Dialog from './Dialog.html';
 import { eff, typeTarget } from './stores.js';
 
 function close() {
@@ -15,8 +16,7 @@ function changeType(e) {
 
 
 
-<div class="dialog-card" hidden={!$typeTarget}>
-  <div class="dialog-overlay" on:click={close} />
+<Dialog closeFn={close} hidden={!$typeTarget}>
   <div class="card">
     {#each $eff as dataRow}
       <div
@@ -43,37 +43,13 @@ function changeType(e) {
       </div>
     {/each}
   </div>
-</div>
+</Dialog>
 
 
 
 <style>
-
-.dialog-card {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  z-index: 1;
-}
-
-.dialog-card .card {
+.card {
   padding: 1em;
-}
-
-.dialog-overlay {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, .2);
 }
 
 .type-chart {
