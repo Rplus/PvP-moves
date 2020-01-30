@@ -55,7 +55,7 @@ function getFactorText(factor) {
           style="order: {factor[0]}; --factor: 'x{getFactorText(factor[0])}'"
         >
           {#each factor[1] as type}
-            <Type klass="m-icon mr-1" type={type} />
+            <Type klass="mr-1" type={type} />
           {/each}
         </div>
       {/each}
