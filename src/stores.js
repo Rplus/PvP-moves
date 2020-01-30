@@ -2,7 +2,7 @@ import { writable, readable, derived } from 'svelte/store';
 import { getDexFromUrl, toJSON, genOptions, saveItem, getItem } from './u.js';
 import { typesEff } from './types-eff.js';
 
-export const defaultDex = '371';
+export const defaultDex = (Math.random() * 600).toFixed();
 export const dex = writable(getDexFromUrl() || defaultDex);
 export const queryHistory = writable(getDexFromUrl(true));
 
