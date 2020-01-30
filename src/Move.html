@@ -1,6 +1,12 @@
 <script>
 import Type from './Type.html';
+import { mid } from './stores.js';
 export let mdata;
+
+let updateMid = (_mid) => e => {
+  $mid = _mid;
+}
+
 </script>
 
 
@@ -16,7 +22,9 @@ export let mdata;
     <div class="m-title df df-c ai-c">
       <div class="m-name">
         <Type klass="m-icon mr-1" type={mdata.type} />
-        {mdata.name}
+        <div on:click={updateMid(mdata.moveId)}>
+          {mdata.name}
+        </div>
       </div>
     </div>
   </div>

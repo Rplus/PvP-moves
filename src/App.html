@@ -3,6 +3,7 @@ import Selector from './Selector.html';
 import PM from './PM.html';
 import History from './History.html';
 import Types from './Types.html';
+import SameMove from './SameMove.html';
 import Footer from './Footer.html';
 import { settings } from './stores.js';
 import { dex, pokemon } from './stores.js';
@@ -24,6 +25,7 @@ $: pm = $pokemon.find(pm => pm.uid === $dex);
       <PM pm={pm} />
     {/if}
     <History />
+    <SameMove />
     <Types />
   </div>
   <Footer />

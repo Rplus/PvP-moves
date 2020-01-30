@@ -1,0 +1,113 @@
+<script>
+import Dialog from './Dialog.html';
+import Type from './Type.html';
+import { mid, dex, moves, pokemon } from './stores.js';
+
+function close() {
+  $mid = null;
+}
+
+function setDex(e) {
+  if (!e.target.href) { return; }
+  $dex = e.target.dataset.uid;
+  close();
+}
+
+$: mmm = $moves.find(m => m.moveId === $mid);
+let pms;
+
+const mt = ['fastMoves', 'chargedMoves', 'legacyMoves'];
+
+$: {
+  pms = $pokemon
+  .filter(pm => {
+    return mt.some(t => pm[t] && pm[t].includes($mid));
+  })
+  .map(pm => {
+    return {
+      dex: pm.dex,
+      uid: pm.uid,
+      name: pm.name,
+      stab: pm.types.includes(mmm.type)
+    }
+  });
+}
+</script>
+
+
+
+<Dialog closeFn={close} hidden={!$mid}>
+  {#if mmm}
+    <div class="card">
+      <div class="move-name df ai-c">
+        <Type klass="mr-1" type={mmm.type} />
+        <div class="name">
+          {mmm.name}
+          <div class="en">{mmm.moveId}</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <ul class="ul pl-4" on:click|preventDefault={setDex}>
+        {#each pms as pm (pm.uid)}
+          <li class="mb-2">
+            <a
+              href="./?dex={pm.uid}"
+              data-uid={pm.uid}
+              class:is-stab={pm.stab}
+            >
+              #{pm.dex}
+              {pm.name}
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </div>
+  {/if}
+</Dialog>
+
+
+
+
+<style>
+.move-name {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 -2px var(--card-bgc);
+  background-image: linear-gradient(var(--card-bgc) 80%, transparent);
+  margin: 0;
+  padding: .5em 0 2em;
+}
+
+.name {
+  position: relative;
+}
+
+.en {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(.8);
+  font-size: smaller;
+  color: var(--color-3);
+  font-family: monospace;
+}
+
+.is-stab {
+  text-shadow: var(--glow-text, 0 1px 1px #66c);
+}
+
+.card {
+  max-height: 90vh;
+  overflow: auto;
+  font-family: monospace;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.ul a {
+  color: inherit;
+}
+</style>
