@@ -6,11 +6,14 @@ export const defaultDex = (Math.random() * 600).toFixed();
 export const dex = writable(getDexFromUrl() || defaultDex);
 export const queryHistory = writable(getDexFromUrl(true));
 
+const title = document.title;
+
 dex.subscribe(_dex => {
   queryHistory.update(arr => {
     return [...new Set([_dex, ...arr])].slice(-10);
   });
   history.pushState(null, null, `?dex=${_dex}`);
+  document.title = `#${_dex} | ${title}`;
 });
 
 window.addEventListener('popstate', (e) => {
