@@ -80,6 +80,11 @@ https.get(gmUrl, (res) => {
         moves,
       }, './assets/gm.json', 0);
 
+      outputJSON({
+        pokemon,
+        moves,
+      }, './assets/gm.src.json');
+
     } catch (error) {
       console.error(error.message);
     };
