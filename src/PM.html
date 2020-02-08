@@ -37,7 +37,15 @@ export let pm;
 
       <div>
         <CP ads={pm.baseStats} />
+
+        <div class="text-right mt-4">
+          check in PvPoke[tw]:
+          <a href={`https://pvpoketw.com/rankings/all/1500/overall/${pm.id}/`} target="pvpoketw1500">超級<sup>1500</sup></a> /
+          <a href={`https://pvpoketw.com/rankings/all/2500/overall/${pm.id}/`} target="pvpoketw2500">高級<sup>2500</sup></a> /
+          <a href={`https://pvpoketw.com/rankings/all/10000/overall/${pm.id}/`} target="pvpoketw∞">大師<sup>✡</sup></a>
+        </div>
       </div>
+
     </Details>
 
   </header>

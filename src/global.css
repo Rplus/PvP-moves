@@ -161,6 +161,12 @@ button:focus {
 .pb-1 { padding-bottom: .25rem; }
 .pb-4 { padding-bottom: 1rem; }
 
+.text-right {
+  text-align: right;
+}
+.italic {
+  font-style: italic;
+}
 .whs-nw {
   white-space: nowrap;
 }
