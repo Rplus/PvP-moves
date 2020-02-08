@@ -18,7 +18,9 @@
       "chargedMoves": [
         "POWER_WHIP",
         "SEED_BOMB",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "妙蛙種子",
@@ -42,7 +44,9 @@
       "chargedMoves": [
         "POWER_WHIP",
         "SLUDGE_BOMB",
-        "SOLAR_BEAM"
+        "SOLAR_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "妙蛙草",
@@ -67,7 +71,9 @@
         "FRENZY_PLANT",
         "PETAL_BLIZZARD",
         "SLUDGE_BOMB",
-        "SOLAR_BEAM"
+        "SOLAR_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "FRENZY_PLANT"
@@ -93,7 +99,9 @@
       "chargedMoves": [
         "FLAME_BURST",
         "FLAME_CHARGE",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "小火龍",
@@ -117,7 +125,9 @@
       "chargedMoves": [
         "FIRE_PUNCH",
         "FLAME_BURST",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SCRATCH"
@@ -148,7 +158,9 @@
         "DRAGON_CLAW",
         "FIRE_BLAST",
         "FLAMETHROWER",
-        "OVERHEAT"
+        "OVERHEAT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BLAST_BURN",
@@ -177,7 +189,9 @@
       "chargedMoves": [
         "AQUA_JET",
         "AQUA_TAIL",
-        "WATER_PULSE"
+        "WATER_PULSE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "傑尼龜",
@@ -200,7 +214,9 @@
       "chargedMoves": [
         "AQUA_JET",
         "HYDRO_PUMP",
-        "ICE_BEAM"
+        "ICE_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "卡咪龜",
@@ -225,7 +241,9 @@
         "HYDRO_CANNON",
         "HYDRO_PUMP",
         "ICE_BEAM",
-        "SKULL_BASH"
+        "SKULL_BASH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "HYDRO_CANNON"
@@ -317,7 +335,9 @@
         "POISON_STING"
       ],
       "chargedMoves": [
-        "STRUGGLE"
+        "STRUGGLE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "獨角蟲",
@@ -339,7 +359,9 @@
         "POISON_STING"
       ],
       "chargedMoves": [
-        "STRUGGLE"
+        "STRUGGLE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "鐵殼蛹",
@@ -365,7 +387,9 @@
         "AERIAL_ACE",
         "SLUDGE_BOMB",
         "X_SCISSOR",
-        "FELL_STINGER"
+        "FELL_STINGER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BUG_BITE"
@@ -466,7 +490,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "DIG",
-        "HYPER_FANG"
+        "HYPER_FANG",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "小拉達",
@@ -515,7 +541,9 @@
       "chargedMoves": [
         "DIG",
         "HYPER_BEAM",
-        "HYPER_FANG"
+        "HYPER_FANG",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "拉達",
@@ -619,7 +647,9 @@
         "GUNK_SHOT",
         "POISON_FANG",
         "SLUDGE_BOMB",
-        "WRAP"
+        "WRAP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "GUNK_SHOT"
@@ -647,7 +677,9 @@
         "DARK_PULSE",
         "GUNK_SHOT",
         "SLUDGE_WAVE",
-        "ACID_SPRAY"
+        "ACID_SPRAY",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "阿柏怪",
@@ -758,7 +790,9 @@
         "DIG",
         "ROCK_SLIDE",
         "ROCK_TOMB",
-        "SAND_TOMB"
+        "SAND_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ROCK_TOMB"
@@ -810,7 +844,9 @@
       "chargedMoves": [
         "BULLDOZE",
         "EARTHQUAKE",
-        "ROCK_TOMB"
+        "ROCK_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "穿山王",
@@ -1050,7 +1086,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "FLAME_CHARGE",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "六尾",
@@ -1102,7 +1140,9 @@
         "HEAT_WAVE",
         "OVERHEAT",
         "PSYSHOCK",
-        "SOLAR_BEAM"
+        "SOLAR_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "EMBER",
@@ -1214,7 +1254,9 @@
         "AIR_CUTTER",
         "POISON_FANG",
         "SLUDGE_BOMB",
-        "SWIFT"
+        "SWIFT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SLUDGE_BOMB"
@@ -1242,7 +1284,9 @@
         "AIR_CUTTER",
         "OMINOUS_WIND",
         "POISON_FANG",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "OMINOUS_WIND"
@@ -1269,7 +1313,9 @@
       "chargedMoves": [
         "MOONBLAST",
         "SEED_BOMB",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "走路草",
@@ -1293,7 +1339,9 @@
       "chargedMoves": [
         "MOONBLAST",
         "PETAL_BLIZZARD",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "臭臭花",
@@ -1318,7 +1366,9 @@
         "MOONBLAST",
         "PETAL_BLIZZARD",
         "SOLAR_BEAM",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "霸王花",
@@ -1392,7 +1442,9 @@
       "chargedMoves": [
         "POISON_FANG",
         "PSYBEAM",
-        "SIGNAL_BEAM"
+        "SIGNAL_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "毛球",
@@ -1418,7 +1470,9 @@
         "BUG_BUZZ",
         "POISON_FANG",
         "PSYCHIC",
-        "SILVER_WIND"
+        "SILVER_WIND",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BUG_BITE"
@@ -1445,7 +1499,9 @@
       "chargedMoves": [
         "DIG",
         "MUD_BOMB",
-        "ROCK_TOMB"
+        "ROCK_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "MUD_SHOT"
@@ -1498,7 +1554,9 @@
       "chargedMoves": [
         "EARTHQUAKE",
         "MUD_BOMB",
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "MUD_SHOT"
@@ -1551,7 +1609,9 @@
         "BODY_SLAM",
         "DARK_PULSE",
         "FOUL_PLAY",
-        "NIGHT_SLASH"
+        "NIGHT_SLASH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BODY_SLAM"
@@ -1603,7 +1663,9 @@
         "FOUL_PLAY",
         "NIGHT_SLASH",
         "PLAY_ROUGH",
-        "POWER_GEM"
+        "POWER_GEM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "NIGHT_SLASH"
@@ -1654,7 +1716,9 @@
       "chargedMoves": [
         "AQUA_TAIL",
         "CROSS_CHOP",
-        "PSYBEAM"
+        "PSYBEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "可達鴨",
@@ -1680,7 +1744,9 @@
         "PSYCHIC",
         "BUBBLE_BEAM",
         "SYNCHRONOISE",
-        "CROSS_CHOP"
+        "CROSS_CHOP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "哥達鴨",
@@ -1753,7 +1819,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "FLAME_WHEEL",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "卡蒂狗",
@@ -1780,7 +1848,9 @@
         "CRUNCH",
         "FIRE_BLAST",
         "FLAMETHROWER",
-        "WILD_CHARGE"
+        "WILD_CHARGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BITE",
@@ -1807,7 +1877,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "BUBBLE_BEAM",
-        "MUD_BOMB"
+        "MUD_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "蚊香蝌蚪",
@@ -1831,7 +1903,9 @@
         "BUBBLE_BEAM",
         "MUD_BOMB",
         "SCALD",
-        "WATER_PULSE"
+        "WATER_PULSE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SCALD"
@@ -1861,7 +1935,9 @@
         "HYDRO_PUMP",
         "ICE_PUNCH",
         "SUBMISSION",
-        "POWER_UP_PUNCH"
+        "POWER_UP_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SUBMISSION"
@@ -1887,7 +1963,9 @@
       "chargedMoves": [
         "PSYSHOCK",
         "SHADOW_BALL",
-        "SIGNAL_BEAM"
+        "SIGNAL_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "凱西",
@@ -1910,7 +1988,9 @@
       "chargedMoves": [
         "DAZZLING_GLEAM",
         "PSYBEAM",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "勇基拉",
@@ -1936,7 +2016,9 @@
         "FOCUS_BLAST",
         "FUTURE_SIGHT",
         "PSYCHIC",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "DAZZLING_GLEAM",
@@ -2048,7 +2130,9 @@
       "chargedMoves": [
         "POWER_WHIP",
         "SLUDGE_BOMB",
-        "WRAP"
+        "WRAP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "喇叭芽",
@@ -2073,7 +2157,9 @@
       "chargedMoves": [
         "POWER_WHIP",
         "SEED_BOMB",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "RAZOR_LEAF"
@@ -2102,7 +2188,9 @@
         "SLUDGE_BOMB",
         "SOLAR_BEAM",
         "ACID_SPRAY",
-        "LEAF_TORNADO"
+        "LEAF_TORNADO",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "大食花",
@@ -2173,7 +2261,9 @@
       "chargedMoves": [
         "DIG",
         "ROCK_SLIDE",
-        "ROCK_TOMB"
+        "ROCK_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "小拳石",
@@ -2225,7 +2315,9 @@
         "DIG",
         "ROCK_BLAST",
         "ROCK_SLIDE",
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "MUD_SHOT",
@@ -2281,7 +2373,9 @@
         "ANCIENT_POWER",
         "EARTHQUAKE",
         "ROCK_BLAST",
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "MUD_SHOT"
@@ -2432,7 +2526,9 @@
       "chargedMoves": [
         "DISCHARGE",
         "MAGNET_BOMB",
-        "THUNDERBOLT"
+        "THUNDERBOLT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "小磁怪",
@@ -2458,7 +2554,9 @@
         "DISCHARGE",
         "FLASH_CANNON",
         "MAGNET_BOMB",
-        "ZAP_CANNON"
+        "ZAP_CANNON",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "三合一磁怪",
@@ -2625,7 +2723,9 @@
       "chargedMoves": [
         "MUD_BOMB",
         "SLUDGE",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ACID"
@@ -2685,7 +2785,9 @@
         "GUNK_SHOT",
         "SLUDGE_WAVE",
         "THUNDER_PUNCH",
-        "ACID_SPRAY"
+        "ACID_SPRAY",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ACID",
@@ -2740,7 +2842,9 @@
       "chargedMoves": [
         "BUBBLE_BEAM",
         "ICY_WIND",
-        "WATER_PULSE"
+        "WATER_PULSE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "大舌貝",
@@ -2766,7 +2870,9 @@
         "AVALANCHE",
         "BLIZZARD",
         "HYDRO_PUMP",
-        "ICY_WIND"
+        "ICY_WIND",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BLIZZARD"
@@ -2886,7 +2992,9 @@
         "IRON_HEAD",
         "ROCK_SLIDE",
         "SAND_TOMB",
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "IRON_HEAD",
@@ -2913,7 +3021,9 @@
       "chargedMoves": [
         "PSYBEAM",
         "PSYCHIC",
-        "PSYSHOCK"
+        "PSYSHOCK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "催眠貘",
@@ -2941,7 +3051,9 @@
         "SHADOW_BALL",
         "FIRE_PUNCH",
         "ICE_PUNCH",
-        "THUNDER_PUNCH"
+        "THUNDER_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "PSYSHOCK"
@@ -3070,7 +3182,9 @@
       "chargedMoves": [
         "ANCIENT_POWER",
         "PSYCHIC",
-        "SEED_BOMB"
+        "SEED_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "蛋蛋",
@@ -3148,7 +3262,9 @@
       "chargedMoves": [
         "BONE_CLUB",
         "BULLDOZE",
-        "DIG"
+        "DIG",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "卡拉卡拉",
@@ -3171,7 +3287,9 @@
       "chargedMoves": [
         "BONE_CLUB",
         "DIG",
-        "EARTHQUAKE"
+        "EARTHQUAKE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "嘎啦嘎啦",
@@ -3224,7 +3342,9 @@
         "CLOSE_COMBAT",
         "LOW_SWEEP",
         "STOMP",
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BRICK_BREAK",
@@ -3255,7 +3375,9 @@
         "FIRE_PUNCH",
         "ICE_PUNCH",
         "THUNDER_PUNCH",
-        "POWER_UP_PUNCH"
+        "POWER_UP_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BRICK_BREAK",
@@ -3305,7 +3427,9 @@
       "chargedMoves": [
         "DARK_PULSE",
         "SLUDGE",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ACID"
@@ -3333,7 +3457,9 @@
         "DARK_PULSE",
         "SHADOW_BALL",
         "SLUDGE_BOMB",
-        "THUNDERBOLT"
+        "THUNDERBOLT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ACID"
@@ -3386,7 +3512,9 @@
       "chargedMoves": [
         "BULLDOZE",
         "HORN_ATTACK",
-        "STOMP"
+        "STOMP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "獨角犀牛",
@@ -3411,7 +3539,9 @@
         "EARTHQUAKE",
         "MEGAHORN",
         "STONE_EDGE",
-        "SURF"
+        "SURF",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "MEGAHORN"
@@ -3492,7 +3622,9 @@
         "EARTHQUAKE",
         "OUTRAGE",
         "STOMP",
-        "POWER_UP_PUNCH"
+        "POWER_UP_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BRICK_BREAK",
@@ -3710,7 +3842,9 @@
         "AERIAL_ACE",
         "BUG_BUZZ",
         "NIGHT_SLASH",
-        "X_SCISSOR"
+        "X_SCISSOR",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BUG_BUZZ",
@@ -3767,7 +3901,9 @@
       "chargedMoves": [
         "THUNDER",
         "THUNDER_PUNCH",
-        "THUNDERBOLT"
+        "THUNDERBOLT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "電擊獸",
@@ -3790,7 +3926,9 @@
       "chargedMoves": [
         "FIRE_BLAST",
         "FIRE_PUNCH",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "鴨嘴火獸",
@@ -3816,7 +3954,9 @@
         "SUBMISSION",
         "VICE_GRIP",
         "X_SCISSOR",
-        "SUPER_POWER"
+        "SUPER_POWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SUBMISSION"
@@ -3864,7 +4004,9 @@
         "SPLASH"
       ],
       "chargedMoves": [
-        "STRUGGLE"
+        "STRUGGLE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "鯉魚王",
@@ -3892,7 +4034,9 @@
         "DRAGON_PULSE",
         "HYDRO_PUMP",
         "OUTRAGE",
-        "TWISTER"
+        "TWISTER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "DRAGON_PULSE",
@@ -3924,7 +4068,9 @@
         "HYDRO_PUMP",
         "ICE_BEAM",
         "SURF",
-        "SKULL_BASH"
+        "SKULL_BASH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "DRAGON_PULSE",
@@ -4083,7 +4229,9 @@
         "PSYBEAM",
         "SIGNAL_BEAM",
         "SOLAR_BEAM",
-        "ZAP_CANNON"
+        "ZAP_CANNON",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "DISCHARGE",
@@ -4117,7 +4265,9 @@
         "BRINE",
         "BUBBLE_BEAM",
         "ROCK_BLAST",
-        "ROCK_TOMB"
+        "ROCK_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BRINE",
@@ -4147,7 +4297,9 @@
         "ANCIENT_POWER",
         "HYDRO_PUMP",
         "ROCK_BLAST",
-        "ROCK_SLIDE"
+        "ROCK_SLIDE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ROCK_SLIDE",
@@ -4256,7 +4408,9 @@
         "HYPER_BEAM",
         "OUTRAGE",
         "SKULL_BASH",
-        "SUPER_POWER"
+        "SUPER_POWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "YAWN"
@@ -4285,7 +4439,9 @@
         "HURRICANE",
         "ICE_BEAM",
         "ICY_WIND",
-        "ANCIENT_POWER"
+        "ANCIENT_POWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "HURRICANE"
@@ -4317,7 +4473,9 @@
         "THUNDERBOLT",
         "ZAP_CANNON",
         "ANCIENT_POWER",
-        "DRILL_PECK"
+        "DRILL_PECK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "THUNDER_SHOCK"
@@ -4350,7 +4508,9 @@
         "HEAT_WAVE",
         "OVERHEAT",
         "SKY_ATTACK",
-        "ANCIENT_POWER"
+        "ANCIENT_POWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "EMBER",
@@ -4380,7 +4540,9 @@
       "chargedMoves": [
         "AQUA_TAIL",
         "TWISTER",
-        "WRAP"
+        "WRAP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "迷你龍",
@@ -4403,7 +4565,9 @@
       "chargedMoves": [
         "AQUA_TAIL",
         "DRAGON_PULSE",
-        "WRAP"
+        "WRAP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "哈克龍",
@@ -4431,7 +4595,9 @@
         "DRAGON_PULSE",
         "HURRICANE",
         "HYPER_BEAM",
-        "OUTRAGE"
+        "OUTRAGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "DRACO_METEOR",
@@ -4978,7 +5144,9 @@
       "chargedMoves": [
         "AIR_CUTTER",
         "SHADOW_BALL",
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "叉字蝠",
@@ -5229,7 +5397,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "DISCHARGE",
-        "THUNDERBOLT"
+        "THUNDERBOLT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "咩利羊",
@@ -5252,7 +5422,9 @@
       "chargedMoves": [
         "DISCHARGE",
         "POWER_GEM",
-        "THUNDERBOLT"
+        "THUNDERBOLT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "茸茸羊",
@@ -5278,7 +5450,9 @@
         "POWER_GEM",
         "THUNDER",
         "ZAP_CANNON",
-        "THUNDER_PUNCH"
+        "THUNDER_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "DRAGON_PULSE"
@@ -5304,7 +5478,9 @@
       "chargedMoves": [
         "DAZZLING_GLEAM",
         "LEAF_BLADE",
-        "PETAL_BLIZZARD"
+        "PETAL_BLIZZARD",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "美麗花",
@@ -5396,7 +5572,9 @@
         "BLIZZARD",
         "EARTHQUAKE",
         "HYDRO_PUMP",
-        "SURF"
+        "SURF",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "EARTHQUAKE"
@@ -5679,7 +5857,9 @@
       "chargedMoves": [
         "DARK_PULSE",
         "DRILL_PECK",
-        "FOUL_PLAY"
+        "FOUL_PLAY",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "黑暗鴉",
@@ -5725,7 +5905,9 @@
       "chargedMoves": [
         "DARK_PULSE",
         "OMINOUS_WIND",
-        "SHADOW_SNEAK"
+        "SHADOW_SNEAK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "夢妖",
@@ -5766,7 +5948,9 @@
         "CHARM"
       ],
       "chargedMoves": [
-        "MIRROR_COAT"
+        "MIRROR_COAT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "果然翁",
@@ -5906,7 +6090,9 @@
       "chargedMoves": [
         "CRUNCH",
         "EARTHQUAKE",
-        "HEAVY_SLAM"
+        "HEAVY_SLAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "大鋼蛇",
@@ -6000,7 +6186,9 @@
       "chargedMoves": [
         "IRON_HEAD",
         "NIGHT_SLASH",
-        "X_SCISSOR"
+        "X_SCISSOR",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "巨鉗螳螂",
@@ -6073,7 +6261,9 @@
       "chargedMoves": [
         "AVALANCHE",
         "FOUL_PLAY",
-        "ICE_PUNCH"
+        "ICE_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "狃拉",
@@ -6306,7 +6496,9 @@
       "chargedMoves": [
         "AERIAL_ACE",
         "ICE_PUNCH",
-        "ICY_WIND"
+        "ICY_WIND",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ICE_SHARD",
@@ -6382,7 +6574,9 @@
       "chargedMoves": [
         "CRUNCH",
         "DARK_PULSE",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "戴魯比",
@@ -6407,7 +6601,9 @@
         "CRUNCH",
         "FIRE_BLAST",
         "FLAMETHROWER",
-        "FOUL_PLAY"
+        "FOUL_PLAY",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "黑魯加",
@@ -6505,7 +6701,9 @@
       "chargedMoves": [
         "HYPER_BEAM",
         "SOLAR_BEAM",
-        "ZAP_CANNON"
+        "ZAP_CANNON",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "多邊獸Ⅱ",
@@ -6528,7 +6726,9 @@
       "chargedMoves": [
         "MEGAHORN",
         "STOMP",
-        "WILD_CHARGE"
+        "WILD_CHARGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "驚角鹿",
@@ -6913,7 +7113,9 @@
         "SHADOW_BALL",
         "THUNDER",
         "THUNDERBOLT",
-        "WILD_CHARGE"
+        "WILD_CHARGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "tags": [
         "legendary"
@@ -6997,7 +7199,9 @@
       "chargedMoves": [
         "ANCIENT_POWER",
         "CRUNCH",
-        "STOMP"
+        "STOMP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "幼基拉斯",
@@ -7021,7 +7225,9 @@
       "chargedMoves": [
         "ANCIENT_POWER",
         "CRUNCH",
-        "DIG"
+        "DIG",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "沙基拉斯",
@@ -7046,7 +7252,9 @@
       "chargedMoves": [
         "CRUNCH",
         "FIRE_BLAST",
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SMACK_DOWN"
@@ -7298,7 +7506,9 @@
       "chargedMoves": [
         "DIG",
         "SLUDGE",
-        "STOMP"
+        "STOMP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "水躍魚",
@@ -7322,7 +7532,9 @@
       "chargedMoves": [
         "MUD_BOMB",
         "SLUDGE",
-        "SURF"
+        "SURF",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "沼躍魚",
@@ -7348,7 +7560,9 @@
         "SLUDGE_WAVE",
         "SURF",
         "HYDRO_CANNON",
-        "MUDDY_WATER"
+        "MUDDY_WATER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "HYDRO_CANNON"
@@ -7691,7 +7905,9 @@
       "chargedMoves": [
         "ENERGY_BALL",
         "FOUL_PLAY",
-        "GRASS_KNOT"
+        "GRASS_KNOT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "橡實果",
@@ -7715,7 +7931,9 @@
       "chargedMoves": [
         "FOUL_PLAY",
         "GRASS_KNOT",
-        "LEAF_BLADE"
+        "LEAF_BLADE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "長鼻葉",
@@ -7741,7 +7959,9 @@
         "FOUL_PLAY",
         "HURRICANE",
         "LEAF_BLADE",
-        "LEAF_TORNADO"
+        "LEAF_TORNADO",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "狡猾天狗",
@@ -7855,7 +8075,9 @@
       "chargedMoves": [
         "DISARMING_VOICE",
         "PSYSHOCK",
-        "SHADOW_SNEAK"
+        "SHADOW_SNEAK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "拉魯拉絲",
@@ -7879,7 +8101,9 @@
       "chargedMoves": [
         "DISARMING_VOICE",
         "PSYCHIC",
-        "SHADOW_SNEAK"
+        "SHADOW_SNEAK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "奇魯莉安",
@@ -7905,7 +8129,9 @@
         "DAZZLING_GLEAM",
         "PSYCHIC",
         "SHADOW_BALL",
-        "SYNCHRONOISE"
+        "SYNCHRONOISE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SYNCHRONOISE"
@@ -8367,7 +8593,9 @@
       "chargedMoves": [
         "FOUL_PLAY",
         "POWER_GEM",
-        "SHADOW_SNEAK"
+        "SHADOW_SNEAK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "勾魂眼",
@@ -8394,7 +8622,9 @@
         "IRON_HEAD",
         "PLAY_ROUGH",
         "VICE_GRIP",
-        "POWER_UP_PUNCH"
+        "POWER_UP_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "大嘴娃",
@@ -8737,7 +8967,9 @@
       "chargedMoves": [
         "AQUA_JET",
         "CRUNCH",
-        "POISON_FANG"
+        "POISON_FANG",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "利牙魚",
@@ -8761,7 +8993,9 @@
       "chargedMoves": [
         "CRUNCH",
         "HYDRO_PUMP",
-        "POISON_FANG"
+        "POISON_FANG",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "巨牙鯊",
@@ -8902,7 +9136,7 @@
         "PSYBEAM",
         "SHADOW_BALL"
       ],
-      "name": "跳跳���",
+      "name": "跳跳豬",
       "id": "spoink"
     },
     {
@@ -8966,7 +9200,9 @@
       "chargedMoves": [
         "CRUNCH",
         "DIG",
-        "SAND_TOMB"
+        "SAND_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "大顎蟻",
@@ -8990,7 +9226,9 @@
       "chargedMoves": [
         "BUG_BUZZ",
         "BULLDOZE",
-        "SAND_TOMB"
+        "SAND_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "超音波幼蟲",
@@ -9015,7 +9253,9 @@
         "DRAGON_CLAW",
         "EARTHQUAKE",
         "STONE_EDGE",
-        "EARTH_POWER"
+        "EARTH_POWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "EARTH_POWER"
@@ -9041,7 +9281,9 @@
       "chargedMoves": [
         "BRICK_BREAK",
         "GRASS_KNOT",
-        "SEED_BOMB"
+        "SEED_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "刺球仙人掌",
@@ -9065,7 +9307,9 @@
       "chargedMoves": [
         "DARK_PULSE",
         "DYNAMIC_PUNCH",
-        "GRASS_KNOT"
+        "GRASS_KNOT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "夢歌仙人掌",
@@ -9158,7 +9402,7 @@
         "POISON_FANG",
         "WRAP"
       ],
-      "name": "飯���蛇",
+      "name": "飯匙蛇",
       "id": "seviper"
     },
     {
@@ -9611,7 +9855,9 @@
       "chargedMoves": [
         "NIGHT_SHADE",
         "OMINOUS_WIND",
-        "SHADOW_SNEAK"
+        "SHADOW_SNEAK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "怨影娃娃",
@@ -9634,7 +9880,9 @@
       "chargedMoves": [
         "DAZZLING_GLEAM",
         "SHADOW_BALL",
-        "THUNDER"
+        "THUNDER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "詛咒娃娃",
@@ -9657,7 +9905,9 @@
       "chargedMoves": [
         "NIGHT_SHADE",
         "OMINOUS_WIND",
-        "SHADOW_SNEAK"
+        "SHADOW_SNEAK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "夜巡靈",
@@ -9680,7 +9930,9 @@
       "chargedMoves": [
         "FIRE_PUNCH",
         "ICE_PUNCH",
-        "SHADOW_PUNCH"
+        "SHADOW_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "彷徨夜靈",
@@ -9751,7 +10003,9 @@
       "chargedMoves": [
         "DARK_PULSE",
         "MEGAHORN",
-        "THUNDER"
+        "THUNDER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "阿勃梭魯",
@@ -10020,7 +10274,9 @@
       "chargedMoves": [
         "CRUNCH",
         "FLAMETHROWER",
-        "TWISTER"
+        "TWISTER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "寶貝龍",
@@ -10043,7 +10299,9 @@
       "chargedMoves": [
         "DRAGON_PULSE",
         "FLAMETHROWER",
-        "TWISTER"
+        "TWISTER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "甲殼龍",
@@ -10069,7 +10327,9 @@
         "DRACO_METEOR",
         "FIRE_BLAST",
         "HYDRO_PUMP",
-        "OUTRAGE"
+        "OUTRAGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "暴飛龍",
@@ -10090,7 +10350,9 @@
         "TAKE_DOWN"
       ],
       "chargedMoves": [
-        "STRUGGLE"
+        "STRUGGLE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "鐵啞鈴",
@@ -10114,7 +10376,9 @@
       "chargedMoves": [
         "GYRO_BALL",
         "PSYCHIC",
-        "PSYSHOCK"
+        "PSYSHOCK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "金屬怪",
@@ -10139,7 +10403,9 @@
         "EARTHQUAKE",
         "FLASH_CANNON",
         "METEOR_MASH",
-        "PSYCHIC"
+        "PSYCHIC",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "METEOR_MASH"
@@ -10498,7 +10764,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "ENERGY_BALL",
-        "SEED_BOMB"
+        "SEED_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "草苗龜",
@@ -10521,7 +10789,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "ENERGY_BALL",
-        "SOLAR_BEAM"
+        "SOLAR_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "樹林龜",
@@ -10547,7 +10817,9 @@
         "SOLAR_BEAM",
         "SAND_TOMB",
         "STONE_EDGE",
-        "FRENZY_PLANT"
+        "FRENZY_PLANT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "FRENZY_PLANT"
@@ -10573,7 +10845,9 @@
       "chargedMoves": [
         "FLAME_CHARGE",
         "FLAME_WHEEL",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "小火焰猴",
@@ -10597,7 +10871,9 @@
       "chargedMoves": [
         "FLAME_WHEEL",
         "FLAMETHROWER",
-        "LOW_SWEEP"
+        "LOW_SWEEP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "猛火猴",
@@ -10622,7 +10898,9 @@
         "CLOSE_COMBAT",
         "FLAMETHROWER",
         "SOLAR_BEAM",
-        "BLAST_BURN"
+        "BLAST_BURN",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "BLAST_BURN"
@@ -11372,7 +11650,7 @@
         "HYPER_BEAM",
         "SOLAR_BEAM"
       ],
-      "name": "櫻花兒 花苞型態",
+      "name": "櫻花兒 花��型態",
       "id": "cherrim_overcast"
     },
     {
@@ -11623,7 +11901,9 @@
       "chargedMoves": [
         "DARK_PULSE",
         "DAZZLING_GLEAM",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "夢妖魔",
@@ -11648,7 +11928,9 @@
         "BRAVE_BIRD",
         "DARK_PULSE",
         "PSYCHIC",
-        "SKY_ATTACK"
+        "SKY_ATTACK",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "烏鴉頭頭",
@@ -11946,7 +12228,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "DIG",
-        "TWISTER"
+        "TWISTER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "圓陸鯊",
@@ -11970,7 +12254,9 @@
       "chargedMoves": [
         "DIG",
         "FLAMETHROWER",
-        "TWISTER"
+        "TWISTER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "尖牙陸鯊",
@@ -11995,7 +12281,9 @@
         "EARTHQUAKE",
         "FIRE_BLAST",
         "OUTRAGE",
-        "SAND_TOMB"
+        "SAND_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "烈咬陸鯊",
@@ -12087,7 +12375,9 @@
       "chargedMoves": [
         "BODY_SLAM",
         "DIG",
-        "ROCK_TOMB"
+        "ROCK_TOMB",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "沙河馬",
@@ -12113,7 +12403,9 @@
         "BODY_SLAM",
         "EARTHQUAKE",
         "STONE_EDGE",
-        "EARTH_POWER"
+        "EARTH_POWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "河馬獸",
@@ -12324,7 +12616,9 @@
       "chargedMoves": [
         "ENERGY_BALL",
         "ICE_BEAM",
-        "STOMP"
+        "STOMP",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "雪笠怪",
@@ -12348,7 +12642,9 @@
       "chargedMoves": [
         "BLIZZARD",
         "ENERGY_BALL",
-        "OUTRAGE"
+        "OUTRAGE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "暴雪王",
@@ -12373,7 +12669,9 @@
       "chargedMoves": [
         "AVALANCHE",
         "FOCUS_BLAST",
-        "FOUL_PLAY"
+        "FOUL_PLAY",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "瑪狃拉",
@@ -12398,7 +12696,9 @@
         "FLASH_CANNON",
         "WILD_CHARGE",
         "ZAP_CANNON",
-        "MIRROR_SHOT"
+        "MIRROR_SHOT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "自爆磁怪",
@@ -12447,7 +12747,9 @@
         "STONE_EDGE",
         "SURF",
         "SKULL_BASH",
-        "SUPER_POWER"
+        "SUPER_POWER",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "超甲狂犀",
@@ -12494,7 +12796,9 @@
         "THUNDER",
         "THUNDER_PUNCH",
         "WILD_CHARGE",
-        "ICE_PUNCH"
+        "ICE_PUNCH",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "電擊魔獸",
@@ -12518,7 +12822,9 @@
         "BRICK_BREAK",
         "FIRE_BLAST",
         "FIRE_PUNCH",
-        "PSYCHIC"
+        "PSYCHIC",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "鴨嘴炎獸",
@@ -12694,7 +13000,9 @@
         "BLIZZARD",
         "HYPER_BEAM",
         "SOLAR_BEAM",
-        "ZAP_CANNON"
+        "ZAP_CANNON",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "多邊獸Ｚ",
@@ -12720,7 +13028,9 @@
         "CLOSE_COMBAT",
         "LEAF_BLADE",
         "PSYCHIC",
-        "SYNCHRONOISE"
+        "SYNCHRONOISE",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "SYNCHRONOISE"
@@ -12769,7 +13079,9 @@
       "chargedMoves": [
         "DARK_PULSE",
         "OMINOUS_WIND",
-        "PSYCHIC"
+        "PSYCHIC",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "shadow": true,
       "name": "黑夜魔靈",
@@ -17612,7 +17924,7 @@
         "DAZZLING_GLEAM",
         "HYPER_BEAM"
       ],
-      "name": "美洛耶塔 歌聲型態",
+      "name": "美洛耶塔 歌��型態",
       "id": "meloetta_aria"
     },
     {

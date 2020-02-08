@@ -19,13 +19,18 @@ https.get(gmUrl, (res) => {
   res.on('end', () => {
     try {
       let json = JSON.parse(body);
-      let { pokemon, moves } = json;
+      let { pokemon, moves, shadowPokemon } = json;
 
       pokemon.forEach(pm => {
         pm.baseStats.sta = pm.baseStats.hp;
         pm.name = pm.speciesName;
         pm.id = pm.speciesId;
         pm.types = pm.types.filter(t => t !== 'none');
+
+        if (shadowPokemon.indexOf(pm.id) !== -1) {
+          pm.chargedMoves.push('RETURN');
+          pm.chargedMoves.push('FRUSTRATION');
+        }
 
         delete pm.speciesId;
         delete pm.speciesName;
