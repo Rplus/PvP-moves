@@ -3210,7 +3210,9 @@
       "chargedMoves": [
         "PSYCHIC",
         "SEED_BOMB",
-        "SOLAR_BEAM"
+        "SOLAR_BEAM",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "legacyMoves": [
         "ZEN_HEADBUTT"
@@ -3404,7 +3406,11 @@
       "chargedMoves": [
         "HYPER_BEAM",
         "POWER_WHIP",
-        "STOMP"
+        "STOMP",
+        "BODY_SLAM"
+      ],
+      "legacyMoves": [
+        "BODY_SLAM"
       ],
       "name": "大舌頭",
       "id": "lickitung"
@@ -11650,7 +11656,7 @@
         "HYPER_BEAM",
         "SOLAR_BEAM"
       ],
-      "name": "櫻花兒 花��型態",
+      "name": "櫻花兒 花苞型態",
       "id": "cherrim_overcast"
     },
     {
@@ -12722,7 +12728,11 @@
         "EARTHQUAKE",
         "HYPER_BEAM",
         "SOLAR_BEAM",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "BODY_SLAM"
+      ],
+      "legacyMoves": [
+        "BODY_SLAM"
       ],
       "name": "大舌舔",
       "id": "lickilicky"
@@ -14455,7 +14465,7 @@
         "FLAME_CHARGE",
         "CRUNCH"
       ],
-      "name": "��香猴",
+      "name": "爆香猴",
       "id": "pansear"
     },
     {
@@ -17924,7 +17934,7 @@
         "DAZZLING_GLEAM",
         "HYPER_BEAM"
       ],
-      "name": "美洛耶塔 歌��型態",
+      "name": "美洛耶塔 歌聲型態",
       "id": "meloetta_aria"
     },
     {
