@@ -10,7 +10,7 @@ const title = document.title;
 
 dex.subscribe(_dex => {
   queryHistory.update(arr => {
-    return [...new Set([_dex, ...arr])].slice(-10);
+    return [...new Set([_dex, ...arr])].slice(0, 10);
   });
   history.pushState(null, null, `?dex=${_dex}`);
   document.title = `#${_dex} | ${title}`;
