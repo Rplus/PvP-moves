@@ -36,7 +36,7 @@ let pvplinks = [
     <Details type="head">
       <summary>
         <h2 class="summary-title d-if mb-4 mt-4">
-          <span class="pm-name">{pm.name}</span>
+          <span class="pm-name" data-id={pm.id}>{pm.name}</span>
           <small class="pm-dex">#{pm.dex}</small>
 
           <div class="pm-types df">
@@ -90,8 +90,19 @@ let pvplinks = [
 }
 
 .pm-name {
+  position: relative;
   font-weight: bolder;
   font-size: 1.5em;
+}
+.pm-name::before {
+  content: attr(data-id);
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%);
+  font: 500 .7em monospace;
+  color: var(--color-3);
+  text-transform: capitalize;
 }
 
 .pm-dex {
