@@ -1,54 +1,129 @@
 <script>
   import { calPmCP, calPmWOWCP } from './u.js';
+  import Details from './Details.html';
 
   export let ads;
+  let iv_a = 15;
+  let iv_d = 15;
+  let iv_s = 15;
+  let lv = 20;
 
-  $: cps = [
+  const lvs = [8, 13, 15, 20, 25, 30, 35, 40, 41];
+
+  function getCPs(ads) {
+    let cps = lvs.map(lv => {
+      return {
+        lv,
+        maxcp: calPmCP(ads, [15, 15, 15, lv]),
+        mincp: calPmCP(ads, [0, 0, 0, lv]),
+      };
+    });
+    return cps;
+  }
+
+  $: cps = getCPs(ads);
+
+  let customeInputs = [
     {
-      lv: 8,
-      ooo: calPmCP(ads, [0, 0, 0, 8]),
-      min: calPmCP(ads, [0, 0, 0, 8]),
-      ccc: calPmCP(ads, [13, 13, 13, 8]),
-      max: calPmCP(ads, [15, 15, 15, 8]),
-      wow: calPmWOWCP(ads, 8),
+      title: 'A',
+      min: 0,
+      max: 15,
+      step: 1,
+      value: 15,
     },
     {
-      lv: 13,
-      ooo: calPmCP(ads, [0, 0, 0, 13]),
-      min: calPmCP(ads, [4, 4, 4, 13]),
-      ccc: calPmCP(ads, [13, 13, 13, 13]),
-      max: calPmCP(ads, [15, 15, 15, 13]),
-      wow: calPmWOWCP(ads, 13),
+      title: 'D',
+      min: 0,
+      max: 15,
+      step: 1,
+      value: 15,
+    },
+    {
+      title: 'S',
+      min: 0,
+      max: 15,
+      step: 1,
+      value: 15,
+    },
+    {
+      title: 'Lv',
+      min: 1,
+      max: 41,
+      step: .5,
+      value: 20,
     },
   ];
+  $: c_cp = calPmCP(ads, customeInputs.map(i => i.value));
+
+
 </script>
 
 
 
-<table class="pm-cp whs-nw">
-  <thead>
-    <tr>
-      <th><small class="sss">IV/CP</small></th>
-      <th>0-0-0</th>
-      <th>4-4-4</th>
-      <th title="淨化後可能 100%">13-13-13</th>
-      <th title="淨化後必為 100%">☆☆☆☆</th>
-      <th>15-15-15</th>
-    </tr>
-  </thead>
-  <tbody>
-    {#each cps as cp }
+<Details type="cptable">
+  <summary class="custom-summary">CP table</summary>
+  <table class="pm-cp whs-nw">
+    <thead>
       <tr>
-        <th>Lv{cp.lv}</th>
-        <td>{cp.ooo}</td>
-        <td>{cp.ooo !== cp.min ? cp.min : ''}</td>
-        <td>{cp.ccc}</td>
-        <td>{cp.wow}</td>
-        <td>{cp.max}</td>
+        <th>Lv/CP</th>
+        <th>MAX</th>
+        <th>MIN</th>
       </tr>
-    {/each}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {#each cps as cp}
+        <tr>
+          <td>{cp.lv}</td>
+          <td>{cp.maxcp}</td>
+          <td>{cp.mincp}</td>
+        </tr>
+      {/each}
+    </tbody>
+  </table>
+
+  <div class="pt-4">
+    <Details type="cp">
+      <summary class="custom-summary">Custom IV & Lv</summary>
+
+      <div>
+        <table class="custom-cp text-center">
+          <colgroup>
+            <col />
+            <col width="70" align="center" />
+            <col />
+          </colgroup>
+
+          {#each customeInputs as input}
+            <tr>
+              <td>
+                <label for="c_{input.title}">
+                  {input.title}
+                </label>
+              </td>
+              <td>
+                <input type="number" max={input.max} min={input.min} step={input.step} bind:value={input.value} id="c_{input.title}">
+              </td>
+              <td>
+                <input type="range" max={input.max} min={input.min} step={input.step} bind:value={input.value}>
+              </td>
+            </tr>
+          {/each}
+
+          <tr>
+            <td>CP</td>
+            <td>
+              {c_cp}
+            </td>
+            <td></td>
+          </tr>
+
+        </table>
+
+      </div>
+    </Details>
+  </div>
+</Details>
+
 
 
 
@@ -59,22 +134,50 @@
   text-align: right;
   table-layout: fixed;
   border-collapse: collapse;
-  font-size: smaller;
+  font-family: monospace;
 }
 
 .pm-cp th,
 .pm-cp td {
-  padding: .5em calc(3px + .5vw) .25em;
+  padding: .5em 1em .25em;
   vertical-align: baseline;
 }
 .pm-cp th {
   font-weight: normal;
   color: #aaa;
+}
+
+.pm-cp tr {
+  border-bottom: 1px solid var(--color-5);
+}
+
+.pm-cp tr:nth-of-type(even) {
+  background-color: var(--color-7);
+}
+
+input[type="range"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-summary {
+  text-align: right;
   font-family: monospace;
 }
 
-.pm-cp tr td {
-  width: 20%;
-  border-bottom: 1px solid var(--color-5);
+.custom-cp {
+  margin: auto;
+  font-family: monospace;
 }
+
+.custom-cp td {
+  padding-left: .5em;
+  text-align: center;
+}
+
+.custom-cp input {
+  width: 100%;
+  margin: 0;
+}
+
 </style>
