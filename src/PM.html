@@ -9,6 +9,24 @@ import { calPmCP, calPmWOWCP } from './u.js';
 
 export let pm;
 
+let pvplinks = [
+  {
+    n: 1500,
+    title: '超級',
+    symbol: '1500',
+  },
+  {
+    n: 2500,
+    title: '高級',
+    symbol: '2500',
+  },
+  {
+    n: 10000,
+    title: '大師',
+    symbol: '∞',
+  },
+];
+
 </script>
 
 
@@ -36,14 +54,22 @@ export let pm;
       </summary>
 
       <div>
-        <CP ads={pm.baseStats} />
-
-        <div class="text-right mt-4">
-          check in PvPoke[tw]:
-          <a href={`https://pvpoketw.com/rankings/all/1500/overall/${pm.id}/`} target="pvpoketw1500">超級<sup>1500</sup></a> /
-          <a href={`https://pvpoketw.com/rankings/all/2500/overall/${pm.id}/`} target="pvpoketw2500">高級<sup>2500</sup></a> /
-          <a href={`https://pvpoketw.com/rankings/all/10000/overall/${pm.id}/`} target="pvpoketw∞">大師<sup>✡</sup></a>
+        <div class="text-right text-smaller mt-4 mb-4">
+          <code>check in PvPoke[tw]:</code>
+          <div class="d-ib">
+            {#each pvplinks as link}
+            <a
+              class="outlink"
+              href="https://pvpoketw.com/rankings/all/{link.n}/overall/{pm.id}/"
+              target="pvpoketw_{link.n}"
+            >
+              <ruby>{link.title}<rp></rp><rt>{link.symbol}</rt><rp></rp></ruby>
+            </a>
+            {/each}
+          </div>
         </div>
+
+        <CP ads={pm.baseStats} />
       </div>
 
     </Details>
@@ -95,4 +121,13 @@ export let pm;
   font-size: 1.5em;
   margin: 0 .25rem;
 }
+
+.outlink ~ .outlink::before {
+  content: ' / ';
+}
+
+.outlink rt {
+  opacity: .5;
+}
 </style>
+
