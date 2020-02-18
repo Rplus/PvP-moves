@@ -11,6 +11,9 @@
     pmName = target ? target.name : '';
   }
 
+  function onFocus(e) {
+    e.target.select();
+  }
 
   function onSubmit(e) {
     // validate
@@ -42,6 +45,7 @@
       title="GG"
       bind:value={dexValue}
       bind:this={dexInput}
+      on:focus={onFocus}
     />
   </div>
   <button class="submit" type="submit">{pmName}</button>
