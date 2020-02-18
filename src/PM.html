@@ -23,7 +23,7 @@ let pvplinks = [
   {
     n: 10000,
     title: '大師',
-    symbol: '∞',
+    symbol: 'ΦωΦ',
   },
 ];
 
@@ -54,8 +54,8 @@ let pvplinks = [
       </summary>
 
       <div>
-        <div class="text-right text-smaller mt-4 mb-4">
-          <code>check in PvPoke[tw]:</code>
+        <div class="checkout text-right text-smaller mt-4 mb-4">
+          check in PvPoke[tw]:
           <div class="d-ib">
             {#each pvplinks as link}
             <a
@@ -131,6 +131,10 @@ let pvplinks = [
 :global(.pm-type) {
   font-size: 1.5em;
   margin: 0 .25rem;
+}
+
+.checkout {
+  font-family: monospace;
 }
 
 .outlink ~ .outlink::before {
