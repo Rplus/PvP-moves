@@ -12758,8 +12758,12 @@
         "SURF",
         "SKULL_BASH",
         "SUPER_POWER",
+        "ROCK_WRECKER",
         "RETURN",
         "FRUSTRATION"
+      ],
+      "legacyMoves": [
+        "ROCK_WRECKER"
       ],
       "shadow": true,
       "name": "超甲狂犀",
@@ -15385,8 +15389,7 @@
       ],
       "chargedMoves": [
         "FIRE_PUNCH",
-        "FLAME_CHARGE",
-        "PSYCHIC"
+        "FLAME_CHARGE"
       ],
       "name": "火紅不倒翁",
       "id": "darumaka"
@@ -19633,6 +19636,15 @@
       "type": "rock",
       "power": 70,
       "energy": 60,
+      "energyGain": 0,
+      "turn": 1
+    },
+    {
+      "moveId": "ROCK_WRECKER",
+      "name": "岩石炮",
+      "type": "rock",
+      "power": 110,
+      "energy": 50,
       "energyGain": 0,
       "turn": 1
     },
