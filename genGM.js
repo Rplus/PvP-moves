@@ -15,6 +15,7 @@ handleJSON(JSON.parse(contents));
 function handleJSON(jsonData) {
   let { pokemon, moves, shadowPokemon } = jsonData;
 
+  pokemon = pokemon.filter(pm => pm.speciesId.indexOf('_shadow') === -1);
   pokemon.forEach(pm => {
     pm.baseStats.sta = pm.baseStats.hp;
     pm.name = pm.speciesName;
@@ -34,13 +35,17 @@ function handleJSON(jsonData) {
     delete pm.defaultIVs;
     delete pm.level25CP;
     delete pm.baseStats.hp;
+    delete pm.tags;
 
-    ['fastMoves', 'legacyMoves'].forEach(type => {
+    ['fastMoves', 'legacyMoves', 'eliteMoves'].forEach(type => {
       if (pm[type] && pm[type].indexOf('HIDDEN_POWER_BUG') !== -1) {
         pm[type] = pm[type].filter(m => m.indexOf('HIDDEN_POWER_') === -1);
         pm[type].push('HIDDEN_POWER');
       }
     });
+
+    let mergedLegacyMoves = [].concat(pm.legacyMoves, pm.eliteMoves).filter(Boolean);
+    pm.legacyMoves = mergedLegacyMoves ? mergedLegacyMoves : undefined;
 
   });
 

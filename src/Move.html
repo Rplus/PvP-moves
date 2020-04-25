@@ -16,6 +16,7 @@ let updateMid = (_mid) => e => {
   class:is-fast={mdata.isFast}
   class:is-charged={!mdata.isFast}
   class:is-legacy={mdata.isLegacy}
+  class:is-elite={mdata.isElite}
   class:is-stab={mdata.stab}
 >
   <div class="m-info m-grid" grid-size="full" title={mdata.moveId} data-title={mdata.moveId}>
@@ -148,6 +149,9 @@ let updateMid = (_mid) => e => {
   padding-left: .1em;
   font-size: smaller;
   color: var(--color-3);
+}
+.is-elite .m-name::after {
+  content: '‡';
 }
 .is-stab .m-name {
   text-shadow: var(--glow-text, 0 1px 1px #66c);
