@@ -22,9 +22,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "妙蛙種子",
-      "id": "bulbasaur"
+      "id": "bulbasaur",
+      "legacyMoves": []
     },
     {
       "dex": 2,
@@ -48,9 +48,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "妙蛙草",
-      "id": "ivysaur"
+      "id": "ivysaur",
+      "legacyMoves": []
     },
     {
       "dex": 3,
@@ -75,12 +75,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FRENZY_PLANT"
       ],
-      "shadow": true,
       "name": "妙蛙花",
-      "id": "venusaur"
+      "id": "venusaur",
+      "legacyMoves": [
+        "FRENZY_PLANT"
+      ]
     },
     {
       "dex": 4,
@@ -103,9 +105,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "小火龍",
-      "id": "charmander"
+      "id": "charmander",
+      "legacyMoves": []
     },
     {
       "dex": 5,
@@ -129,12 +131,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SCRATCH"
       ],
-      "shadow": true,
       "name": "火恐龍",
-      "id": "charmeleon"
+      "id": "charmeleon",
+      "legacyMoves": [
+        "SCRATCH"
+      ]
     },
     {
       "dex": 6,
@@ -162,15 +166,20 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "BLAST_BURN",
+      "eliteMoves": [
         "EMBER",
-        "FLAMETHROWER",
-        "WING_ATTACK"
+        "WING_ATTACK",
+        "BLAST_BURN",
+        "FLAMETHROWER"
       ],
-      "shadow": true,
       "name": "噴火龍",
-      "id": "charizard"
+      "id": "charizard",
+      "legacyMoves": [
+        "EMBER",
+        "WING_ATTACK",
+        "BLAST_BURN",
+        "FLAMETHROWER"
+      ]
     },
     {
       "dex": 7,
@@ -193,9 +202,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "傑尼龜",
-      "id": "squirtle"
+      "id": "squirtle",
+      "legacyMoves": []
     },
     {
       "dex": 8,
@@ -218,9 +227,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "卡咪龜",
-      "id": "wartortle"
+      "id": "wartortle",
+      "legacyMoves": []
     },
     {
       "dex": 9,
@@ -245,12 +254,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "HYDRO_CANNON"
       ],
-      "shadow": true,
       "name": "水箭龜",
-      "id": "blastoise"
+      "id": "blastoise",
+      "legacyMoves": [
+        "HYDRO_CANNON"
+      ]
     },
     {
       "dex": 10,
@@ -270,7 +281,8 @@
         "STRUGGLE"
       ],
       "name": "綠毛蟲",
-      "id": "caterpie"
+      "id": "caterpie",
+      "legacyMoves": []
     },
     {
       "dex": 11,
@@ -290,7 +302,8 @@
         "STRUGGLE"
       ],
       "name": "鐵甲蛹",
-      "id": "metapod"
+      "id": "metapod",
+      "legacyMoves": []
     },
     {
       "dex": 12,
@@ -313,11 +326,14 @@
         "PSYCHIC",
         "SIGNAL_BEAM"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BUG_BITE"
       ],
       "name": "巴大蝶",
-      "id": "butterfree"
+      "id": "butterfree",
+      "legacyMoves": [
+        "BUG_BITE"
+      ]
     },
     {
       "dex": 13,
@@ -339,9 +355,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "獨角蟲",
-      "id": "weedle"
+      "id": "weedle",
+      "legacyMoves": []
     },
     {
       "dex": 14,
@@ -363,9 +379,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "鐵殼蛹",
-      "id": "kakuna"
+      "id": "kakuna",
+      "legacyMoves": []
     },
     {
       "dex": 15,
@@ -391,12 +407,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BUG_BITE"
       ],
-      "shadow": true,
       "name": "大針蜂",
-      "id": "beedrill"
+      "id": "beedrill",
+      "legacyMoves": [
+        "BUG_BITE"
+      ]
     },
     {
       "dex": 16,
@@ -419,7 +437,8 @@
         "TWISTER"
       ],
       "name": "波波",
-      "id": "pidgey"
+      "id": "pidgey",
+      "legacyMoves": []
     },
     {
       "dex": 17,
@@ -442,7 +461,8 @@
         "TWISTER"
       ],
       "name": "比比鳥",
-      "id": "pidgeotto"
+      "id": "pidgeotto",
+      "legacyMoves": []
     },
     {
       "dex": 18,
@@ -466,12 +486,16 @@
         "BRAVE_BIRD",
         "HURRICANE"
       ],
-      "legacyMoves": [
-        "AIR_CUTTER",
-        "WING_ATTACK"
+      "eliteMoves": [
+        "WING_ATTACK",
+        "AIR_CUTTER"
       ],
       "name": "大比鳥",
-      "id": "pidgeot"
+      "id": "pidgeot",
+      "legacyMoves": [
+        "WING_ATTACK",
+        "AIR_CUTTER"
+      ]
     },
     {
       "dex": 19,
@@ -494,9 +518,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "小拉達",
-      "id": "rattata"
+      "id": "rattata",
+      "legacyMoves": []
     },
     {
       "dex": 19,
@@ -518,11 +542,9 @@
         "HYPER_FANG",
         "SHADOW_BALL"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "小拉達 阿羅拉型態",
-      "id": "rattata_alolan"
+      "id": "rattata_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 20,
@@ -545,9 +567,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "拉達",
-      "id": "raticate"
+      "id": "raticate",
+      "legacyMoves": []
     },
     {
       "dex": 20,
@@ -569,11 +591,9 @@
         "HYPER_BEAM",
         "HYPER_FANG"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "拉達 阿羅拉型態",
-      "id": "raticate_alolan"
+      "id": "raticate_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 21,
@@ -596,11 +616,14 @@
         "SKY_ATTACK",
         "TWISTER"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "TWISTER"
       ],
       "name": "烈雀",
-      "id": "spearow"
+      "id": "spearow",
+      "legacyMoves": [
+        "TWISTER"
+      ]
     },
     {
       "dex": 22,
@@ -623,11 +646,14 @@
         "SKY_ATTACK",
         "TWISTER"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "TWISTER"
       ],
       "name": "大嘴雀",
-      "id": "fearow"
+      "id": "fearow",
+      "legacyMoves": [
+        "TWISTER"
+      ]
     },
     {
       "dex": 23,
@@ -647,16 +673,16 @@
         "GUNK_SHOT",
         "POISON_FANG",
         "SLUDGE_BOMB",
-        "WRAP",
-        "RETURN",
-        "FRUSTRATION"
+        "WRAP"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "GUNK_SHOT"
       ],
-      "shadow": true,
       "name": "阿柏蛇",
-      "id": "ekans"
+      "id": "ekans",
+      "legacyMoves": [
+        "GUNK_SHOT"
+      ]
     },
     {
       "dex": 24,
@@ -677,13 +703,11 @@
         "DARK_PULSE",
         "GUNK_SHOT",
         "SLUDGE_WAVE",
-        "ACID_SPRAY",
-        "RETURN",
-        "FRUSTRATION"
+        "ACID_SPRAY"
       ],
-      "shadow": true,
       "name": "阿柏怪",
-      "id": "arbok"
+      "id": "arbok",
+      "legacyMoves": []
     },
     {
       "dex": 25,
@@ -707,13 +731,41 @@
         "THUNDERBOLT",
         "WILD_CHARGE"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "PRESENT",
         "SURF",
         "THUNDER"
       ],
       "name": "皮卡丘",
-      "id": "pikachu"
+      "id": "pikachu",
+      "legacyMoves": [
+        "PRESENT",
+        "SURF",
+        "THUNDER"
+      ]
+    },
+    {
+      "dex": 25,
+      "baseStats": {
+        "atk": 112,
+        "def": 96,
+        "sta": 111
+      },
+      "types": [
+        "electric"
+      ],
+      "fastMoves": [
+        "THUNDER_SHOCK",
+        "CHARM"
+      ],
+      "chargedMoves": [
+        "FLYING_PRESS",
+        "PLAY_ROUGH",
+        "THUNDER_PUNCH"
+      ],
+      "name": "皮卡丘 面罩摔角手",
+      "id": "pikachu_libre",
+      "legacyMoves": []
     },
     {
       "dex": 26,
@@ -738,11 +790,14 @@
         "WILD_CHARGE",
         "SKULL_BASH"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "THUNDER"
       ],
       "name": "雷丘",
-      "id": "raichu"
+      "id": "raichu",
+      "legacyMoves": [
+        "THUNDER"
+      ]
     },
     {
       "dex": 26,
@@ -766,11 +821,9 @@
         "WILD_CHARGE",
         "GRASS_KNOT"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "雷丘 阿羅拉型態",
-      "id": "raichu_alolan"
+      "id": "raichu_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 27,
@@ -794,12 +847,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "ROCK_TOMB"
       ],
-      "shadow": true,
       "name": "穿山鼠",
-      "id": "sandshrew"
+      "id": "sandshrew",
+      "legacyMoves": [
+        "ROCK_TOMB"
+      ]
     },
     {
       "dex": 27,
@@ -821,11 +876,9 @@
         "GYRO_BALL",
         "NIGHT_SLASH"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "穿山鼠 阿羅拉型態",
-      "id": "sandshrew_alolan"
+      "id": "sandshrew_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 28,
@@ -848,9 +901,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "穿山王",
-      "id": "sandslash"
+      "id": "sandslash",
+      "legacyMoves": []
     },
     {
       "dex": 28,
@@ -873,11 +926,9 @@
         "GYRO_BALL",
         "ICE_PUNCH"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "穿山王 阿羅拉型態",
-      "id": "sandslash_alolan"
+      "id": "sandslash_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 29,
@@ -899,7 +950,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "尼多蘭",
-      "id": "nidoran_female"
+      "id": "nidoran_female",
+      "legacyMoves": []
     },
     {
       "dex": 30,
@@ -921,7 +973,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "尼多娜",
-      "id": "nidorina"
+      "id": "nidorina",
+      "legacyMoves": []
     },
     {
       "dex": 31,
@@ -945,7 +998,8 @@
         "EARTH_POWER"
       ],
       "name": "尼多后",
-      "id": "nidoqueen"
+      "id": "nidoqueen",
+      "legacyMoves": []
     },
     {
       "dex": 32,
@@ -967,7 +1021,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "尼多朗",
-      "id": "nidoran_male"
+      "id": "nidoran_male",
+      "legacyMoves": []
     },
     {
       "dex": 33,
@@ -989,7 +1044,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "尼多力諾",
-      "id": "nidorino"
+      "id": "nidorino",
+      "legacyMoves": []
     },
     {
       "dex": 34,
@@ -1013,11 +1069,14 @@
         "SLUDGE_WAVE",
         "EARTH_POWER"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FURY_CUTTER"
       ],
       "name": "尼多王",
-      "id": "nidoking"
+      "id": "nidoking",
+      "legacyMoves": [
+        "FURY_CUTTER"
+      ]
     },
     {
       "dex": 35,
@@ -1039,7 +1098,8 @@
         "MOONBLAST"
       ],
       "name": "皮皮",
-      "id": "clefairy"
+      "id": "clefairy",
+      "legacyMoves": []
     },
     {
       "dex": 36,
@@ -1063,11 +1123,14 @@
         "MOONBLAST",
         "PSYCHIC"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "POUND"
       ],
       "name": "皮可西",
-      "id": "clefable"
+      "id": "clefable",
+      "legacyMoves": [
+        "POUND"
+      ]
     },
     {
       "dex": 37,
@@ -1090,9 +1153,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "六尾",
-      "id": "vulpix"
+      "id": "vulpix",
+      "legacyMoves": []
     },
     {
       "dex": 37,
@@ -1113,11 +1176,9 @@
         "DARK_PULSE",
         "ICE_BEAM"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "六尾 阿羅拉型態",
-      "id": "vulpix_alolan"
+      "id": "vulpix_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 38,
@@ -1144,14 +1205,18 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "EMBER",
         "FIRE_BLAST",
         "FLAMETHROWER"
       ],
-      "shadow": true,
       "name": "九尾",
-      "id": "ninetales"
+      "id": "ninetales",
+      "legacyMoves": [
+        "EMBER",
+        "FIRE_BLAST",
+        "FLAMETHROWER"
+      ]
     },
     {
       "dex": 38,
@@ -1175,11 +1240,9 @@
         "ICE_BEAM",
         "PSYSHOCK"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "九尾 阿羅拉型態",
-      "id": "ninetales_alolan"
+      "id": "ninetales_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 39,
@@ -1203,12 +1266,16 @@
         "GYRO_BALL",
         "PLAY_ROUGH"
       ],
-      "legacyMoves": [
-        "BODY_SLAM",
-        "PLAY_ROUGH"
+      "eliteMoves": [
+        "PLAY_ROUGH",
+        "BODY_SLAM"
       ],
       "name": "胖丁",
-      "id": "jigglypuff"
+      "id": "jigglypuff",
+      "legacyMoves": [
+        "PLAY_ROUGH",
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 40,
@@ -1233,7 +1300,8 @@
         "PLAY_ROUGH"
       ],
       "name": "胖可丁",
-      "id": "wigglytuff"
+      "id": "wigglytuff",
+      "legacyMoves": []
     },
     {
       "dex": 41,
@@ -1258,12 +1326,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SLUDGE_BOMB"
       ],
-      "shadow": true,
       "name": "超音蝠",
-      "id": "zubat"
+      "id": "zubat",
+      "legacyMoves": [
+        "SLUDGE_BOMB"
+      ]
     },
     {
       "dex": 42,
@@ -1288,12 +1358,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "OMINOUS_WIND"
       ],
-      "shadow": true,
       "name": "大嘴蝠",
-      "id": "golbat"
+      "id": "golbat",
+      "legacyMoves": [
+        "OMINOUS_WIND"
+      ]
     },
     {
       "dex": 43,
@@ -1317,9 +1389,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "走路草",
-      "id": "oddish"
+      "id": "oddish",
+      "legacyMoves": []
     },
     {
       "dex": 44,
@@ -1343,9 +1415,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "臭臭花",
-      "id": "gloom"
+      "id": "gloom",
+      "legacyMoves": []
     },
     {
       "dex": 45,
@@ -1370,9 +1442,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "霸王花",
-      "id": "vileplume"
+      "id": "vileplume",
+      "legacyMoves": []
     },
     {
       "dex": 46,
@@ -1395,7 +1467,8 @@
         "X_SCISSOR"
       ],
       "name": "派拉斯",
-      "id": "paras"
+      "id": "paras",
+      "legacyMoves": []
     },
     {
       "dex": 47,
@@ -1418,11 +1491,14 @@
         "SOLAR_BEAM",
         "X_SCISSOR"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BUG_BITE"
       ],
       "name": "派拉斯特",
-      "id": "parasect"
+      "id": "parasect",
+      "legacyMoves": [
+        "BUG_BITE"
+      ]
     },
     {
       "dex": 48,
@@ -1446,9 +1522,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "毛球",
-      "id": "venonat"
+      "id": "venonat",
+      "legacyMoves": []
     },
     {
       "dex": 49,
@@ -1474,12 +1550,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BUG_BITE"
       ],
-      "shadow": true,
       "name": "摩魯蛾",
-      "id": "venomoth"
+      "id": "venomoth",
+      "legacyMoves": [
+        "BUG_BITE"
+      ]
     },
     {
       "dex": 50,
@@ -1499,16 +1577,11 @@
       "chargedMoves": [
         "DIG",
         "MUD_BOMB",
-        "ROCK_TOMB",
-        "RETURN",
-        "FRUSTRATION"
+        "ROCK_TOMB"
       ],
-      "legacyMoves": [
-        "MUD_SHOT"
-      ],
-      "shadow": true,
       "name": "地鼠",
-      "id": "diglett"
+      "id": "diglett",
+      "legacyMoves": []
     },
     {
       "dex": 50,
@@ -1530,11 +1603,9 @@
         "MUD_BOMB",
         "ROCK_TOMB"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "地鼠 阿羅拉型態",
-      "id": "diglett_alolan"
+      "id": "diglett_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 51,
@@ -1554,14 +1625,11 @@
       "chargedMoves": [
         "EARTHQUAKE",
         "MUD_BOMB",
-        "STONE_EDGE",
-        "RETURN",
-        "FRUSTRATION"
+        "STONE_EDGE"
       ],
       "legacyMoves": [
         "MUD_SHOT"
       ],
-      "shadow": true,
       "name": "三地鼠",
       "id": "dugtrio"
     },
@@ -1585,11 +1653,9 @@
         "IRON_HEAD",
         "MUD_BOMB"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "三地鼠 阿羅拉型態",
-      "id": "dugtrio_alolan"
+      "id": "dugtrio_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 52,
@@ -1613,12 +1679,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BODY_SLAM"
       ],
-      "shadow": true,
       "name": "喵喵",
-      "id": "meowth"
+      "id": "meowth",
+      "legacyMoves": [
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 52,
@@ -1639,11 +1707,9 @@
         "FOUL_PLAY",
         "NIGHT_SLASH"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "喵喵 阿羅拉型態",
-      "id": "meowth_alolan"
+      "id": "meowth_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 53,
@@ -1667,12 +1733,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "NIGHT_SLASH"
       ],
-      "shadow": true,
       "name": "貓老大",
-      "id": "persian"
+      "id": "persian",
+      "legacyMoves": [
+        "NIGHT_SLASH"
+      ]
     },
     {
       "dex": 53,
@@ -1693,11 +1761,9 @@
         "FOUL_PLAY",
         "PLAY_ROUGH"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "貓老大 阿羅拉型態",
-      "id": "persian_alolan"
+      "id": "persian_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 54,
@@ -1720,9 +1786,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "可達鴨",
-      "id": "psyduck"
+      "id": "psyduck",
+      "legacyMoves": []
     },
     {
       "dex": 55,
@@ -1748,9 +1814,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "哥達鴨",
-      "id": "golduck"
+      "id": "golduck",
+      "legacyMoves": []
     },
     {
       "dex": 56,
@@ -1772,7 +1838,8 @@
         "LOW_SWEEP"
       ],
       "name": "猴怪",
-      "id": "mankey"
+      "id": "mankey",
+      "legacyMoves": []
     },
     {
       "dex": 57,
@@ -1795,12 +1862,16 @@
         "LOW_SWEEP",
         "NIGHT_SLASH"
       ],
-      "legacyMoves": [
-        "CROSS_CHOP",
-        "KARATE_CHOP"
+      "eliteMoves": [
+        "KARATE_CHOP",
+        "CROSS_CHOP"
       ],
       "name": "火爆猴",
-      "id": "primeape"
+      "id": "primeape",
+      "legacyMoves": [
+        "KARATE_CHOP",
+        "CROSS_CHOP"
+      ]
     },
     {
       "dex": 58,
@@ -1823,9 +1894,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "卡蒂狗",
-      "id": "growlithe"
+      "id": "growlithe",
+      "legacyMoves": []
     },
     {
       "dex": 59,
@@ -1852,13 +1923,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BITE",
         "BULLDOZE"
       ],
-      "shadow": true,
       "name": "風速狗",
-      "id": "arcanine"
+      "id": "arcanine",
+      "legacyMoves": [
+        "BITE",
+        "BULLDOZE"
+      ]
     },
     {
       "dex": 60,
@@ -1881,9 +1955,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "蚊香蝌蚪",
-      "id": "poliwag"
+      "id": "poliwag",
+      "legacyMoves": []
     },
     {
       "dex": 61,
@@ -1907,12 +1981,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SCALD"
       ],
-      "shadow": true,
       "name": "蚊香君",
-      "id": "poliwhirl"
+      "id": "poliwhirl",
+      "legacyMoves": [
+        "SCALD"
+      ]
     },
     {
       "dex": 62,
@@ -1939,12 +2015,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SUBMISSION"
       ],
-      "shadow": true,
       "name": "蚊香泳士",
-      "id": "poliwrath"
+      "id": "poliwrath",
+      "legacyMoves": [
+        "SUBMISSION"
+      ]
     },
     {
       "dex": 63,
@@ -1967,9 +2045,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "凱西",
-      "id": "abra"
+      "id": "abra",
+      "legacyMoves": []
     },
     {
       "dex": 64,
@@ -1992,9 +2070,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "勇基拉",
-      "id": "kadabra"
+      "id": "kadabra",
+      "legacyMoves": []
     },
     {
       "dex": 65,
@@ -2008,7 +2086,8 @@
       ],
       "fastMoves": [
         "CONFUSION",
-        "PSYCHO_CUT"
+        "PSYCHO_CUT",
+        "COUNTER"
       ],
       "chargedMoves": [
         "DAZZLING_GLEAM",
@@ -2020,13 +2099,18 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
+        "COUNTER",
         "DAZZLING_GLEAM",
         "PSYCHIC"
       ],
-      "shadow": true,
       "name": "胡地",
-      "id": "alakazam"
+      "id": "alakazam",
+      "legacyMoves": [
+        "COUNTER",
+        "DAZZLING_GLEAM",
+        "PSYCHIC"
+      ]
     },
     {
       "dex": 66,
@@ -2048,11 +2132,14 @@
         "CROSS_CHOP",
         "LOW_SWEEP"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LOW_KICK"
       ],
       "name": "腕力",
-      "id": "machop"
+      "id": "machop",
+      "legacyMoves": [
+        "LOW_KICK"
+      ]
     },
     {
       "dex": 67,
@@ -2074,11 +2161,14 @@
         "DYNAMIC_PUNCH",
         "SUBMISSION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "CROSS_CHOP"
       ],
       "name": "豪力",
-      "id": "machoke"
+      "id": "machoke",
+      "legacyMoves": [
+        "CROSS_CHOP"
+      ]
     },
     {
       "dex": 68,
@@ -2104,13 +2194,18 @@
         "STONE_EDGE",
         "SUBMISSION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "KARATE_CHOP",
         "STONE_EDGE",
         "SUBMISSION"
       ],
       "name": "怪力",
-      "id": "machamp"
+      "id": "machamp",
+      "legacyMoves": [
+        "KARATE_CHOP",
+        "STONE_EDGE",
+        "SUBMISSION"
+      ]
     },
     {
       "dex": 69,
@@ -2134,9 +2229,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "喇叭芽",
-      "id": "bellsprout"
+      "id": "bellsprout",
+      "legacyMoves": []
     },
     {
       "dex": 70,
@@ -2161,12 +2256,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "RAZOR_LEAF"
       ],
-      "shadow": true,
       "name": "口呆花",
-      "id": "weepinbell"
+      "id": "weepinbell",
+      "legacyMoves": [
+        "RAZOR_LEAF"
+      ]
     },
     {
       "dex": 71,
@@ -2192,9 +2289,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "大食花",
-      "id": "victreebel"
+      "id": "victreebel",
+      "legacyMoves": []
     },
     {
       "dex": 72,
@@ -2217,7 +2314,8 @@
         "WRAP"
       ],
       "name": "瑪瑙水母",
-      "id": "tentacool"
+      "id": "tentacool",
+      "legacyMoves": []
     },
     {
       "dex": 73,
@@ -2241,7 +2339,8 @@
         "ACID_SPRAY"
       ],
       "name": "毒刺水母",
-      "id": "tentacruel"
+      "id": "tentacruel",
+      "legacyMoves": []
     },
     {
       "dex": 74,
@@ -2261,13 +2360,11 @@
       "chargedMoves": [
         "DIG",
         "ROCK_SLIDE",
-        "ROCK_TOMB",
-        "RETURN",
-        "FRUSTRATION"
+        "ROCK_TOMB"
       ],
-      "shadow": true,
       "name": "小拳石",
-      "id": "geodude"
+      "id": "geodude",
+      "legacyMoves": []
     },
     {
       "dex": 74,
@@ -2289,11 +2386,9 @@
         "ROCK_TOMB",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "小拳石 阿羅拉型態",
-      "id": "geodude_alolan"
+      "id": "geodude_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 75,
@@ -2315,15 +2410,15 @@
         "DIG",
         "ROCK_BLAST",
         "ROCK_SLIDE",
-        "STONE_EDGE",
-        "RETURN",
-        "FRUSTRATION"
+        "STONE_EDGE"
       ],
       "legacyMoves": [
         "MUD_SHOT",
         "ROCK_SLIDE"
       ],
-      "shadow": true,
+      "eliteMoves": [
+        "ROCK_SLIDE"
+      ],
       "name": "隆隆石",
       "id": "graveler"
     },
@@ -2347,11 +2442,9 @@
         "STONE_EDGE",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "隆隆石 阿羅拉型態",
-      "id": "graveler_alolan"
+      "id": "graveler_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 76,
@@ -2373,14 +2466,11 @@
         "ANCIENT_POWER",
         "EARTHQUAKE",
         "ROCK_BLAST",
-        "STONE_EDGE",
-        "RETURN",
-        "FRUSTRATION"
+        "STONE_EDGE"
       ],
       "legacyMoves": [
         "MUD_SHOT"
       ],
-      "shadow": true,
       "name": "隆隆岩",
       "id": "golem"
     },
@@ -2404,11 +2494,9 @@
         "STONE_EDGE",
         "WILD_CHARGE"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "隆隆岩 阿羅拉型態",
-      "id": "golem_alolan"
+      "id": "golem_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 77,
@@ -2430,11 +2518,14 @@
         "FLAME_WHEEL",
         "STOMP"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FIRE_BLAST"
       ],
       "name": "小火馬",
-      "id": "ponyta"
+      "id": "ponyta",
+      "legacyMoves": [
+        "FIRE_BLAST"
+      ]
     },
     {
       "dex": 78,
@@ -2456,11 +2547,14 @@
         "FIRE_BLAST",
         "HEAT_WAVE"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "EMBER"
       ],
       "name": "烈焰馬",
-      "id": "rapidash"
+      "id": "rapidash",
+      "legacyMoves": [
+        "EMBER"
+      ]
     },
     {
       "dex": 79,
@@ -2483,7 +2577,8 @@
         "WATER_PULSE"
       ],
       "name": "呆呆獸",
-      "id": "slowpoke"
+      "id": "slowpoke",
+      "legacyMoves": []
     },
     {
       "dex": 80,
@@ -2506,7 +2601,8 @@
         "WATER_PULSE"
       ],
       "name": "呆殼獸",
-      "id": "slowbro"
+      "id": "slowbro",
+      "legacyMoves": []
     },
     {
       "dex": 81,
@@ -2530,9 +2626,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "小磁怪",
-      "id": "magnemite"
+      "id": "magnemite",
+      "legacyMoves": []
     },
     {
       "dex": 82,
@@ -2558,9 +2654,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "三合一磁怪",
-      "id": "magneton"
+      "id": "magneton",
+      "legacyMoves": []
     },
     {
       "dex": 83,
@@ -2583,14 +2679,14 @@
         "AIR_CUTTER",
         "LEAF_BLADE"
       ],
-      "tags": [
-        "regional"
-      ],
-      "legacyMoves": [
+      "eliteMoves": [
         "CUT"
       ],
       "name": "大蔥鴨",
-      "id": "farfetchd"
+      "id": "farfetchd",
+      "legacyMoves": [
+        "CUT"
+      ]
     },
     {
       "dex": 84,
@@ -2613,11 +2709,14 @@
         "DRILL_PECK",
         "SWIFT"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SWIFT"
       ],
       "name": "嘟嘟",
-      "id": "doduo"
+      "id": "doduo",
+      "legacyMoves": [
+        "SWIFT"
+      ]
     },
     {
       "dex": 85,
@@ -2640,11 +2739,14 @@
         "BRAVE_BIRD",
         "DRILL_PECK"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "AIR_CUTTER"
       ],
       "name": "嘟嘟利",
-      "id": "dodrio"
+      "id": "dodrio",
+      "legacyMoves": [
+        "AIR_CUTTER"
+      ]
     },
     {
       "dex": 86,
@@ -2667,12 +2769,16 @@
         "AURORA_BEAM",
         "ICY_WIND"
       ],
-      "legacyMoves": [
-        "AQUA_JET",
-        "WATER_GUN"
+      "eliteMoves": [
+        "WATER_GUN",
+        "AQUA_JET"
       ],
       "name": "小海獅",
-      "id": "seel"
+      "id": "seel",
+      "legacyMoves": [
+        "WATER_GUN",
+        "AQUA_JET"
+      ]
     },
     {
       "dex": 87,
@@ -2697,13 +2803,18 @@
         "ICY_WIND",
         "WATER_PULSE"
       ],
-      "legacyMoves": [
-        "AQUA_JET",
+      "eliteMoves": [
         "ICE_SHARD",
+        "AQUA_JET",
         "ICY_WIND"
       ],
       "name": "白海獅",
-      "id": "dewgong"
+      "id": "dewgong",
+      "legacyMoves": [
+        "ICE_SHARD",
+        "AQUA_JET",
+        "ICY_WIND"
+      ]
     },
     {
       "dex": 88,
@@ -2730,7 +2841,6 @@
       "legacyMoves": [
         "ACID"
       ],
-      "shadow": true,
       "name": "臭泥",
       "id": "grimer"
     },
@@ -2754,9 +2864,6 @@
         "CRUNCH",
         "GUNK_SHOT",
         "SLUDGE_BOMB"
-      ],
-      "tags": [
-        "alolan"
       ],
       "legacyMoves": [
         "ACID"
@@ -2793,7 +2900,9 @@
         "ACID",
         "LICK"
       ],
-      "shadow": true,
+      "eliteMoves": [
+        "LICK"
+      ],
       "name": "臭臭泥",
       "id": "muk"
     },
@@ -2819,11 +2928,9 @@
         "SLUDGE_WAVE",
         "ACID_SPRAY"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "臭臭泥 阿羅拉型態",
-      "id": "muk_alolan"
+      "id": "muk_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 90,
@@ -2846,9 +2953,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "大舌貝",
-      "id": "shellder"
+      "id": "shellder",
+      "legacyMoves": []
     },
     {
       "dex": 91,
@@ -2874,12 +2981,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BLIZZARD"
       ],
-      "shadow": true,
       "name": "刺甲貝",
-      "id": "cloyster"
+      "id": "cloyster",
+      "legacyMoves": [
+        "BLIZZARD"
+      ]
     },
     {
       "dex": 92,
@@ -2903,12 +3012,16 @@
         "OMINOUS_WIND",
         "SLUDGE_BOMB"
       ],
-      "legacyMoves": [
-        "OMINOUS_WIND",
-        "SUCKER_PUNCH"
+      "eliteMoves": [
+        "SUCKER_PUNCH",
+        "OMINOUS_WIND"
       ],
       "name": "鬼斯",
-      "id": "gastly"
+      "id": "gastly",
+      "legacyMoves": [
+        "SUCKER_PUNCH",
+        "OMINOUS_WIND"
+      ]
     },
     {
       "dex": 93,
@@ -2932,11 +3045,14 @@
         "SHADOW_PUNCH",
         "SLUDGE_BOMB"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LICK"
       ],
       "name": "鬼斯通",
-      "id": "haunter"
+      "id": "haunter",
+      "legacyMoves": [
+        "LICK"
+      ]
     },
     {
       "dex": 94,
@@ -2963,14 +3079,20 @@
         "SLUDGE_BOMB",
         "SLUDGE_WAVE"
       ],
-      "legacyMoves": [
-        "DARK_PULSE",
+      "eliteMoves": [
         "LICK",
-        "PSYCHIC",
-        "SLUDGE_WAVE"
+        "SLUDGE_WAVE",
+        "DARK_PULSE",
+        "PSYCHIC"
       ],
       "name": "耿鬼",
-      "id": "gengar"
+      "id": "gengar",
+      "legacyMoves": [
+        "LICK",
+        "SLUDGE_WAVE",
+        "DARK_PULSE",
+        "PSYCHIC"
+      ]
     },
     {
       "dex": 95,
@@ -2992,17 +3114,18 @@
         "IRON_HEAD",
         "ROCK_SLIDE",
         "SAND_TOMB",
-        "STONE_EDGE",
-        "RETURN",
-        "FRUSTRATION"
+        "STONE_EDGE"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "IRON_HEAD",
         "ROCK_SLIDE"
       ],
-      "shadow": true,
       "name": "大岩蛇",
-      "id": "onix"
+      "id": "onix",
+      "legacyMoves": [
+        "IRON_HEAD",
+        "ROCK_SLIDE"
+      ]
     },
     {
       "dex": 96,
@@ -3025,9 +3148,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "催眠貘",
-      "id": "drowzee"
+      "id": "drowzee",
+      "legacyMoves": []
     },
     {
       "dex": 97,
@@ -3055,12 +3178,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "PSYSHOCK"
       ],
-      "shadow": true,
       "name": "引夢貘人",
-      "id": "hypno"
+      "id": "hypno",
+      "legacyMoves": [
+        "PSYSHOCK"
+      ]
     },
     {
       "dex": 98,
@@ -3082,7 +3207,8 @@
         "WATER_PULSE"
       ],
       "name": "大鉗蟹",
-      "id": "krabby"
+      "id": "krabby",
+      "legacyMoves": []
     },
     {
       "dex": 99,
@@ -3105,11 +3231,14 @@
         "X_SCISSOR",
         "CRABHAMMER"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "MUD_SHOT"
       ],
       "name": "巨鉗蟹",
-      "id": "kingler"
+      "id": "kingler",
+      "legacyMoves": [
+        "MUD_SHOT"
+      ]
     },
     {
       "dex": 100,
@@ -3131,11 +3260,14 @@
         "SIGNAL_BEAM",
         "THUNDERBOLT"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SIGNAL_BEAM"
       ],
       "name": "霹靂電球",
-      "id": "voltorb"
+      "id": "voltorb",
+      "legacyMoves": [
+        "SIGNAL_BEAM"
+      ]
     },
     {
       "dex": 101,
@@ -3158,11 +3290,14 @@
         "THUNDERBOLT",
         "FOUL_PLAY"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "TACKLE"
       ],
       "name": "頑皮雷彈",
-      "id": "electrode"
+      "id": "electrode",
+      "legacyMoves": [
+        "TACKLE"
+      ]
     },
     {
       "dex": 102,
@@ -3186,9 +3321,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "蛋蛋",
-      "id": "exeggcute"
+      "id": "exeggcute",
+      "legacyMoves": []
     },
     {
       "dex": 103,
@@ -3214,12 +3349,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "ZEN_HEADBUTT"
       ],
-      "shadow": true,
       "name": "椰蛋樹",
-      "id": "exeggutor"
+      "id": "exeggutor",
+      "legacyMoves": [
+        "ZEN_HEADBUTT"
+      ]
     },
     {
       "dex": 103,
@@ -3241,11 +3378,9 @@
         "SEED_BOMB",
         "SOLAR_BEAM"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "椰蛋樹 阿羅拉型態",
-      "id": "exeggutor_alolan"
+      "id": "exeggutor_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 104,
@@ -3268,9 +3403,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "卡拉卡拉",
-      "id": "cubone"
+      "id": "cubone",
+      "legacyMoves": []
     },
     {
       "dex": 105,
@@ -3293,9 +3428,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "嘎啦嘎啦",
-      "id": "marowak"
+      "id": "marowak",
+      "legacyMoves": []
     },
     {
       "dex": 105,
@@ -3319,11 +3454,9 @@
         "SHADOW_BALL",
         "FLAME_WHEEL"
       ],
-      "tags": [
-        "alolan"
-      ],
       "name": "嘎啦嘎啦 阿羅拉型態",
-      "id": "marowak_alolan"
+      "id": "marowak_alolan",
+      "legacyMoves": []
     },
     {
       "dex": 106,
@@ -3348,13 +3481,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "BRICK_BREAK",
-        "STOMP"
+      "eliteMoves": [
+        "STOMP",
+        "BRICK_BREAK"
       ],
-      "shadow": true,
       "name": "飛腿郎",
-      "id": "hitmonlee"
+      "id": "hitmonlee",
+      "legacyMoves": [
+        "STOMP",
+        "BRICK_BREAK"
+      ]
     },
     {
       "dex": 107,
@@ -3381,13 +3517,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "BRICK_BREAK",
-        "ROCK_SMASH"
+      "eliteMoves": [
+        "ROCK_SMASH",
+        "BRICK_BREAK"
       ],
-      "shadow": true,
       "name": "快拳郎",
-      "id": "hitmonchan"
+      "id": "hitmonchan",
+      "legacyMoves": [
+        "ROCK_SMASH",
+        "BRICK_BREAK"
+      ]
     },
     {
       "dex": 108,
@@ -3409,11 +3548,14 @@
         "STOMP",
         "BODY_SLAM"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BODY_SLAM"
       ],
       "name": "大舌頭",
-      "id": "lickitung"
+      "id": "lickitung",
+      "legacyMoves": [
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 109,
@@ -3433,14 +3575,11 @@
       "chargedMoves": [
         "DARK_PULSE",
         "SLUDGE",
-        "SLUDGE_BOMB",
-        "RETURN",
-        "FRUSTRATION"
+        "SLUDGE_BOMB"
       ],
       "legacyMoves": [
         "ACID"
       ],
-      "shadow": true,
       "name": "瓦斯彈",
       "id": "koffing"
     },
@@ -3463,14 +3602,11 @@
         "DARK_PULSE",
         "SHADOW_BALL",
         "SLUDGE_BOMB",
-        "THUNDERBOLT",
-        "RETURN",
-        "FRUSTRATION"
+        "THUNDERBOLT"
       ],
       "legacyMoves": [
         "ACID"
       ],
-      "shadow": true,
       "name": "雙彈瓦斯",
       "id": "weezing"
     },
@@ -3494,11 +3630,9 @@
         "PLAY_ROUGH",
         "OVERHEAT"
       ],
-      "tags": [
-        "galarian"
-      ],
       "name": "雙彈瓦斯 伽勒爾型態",
-      "id": "weezing_galarian"
+      "id": "weezing_galarian",
+      "legacyMoves": []
     },
     {
       "dex": 111,
@@ -3518,13 +3652,11 @@
       "chargedMoves": [
         "BULLDOZE",
         "HORN_ATTACK",
-        "STOMP",
-        "RETURN",
-        "FRUSTRATION"
+        "STOMP"
       ],
-      "shadow": true,
       "name": "獨角犀牛",
-      "id": "rhyhorn"
+      "id": "rhyhorn",
+      "legacyMoves": []
     },
     {
       "dex": 112,
@@ -3545,16 +3677,16 @@
         "EARTHQUAKE",
         "MEGAHORN",
         "STONE_EDGE",
-        "SURF",
-        "RETURN",
-        "FRUSTRATION"
+        "SURF"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "MEGAHORN"
       ],
-      "shadow": true,
       "name": "鑽角犀獸",
-      "id": "rhydon"
+      "id": "rhydon",
+      "legacyMoves": [
+        "MEGAHORN"
+      ]
     },
     {
       "dex": 113,
@@ -3602,11 +3734,14 @@
         "SLUDGE_BOMB",
         "SOLAR_BEAM"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "POWER_WHIP"
       ],
       "name": "蔓藤怪",
-      "id": "tangela"
+      "id": "tangela",
+      "legacyMoves": [
+        "POWER_WHIP"
+      ]
     },
     {
       "dex": 115,
@@ -3628,20 +3763,18 @@
         "EARTHQUAKE",
         "OUTRAGE",
         "STOMP",
-        "POWER_UP_PUNCH",
-        "RETURN",
-        "FRUSTRATION"
+        "POWER_UP_PUNCH"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BRICK_BREAK",
         "STOMP"
       ],
-      "tags": [
-        "regional"
-      ],
-      "shadow": true,
       "name": "袋獸",
-      "id": "kangaskhan"
+      "id": "kangaskhan",
+      "legacyMoves": [
+        "BRICK_BREAK",
+        "STOMP"
+      ]
     },
     {
       "dex": 116,
@@ -3663,7 +3796,8 @@
         "FLASH_CANNON"
       ],
       "name": "墨海馬",
-      "id": "horsea"
+      "id": "horsea",
+      "legacyMoves": []
     },
     {
       "dex": 117,
@@ -3685,11 +3819,14 @@
         "DRAGON_PULSE",
         "HYDRO_PUMP"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BLIZZARD"
       ],
       "name": "海刺龍",
-      "id": "seadra"
+      "id": "seadra",
+      "legacyMoves": [
+        "BLIZZARD"
+      ]
     },
     {
       "dex": 118,
@@ -3711,7 +3848,8 @@
         "WATER_PULSE"
       ],
       "name": "角金魚",
-      "id": "goldeen"
+      "id": "goldeen",
+      "legacyMoves": []
     },
     {
       "dex": 119,
@@ -3735,13 +3873,18 @@
         "MEGAHORN",
         "WATER_PULSE"
       ],
-      "legacyMoves": [
-        "DRILL_RUN",
+      "eliteMoves": [
+        "POISON_JAB",
         "ICY_WIND",
-        "POISON_JAB"
+        "DRILL_RUN"
       ],
       "name": "金魚王",
-      "id": "seaking"
+      "id": "seaking",
+      "legacyMoves": [
+        "POISON_JAB",
+        "ICY_WIND",
+        "DRILL_RUN"
+      ]
     },
     {
       "dex": 120,
@@ -3795,8 +3938,11 @@
         "THUNDER"
       ],
       "legacyMoves": [
-        "PSYBEAM",
         "QUICK_ATTACK",
+        "PSYBEAM",
+        "TACKLE"
+      ],
+      "eliteMoves": [
         "TACKLE"
       ],
       "name": "寶石海星",
@@ -3822,11 +3968,9 @@
         "PSYCHIC",
         "SHADOW_BALL"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "魔牆人偶",
-      "id": "mr_mime"
+      "id": "mr_mime",
+      "legacyMoves": []
     },
     {
       "dex": 123,
@@ -3852,13 +3996,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "BUG_BUZZ",
-        "STEEL_WING"
+      "eliteMoves": [
+        "STEEL_WING",
+        "BUG_BUZZ"
       ],
-      "shadow": true,
       "name": "飛天螳螂",
-      "id": "scyther"
+      "id": "scyther",
+      "legacyMoves": [
+        "STEEL_WING",
+        "BUG_BUZZ"
+      ]
     },
     {
       "dex": 124,
@@ -3883,12 +4030,16 @@
         "ICE_PUNCH",
         "PSYSHOCK"
       ],
-      "legacyMoves": [
-        "ICE_PUNCH",
-        "POUND"
+      "eliteMoves": [
+        "POUND",
+        "ICE_PUNCH"
       ],
       "name": "迷唇姐",
-      "id": "jynx"
+      "id": "jynx",
+      "legacyMoves": [
+        "POUND",
+        "ICE_PUNCH"
+      ]
     },
     {
       "dex": 125,
@@ -3911,9 +4062,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "電擊獸",
-      "id": "electabuzz"
+      "id": "electabuzz",
+      "legacyMoves": []
     },
     {
       "dex": 126,
@@ -3936,9 +4087,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "鴨嘴火獸",
-      "id": "magmar"
+      "id": "magmar",
+      "legacyMoves": []
     },
     {
       "dex": 127,
@@ -3964,12 +4115,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SUBMISSION"
       ],
-      "shadow": true,
       "name": "凱羅斯",
-      "id": "pinsir"
+      "id": "pinsir",
+      "legacyMoves": [
+        "SUBMISSION"
+      ]
     },
     {
       "dex": 128,
@@ -3990,11 +4143,9 @@
         "HORN_ATTACK",
         "IRON_HEAD"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "肯泰羅",
-      "id": "tauros"
+      "id": "tauros",
+      "legacyMoves": []
     },
     {
       "dex": 129,
@@ -4014,9 +4165,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "鯉魚王",
-      "id": "magikarp"
+      "id": "magikarp",
+      "legacyMoves": []
     },
     {
       "dex": 130,
@@ -4044,13 +4195,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "DRAGON_PULSE",
-        "DRAGON_TAIL"
+      "eliteMoves": [
+        "DRAGON_TAIL",
+        "DRAGON_PULSE"
       ],
-      "shadow": true,
       "name": "暴鯉龍",
-      "id": "gyarados"
+      "id": "gyarados",
+      "legacyMoves": [
+        "DRAGON_TAIL",
+        "DRAGON_PULSE"
+      ]
     },
     {
       "dex": 131,
@@ -4078,14 +4232,18 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
+        "ICE_SHARD",
         "DRAGON_PULSE",
-        "ICE_BEAM",
-        "ICE_SHARD"
+        "ICE_BEAM"
       ],
-      "shadow": true,
       "name": "拉普拉斯",
-      "id": "lapras"
+      "id": "lapras",
+      "legacyMoves": [
+        "ICE_SHARD",
+        "DRAGON_PULSE",
+        "ICE_BEAM"
+      ]
     },
     {
       "dex": 132,
@@ -4104,7 +4262,8 @@
         "STRUGGLE"
       ],
       "name": "百變怪",
-      "id": "ditto"
+      "id": "ditto",
+      "legacyMoves": []
     },
     {
       "dex": 133,
@@ -4126,12 +4285,16 @@
         "LAST_RESORT",
         "SWIFT"
       ],
-      "legacyMoves": [
-        "BODY_SLAM",
-        "LAST_RESORT"
+      "eliteMoves": [
+        "LAST_RESORT",
+        "BODY_SLAM"
       ],
       "name": "伊布",
-      "id": "eevee"
+      "id": "eevee",
+      "legacyMoves": [
+        "LAST_RESORT",
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 134,
@@ -4152,11 +4315,14 @@
         "LAST_RESORT",
         "WATER_PULSE"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LAST_RESORT"
       ],
       "name": "水伊布",
-      "id": "vaporeon"
+      "id": "vaporeon",
+      "legacyMoves": [
+        "LAST_RESORT"
+      ]
     },
     {
       "dex": 135,
@@ -4178,11 +4344,14 @@
         "THUNDER",
         "THUNDERBOLT"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LAST_RESORT"
       ],
       "name": "雷伊布",
-      "id": "jolteon"
+      "id": "jolteon",
+      "legacyMoves": [
+        "LAST_RESORT"
+      ]
     },
     {
       "dex": 136,
@@ -4205,12 +4374,16 @@
         "LAST_RESORT",
         "OVERHEAT"
       ],
-      "legacyMoves": [
-        "HEAT_WAVE",
-        "LAST_RESORT"
+      "eliteMoves": [
+        "LAST_RESORT",
+        "HEAT_WAVE"
       ],
       "name": "火伊布",
-      "id": "flareon"
+      "id": "flareon",
+      "legacyMoves": [
+        "LAST_RESORT",
+        "HEAT_WAVE"
+      ]
     },
     {
       "dex": 137,
@@ -4240,14 +4413,20 @@
         "FRUSTRATION"
       ],
       "legacyMoves": [
-        "DISCHARGE",
-        "PSYBEAM",
         "QUICK_ATTACK",
-        "SIGNAL_BEAM",
         "TACKLE",
-        "ZEN_HEADBUTT"
+        "ZEN_HEADBUTT",
+        "SIGNAL_BEAM",
+        "PSYBEAM",
+        "DISCHARGE"
       ],
-      "shadow": true,
+      "eliteMoves": [
+        "TACKLE",
+        "ZEN_HEADBUTT",
+        "SIGNAL_BEAM",
+        "PSYBEAM",
+        "DISCHARGE"
+      ],
       "name": "多邊獸",
       "id": "porygon"
     },
@@ -4275,13 +4454,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "BRINE",
-        "ROCK_TOMB"
+      "eliteMoves": [
+        "ROCK_TOMB",
+        "BRINE"
       ],
-      "shadow": true,
       "name": "菊石獸",
-      "id": "omanyte"
+      "id": "omanyte",
+      "legacyMoves": [
+        "ROCK_TOMB",
+        "BRINE"
+      ]
     },
     {
       "dex": 139,
@@ -4307,13 +4489,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "ROCK_SLIDE",
-        "ROCK_THROW"
+      "eliteMoves": [
+        "ROCK_THROW",
+        "ROCK_SLIDE"
       ],
-      "shadow": true,
       "name": "多刺菊石獸",
-      "id": "omastar"
+      "id": "omastar",
+      "legacyMoves": [
+        "ROCK_THROW",
+        "ROCK_SLIDE"
+      ]
     },
     {
       "dex": 140,
@@ -4336,7 +4521,8 @@
         "ROCK_TOMB"
       ],
       "name": "化石盔",
-      "id": "kabuto"
+      "id": "kabuto",
+      "legacyMoves": []
     },
     {
       "dex": 141,
@@ -4360,11 +4546,14 @@
         "STONE_EDGE",
         "WATER_PULSE"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FURY_CUTTER"
       ],
       "name": "鐮刀盔",
-      "id": "kabutops"
+      "id": "kabutops",
+      "legacyMoves": [
+        "FURY_CUTTER"
+      ]
     },
     {
       "dex": 142,
@@ -4390,7 +4579,8 @@
         "EARTH_POWER"
       ],
       "name": "化石翼龍",
-      "id": "aerodactyl"
+      "id": "aerodactyl",
+      "legacyMoves": []
     },
     {
       "dex": 143,
@@ -4418,12 +4608,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "YAWN"
       ],
-      "shadow": true,
       "name": "卡比獸",
-      "id": "snorlax"
+      "id": "snorlax",
+      "legacyMoves": [
+        "YAWN"
+      ]
     },
     {
       "dex": 144,
@@ -4449,15 +4641,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "HURRICANE"
       ],
-      "tags": [
-        "legendary"
-      ],
-      "shadow": true,
       "name": "急凍鳥",
-      "id": "articuno"
+      "id": "articuno",
+      "legacyMoves": [
+        "HURRICANE"
+      ]
     },
     {
       "dex": 145,
@@ -4480,16 +4671,17 @@
         "ZAP_CANNON",
         "ANCIENT_POWER",
         "DRILL_PECK",
+        "DISCHARGE",
         "RETURN",
         "FRUSTRATION"
       ],
       "legacyMoves": [
+        "DISCHARGE",
         "THUNDER_SHOCK"
       ],
-      "tags": [
-        "legendary"
+      "eliteMoves": [
+        "THUNDER_SHOCK"
       ],
-      "shadow": true,
       "name": "閃電鳥",
       "id": "zapdos"
     },
@@ -4505,7 +4697,6 @@
         "flying"
       ],
       "fastMoves": [
-        "EMBER",
         "FIRE_SPIN",
         "WING_ATTACK"
       ],
@@ -4518,16 +4709,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
-        "EMBER",
+      "eliteMoves": [
         "SKY_ATTACK"
       ],
-      "tags": [
-        "legendary"
-      ],
-      "shadow": true,
       "name": "火焰鳥",
-      "id": "moltres"
+      "id": "moltres",
+      "legacyMoves": [
+        "SKY_ATTACK"
+      ]
     },
     {
       "dex": 147,
@@ -4550,9 +4739,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "迷你龍",
-      "id": "dratini"
+      "id": "dratini",
+      "legacyMoves": []
     },
     {
       "dex": 148,
@@ -4575,9 +4764,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "哈克龍",
-      "id": "dragonair"
+      "id": "dragonair",
+      "legacyMoves": []
     },
     {
       "dex": 149,
@@ -4605,13 +4794,16 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "DRACO_METEOR",
         "DRAGON_PULSE"
       ],
-      "shadow": true,
       "name": "快龍",
-      "id": "dragonite"
+      "id": "dragonite",
+      "legacyMoves": [
+        "DRACO_METEOR",
+        "DRAGON_PULSE"
+      ]
     },
     {
       "dex": 150,
@@ -4637,16 +4829,18 @@
         "THUNDERBOLT",
         "PSYSTRIKE"
       ],
-      "legacyMoves": [
-        "HYPER_BEAM",
+      "eliteMoves": [
+        "PSYSTRIKE",
         "SHADOW_BALL",
-        "PSYSTRIKE"
-      ],
-      "tags": [
-        "legendary"
+        "HYPER_BEAM"
       ],
       "name": "超夢",
-      "id": "mewtwo"
+      "id": "mewtwo",
+      "legacyMoves": [
+        "PSYSTRIKE",
+        "SHADOW_BALL",
+        "HYPER_BEAM"
+      ]
     },
     {
       "dex": 150,
@@ -4672,10 +4866,7 @@
       "legacyMoves": [
         "PSYSTRIKE"
       ],
-      "tags": [
-        "legendary"
-      ],
-      "name": "超夢-裝甲型態",
+      "name": "超夢 裝甲型態",
       "id": "mewtwo_armored"
     },
     {
@@ -4731,11 +4922,9 @@
         "THUNDERBOLT",
         "WILD_CHARGE"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "夢幻",
-      "id": "mew"
+      "id": "mew",
+      "legacyMoves": []
     },
     {
       "dex": 152,
@@ -4757,7 +4946,8 @@
         "GRASS_KNOT"
       ],
       "name": "菊草葉",
-      "id": "chikorita"
+      "id": "chikorita",
+      "legacyMoves": []
     },
     {
       "dex": 153,
@@ -4779,7 +4969,8 @@
         "GRASS_KNOT"
       ],
       "name": "月桂葉",
-      "id": "bayleef"
+      "id": "bayleef",
+      "legacyMoves": []
     },
     {
       "dex": 154,
@@ -4801,11 +4992,14 @@
         "PETAL_BLIZZARD",
         "SOLAR_BEAM"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FRENZY_PLANT"
       ],
       "name": "大竺葵",
-      "id": "meganium"
+      "id": "meganium",
+      "legacyMoves": [
+        "FRENZY_PLANT"
+      ]
     },
     {
       "dex": 155,
@@ -4827,7 +5021,8 @@
         "SWIFT"
       ],
       "name": "火球鼠",
-      "id": "cyndaquil"
+      "id": "cyndaquil",
+      "legacyMoves": []
     },
     {
       "dex": 156,
@@ -4849,7 +5044,8 @@
         "FLAMETHROWER"
       ],
       "name": "火岩鼠",
-      "id": "quilava"
+      "id": "quilava",
+      "legacyMoves": []
     },
     {
       "dex": 157,
@@ -4871,11 +5067,14 @@
         "OVERHEAT",
         "SOLAR_BEAM"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BLAST_BURN"
       ],
       "name": "火爆獸",
-      "id": "typhlosion"
+      "id": "typhlosion",
+      "legacyMoves": [
+        "BLAST_BURN"
+      ]
     },
     {
       "dex": 158,
@@ -4897,7 +5096,8 @@
         "WATER_PULSE"
       ],
       "name": "小鋸鱷",
-      "id": "totodile"
+      "id": "totodile",
+      "legacyMoves": []
     },
     {
       "dex": 159,
@@ -4919,7 +5119,8 @@
         "WATER_PULSE"
       ],
       "name": "藍鱷",
-      "id": "croconaw"
+      "id": "croconaw",
+      "legacyMoves": []
     },
     {
       "dex": 160,
@@ -4943,12 +5144,16 @@
         "HYDRO_PUMP",
         "ICE_BEAM"
       ],
-      "legacyMoves": [
-        "HYDRO_CANNON",
-        "WATER_GUN"
+      "eliteMoves": [
+        "WATER_GUN",
+        "HYDRO_CANNON"
       ],
       "name": "大力鱷",
-      "id": "feraligatr"
+      "id": "feraligatr",
+      "legacyMoves": [
+        "WATER_GUN",
+        "HYDRO_CANNON"
+      ]
     },
     {
       "dex": 161,
@@ -4970,7 +5175,8 @@
         "GRASS_KNOT"
       ],
       "name": "尾立",
-      "id": "sentret"
+      "id": "sentret",
+      "legacyMoves": []
     },
     {
       "dex": 162,
@@ -4992,7 +5198,8 @@
         "HYPER_BEAM"
       ],
       "name": "大尾立",
-      "id": "furret"
+      "id": "furret",
+      "legacyMoves": []
     },
     {
       "dex": 163,
@@ -5015,7 +5222,8 @@
         "SKY_ATTACK"
       ],
       "name": "咕咕",
-      "id": "hoothoot"
+      "id": "hoothoot",
+      "legacyMoves": []
     },
     {
       "dex": 164,
@@ -5038,7 +5246,8 @@
         "SKY_ATTACK"
       ],
       "name": "貓頭夜鷹",
-      "id": "noctowl"
+      "id": "noctowl",
+      "legacyMoves": []
     },
     {
       "dex": 165,
@@ -5061,7 +5270,8 @@
         "SWIFT"
       ],
       "name": "芭瓢蟲",
-      "id": "ledyba"
+      "id": "ledyba",
+      "legacyMoves": []
     },
     {
       "dex": 166,
@@ -5084,7 +5294,8 @@
         "SILVER_WIND"
       ],
       "name": "安瓢蟲",
-      "id": "ledian"
+      "id": "ledian",
+      "legacyMoves": []
     },
     {
       "dex": 167,
@@ -5107,7 +5318,8 @@
         "SIGNAL_BEAM"
       ],
       "name": "圓絲蛛",
-      "id": "spinarak"
+      "id": "spinarak",
+      "legacyMoves": []
     },
     {
       "dex": 168,
@@ -5130,7 +5342,8 @@
         "SHADOW_SNEAK"
       ],
       "name": "阿利多斯",
-      "id": "ariados"
+      "id": "ariados",
+      "legacyMoves": []
     },
     {
       "dex": 169,
@@ -5154,9 +5367,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "叉字蝠",
-      "id": "crobat"
+      "id": "crobat",
+      "legacyMoves": []
     },
     {
       "dex": 170,
@@ -5179,7 +5392,8 @@
         "WATER_PULSE"
       ],
       "name": "燈籠魚",
-      "id": "chinchou"
+      "id": "chinchou",
+      "legacyMoves": []
     },
     {
       "dex": 171,
@@ -5203,7 +5417,8 @@
         "THUNDERBOLT"
       ],
       "name": "電燈怪",
-      "id": "lanturn"
+      "id": "lanturn",
+      "legacyMoves": []
     },
     {
       "dex": 172,
@@ -5251,12 +5466,16 @@
         "PSYSHOCK",
         "SIGNAL_BEAM"
       ],
-      "legacyMoves": [
-        "BODY_SLAM",
-        "PSYCHIC"
+      "eliteMoves": [
+        "PSYCHIC",
+        "BODY_SLAM"
       ],
       "name": "皮寶寶",
-      "id": "cleffa"
+      "id": "cleffa",
+      "legacyMoves": [
+        "PSYCHIC",
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 174,
@@ -5279,11 +5498,14 @@
         "SHADOW_BALL",
         "WILD_CHARGE"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BODY_SLAM"
       ],
       "name": "寶寶丁",
-      "id": "igglybuff"
+      "id": "igglybuff",
+      "legacyMoves": [
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 175,
@@ -5305,11 +5527,14 @@
         "DAZZLING_GLEAM",
         "PSYSHOCK"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "ZEN_HEADBUTT"
       ],
       "name": "波克比",
-      "id": "togepi"
+      "id": "togepi",
+      "legacyMoves": [
+        "ZEN_HEADBUTT"
+      ]
     },
     {
       "dex": 176,
@@ -5333,12 +5558,16 @@
         "ANCIENT_POWER",
         "DAZZLING_GLEAM"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "STEEL_WING",
         "ZEN_HEADBUTT"
       ],
       "name": "波克基古",
-      "id": "togetic"
+      "id": "togetic",
+      "legacyMoves": [
+        "STEEL_WING",
+        "ZEN_HEADBUTT"
+      ]
     },
     {
       "dex": 177,
@@ -5361,7 +5590,8 @@
         "PSYSHOCK"
       ],
       "name": "天然雀",
-      "id": "natu"
+      "id": "natu",
+      "legacyMoves": []
     },
     {
       "dex": 178,
@@ -5384,7 +5614,8 @@
         "OMINOUS_WIND"
       ],
       "name": "天然鳥",
-      "id": "xatu"
+      "id": "xatu",
+      "legacyMoves": []
     },
     {
       "dex": 179,
@@ -5407,9 +5638,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "咩利羊",
-      "id": "mareep"
+      "id": "mareep",
+      "legacyMoves": []
     },
     {
       "dex": 180,
@@ -5432,9 +5663,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "茸茸羊",
-      "id": "flaaffy"
+      "id": "flaaffy",
+      "legacyMoves": []
     },
     {
       "dex": 181,
@@ -5460,12 +5691,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "DRAGON_PULSE"
       ],
-      "shadow": true,
       "name": "電龍",
-      "id": "ampharos"
+      "id": "ampharos",
+      "legacyMoves": [
+        "DRAGON_PULSE"
+      ]
     },
     {
       "dex": 182,
@@ -5479,7 +5712,8 @@
       ],
       "fastMoves": [
         "ACID",
-        "RAZOR_LEAF"
+        "RAZOR_LEAF",
+        "BULLET_SEED"
       ],
       "chargedMoves": [
         "DAZZLING_GLEAM",
@@ -5488,9 +5722,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "美麗花",
-      "id": "bellossom"
+      "id": "bellossom",
+      "legacyMoves": []
     },
     {
       "dex": 183,
@@ -5513,7 +5747,8 @@
         "BUBBLE_BEAM"
       ],
       "name": "瑪力露",
-      "id": "marill"
+      "id": "marill",
+      "legacyMoves": []
     },
     {
       "dex": 184,
@@ -5536,7 +5771,8 @@
         "PLAY_ROUGH"
       ],
       "name": "瑪力露麗",
-      "id": "azumarill"
+      "id": "azumarill",
+      "legacyMoves": []
     },
     {
       "dex": 185,
@@ -5558,7 +5794,8 @@
         "STONE_EDGE"
       ],
       "name": "樹才怪",
-      "id": "sudowoodo"
+      "id": "sudowoodo",
+      "legacyMoves": []
     },
     {
       "dex": 186,
@@ -5582,12 +5819,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "EARTHQUAKE"
       ],
-      "shadow": true,
       "name": "蚊香蛙皇",
-      "id": "politoed"
+      "id": "politoed",
+      "legacyMoves": [
+        "EARTHQUAKE"
+      ]
     },
     {
       "dex": 187,
@@ -5610,7 +5849,8 @@
         "SEED_BOMB"
       ],
       "name": "毽子草",
-      "id": "hoppip"
+      "id": "hoppip",
+      "legacyMoves": []
     },
     {
       "dex": 188,
@@ -5633,7 +5873,8 @@
         "GRASS_KNOT"
       ],
       "name": "毽子花",
-      "id": "skiploom"
+      "id": "skiploom",
+      "legacyMoves": []
     },
     {
       "dex": 189,
@@ -5653,10 +5894,12 @@
       "chargedMoves": [
         "DAZZLING_GLEAM",
         "ENERGY_BALL",
+        "AERIAL_ACE",
         "SOLAR_BEAM"
       ],
       "name": "毽子棉",
-      "id": "jumpluff"
+      "id": "jumpluff",
+      "legacyMoves": []
     },
     {
       "dex": 190,
@@ -5678,7 +5921,8 @@
         "SWIFT"
       ],
       "name": "長尾怪手",
-      "id": "aipom"
+      "id": "aipom",
+      "legacyMoves": []
     },
     {
       "dex": 191,
@@ -5700,7 +5944,8 @@
         "SEED_BOMB"
       ],
       "name": "向日種子",
-      "id": "sunkern"
+      "id": "sunkern",
+      "legacyMoves": []
     },
     {
       "dex": 192,
@@ -5722,7 +5967,8 @@
         "SOLAR_BEAM"
       ],
       "name": "向日花怪",
-      "id": "sunflora"
+      "id": "sunflora",
+      "legacyMoves": []
     },
     {
       "dex": 193,
@@ -5745,7 +5991,8 @@
         "SILVER_WIND"
       ],
       "name": "蜻蜻蜓",
-      "id": "yanma"
+      "id": "yanma",
+      "legacyMoves": []
     },
     {
       "dex": 194,
@@ -5768,7 +6015,8 @@
         "MUD_BOMB"
       ],
       "name": "烏波",
-      "id": "wooper"
+      "id": "wooper",
+      "legacyMoves": []
     },
     {
       "dex": 195,
@@ -5792,7 +6040,8 @@
         "ACID_SPRAY"
       ],
       "name": "沼王",
-      "id": "quagsire"
+      "id": "quagsire",
+      "legacyMoves": []
     },
     {
       "dex": 196,
@@ -5814,11 +6063,14 @@
         "PSYBEAM",
         "PSYCHIC"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LAST_RESORT"
       ],
       "name": "太陽伊布",
-      "id": "espeon"
+      "id": "espeon",
+      "legacyMoves": [
+        "LAST_RESORT"
+      ]
     },
     {
       "dex": 197,
@@ -5839,11 +6091,14 @@
         "FOUL_PLAY",
         "LAST_RESORT"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LAST_RESORT"
       ],
       "name": "月亮伊布",
-      "id": "umbreon"
+      "id": "umbreon",
+      "legacyMoves": [
+        "LAST_RESORT"
+      ]
     },
     {
       "dex": 198,
@@ -5863,13 +6118,11 @@
       "chargedMoves": [
         "DARK_PULSE",
         "DRILL_PECK",
-        "FOUL_PLAY",
-        "RETURN",
-        "FRUSTRATION"
+        "FOUL_PLAY"
       ],
-      "shadow": true,
       "name": "黑暗鴉",
-      "id": "murkrow"
+      "id": "murkrow",
+      "legacyMoves": []
     },
     {
       "dex": 199,
@@ -5892,7 +6145,8 @@
         "PSYCHIC"
       ],
       "name": "呆呆王",
-      "id": "slowking"
+      "id": "slowking",
+      "legacyMoves": []
     },
     {
       "dex": 200,
@@ -5915,9 +6169,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "夢妖",
-      "id": "misdreavus"
+      "id": "misdreavus",
+      "legacyMoves": []
     },
     {
       "dex": 201,
@@ -5936,7 +6190,8 @@
         "STRUGGLE"
       ],
       "name": "未知圖騰",
-      "id": "unown"
+      "id": "unown",
+      "legacyMoves": []
     },
     {
       "dex": 202,
@@ -5958,9 +6213,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "果然翁",
-      "id": "wobbuffet"
+      "id": "wobbuffet",
+      "legacyMoves": []
     },
     {
       "dex": 203,
@@ -5983,7 +6238,8 @@
         "THUNDERBOLT"
       ],
       "name": "麒麟奇",
-      "id": "girafarig"
+      "id": "girafarig",
+      "legacyMoves": []
     },
     {
       "dex": 204,
@@ -6005,7 +6261,8 @@
         "SAND_TOMB"
       ],
       "name": "榛果球",
-      "id": "pineco"
+      "id": "pineco",
+      "legacyMoves": []
     },
     {
       "dex": 205,
@@ -6030,7 +6287,8 @@
         "MIRROR_SHOT"
       ],
       "name": "佛烈托斯",
-      "id": "forretress"
+      "id": "forretress",
+      "legacyMoves": []
     },
     {
       "dex": 206,
@@ -6052,7 +6310,8 @@
         "ROCK_SLIDE"
       ],
       "name": "土龍弟弟",
-      "id": "dunsparce"
+      "id": "dunsparce",
+      "legacyMoves": []
     },
     {
       "dex": 207,
@@ -6075,7 +6334,8 @@
         "NIGHT_SLASH"
       ],
       "name": "天蠍",
-      "id": "gligar"
+      "id": "gligar",
+      "legacyMoves": []
     },
     {
       "dex": 208,
@@ -6096,13 +6356,11 @@
       "chargedMoves": [
         "CRUNCH",
         "EARTHQUAKE",
-        "HEAVY_SLAM",
-        "RETURN",
-        "FRUSTRATION"
+        "HEAVY_SLAM"
       ],
-      "shadow": true,
       "name": "大鋼蛇",
-      "id": "steelix"
+      "id": "steelix",
+      "legacyMoves": []
     },
     {
       "dex": 209,
@@ -6124,7 +6382,8 @@
         "DAZZLING_GLEAM"
       ],
       "name": "布魯",
-      "id": "snubbull"
+      "id": "snubbull",
+      "legacyMoves": []
     },
     {
       "dex": 210,
@@ -6147,7 +6406,8 @@
         "PLAY_ROUGH"
       ],
       "name": "布魯皇",
-      "id": "granbull"
+      "id": "granbull",
+      "legacyMoves": []
     },
     {
       "dex": 211,
@@ -6172,7 +6432,8 @@
         "FELL_STINGER"
       ],
       "name": "千針魚",
-      "id": "qwilfish"
+      "id": "qwilfish",
+      "legacyMoves": []
     },
     {
       "dex": 212,
@@ -6196,9 +6457,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "巨鉗螳螂",
-      "id": "scizor"
+      "id": "scizor",
+      "legacyMoves": []
     },
     {
       "dex": 213,
@@ -6221,7 +6482,8 @@
         "STONE_EDGE"
       ],
       "name": "壺壺",
-      "id": "shuckle"
+      "id": "shuckle",
+      "legacyMoves": []
     },
     {
       "dex": 214,
@@ -6243,11 +6505,9 @@
         "EARTHQUAKE",
         "MEGAHORN"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "赫拉克羅斯",
-      "id": "heracross"
+      "id": "heracross",
+      "legacyMoves": []
     },
     {
       "dex": 215,
@@ -6271,9 +6531,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "狃拉",
-      "id": "sneasel"
+      "id": "sneasel",
+      "legacyMoves": []
     },
     {
       "dex": 216,
@@ -6295,7 +6555,8 @@
         "PLAY_ROUGH"
       ],
       "name": "熊寶寶",
-      "id": "teddiursa"
+      "id": "teddiursa",
+      "legacyMoves": []
     },
     {
       "dex": 217,
@@ -6318,7 +6579,8 @@
         "PLAY_ROUGH"
       ],
       "name": "圈圈熊",
-      "id": "ursaring"
+      "id": "ursaring",
+      "legacyMoves": []
     },
     {
       "dex": 218,
@@ -6340,7 +6602,8 @@
         "ROCK_SLIDE"
       ],
       "name": "熔岩蟲",
-      "id": "slugma"
+      "id": "slugma",
+      "legacyMoves": []
     },
     {
       "dex": 219,
@@ -6363,7 +6626,8 @@
         "STONE_EDGE"
       ],
       "name": "熔岩蝸牛",
-      "id": "magcargo"
+      "id": "magcargo",
+      "legacyMoves": []
     },
     {
       "dex": 220,
@@ -6386,7 +6650,8 @@
         "ROCK_SLIDE"
       ],
       "name": "小山豬",
-      "id": "swinub"
+      "id": "swinub",
+      "legacyMoves": []
     },
     {
       "dex": 221,
@@ -6409,7 +6674,8 @@
         "STONE_EDGE"
       ],
       "name": "長毛豬",
-      "id": "piloswine"
+      "id": "piloswine",
+      "legacyMoves": []
     },
     {
       "dex": 222,
@@ -6431,11 +6697,9 @@
         "POWER_GEM",
         "ROCK_BLAST"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "太陽珊瑚",
-      "id": "corsola"
+      "id": "corsola",
+      "legacyMoves": []
     },
     {
       "dex": 223,
@@ -6457,7 +6721,8 @@
         "WATER_PULSE"
       ],
       "name": "鐵炮魚",
-      "id": "remoraid"
+      "id": "remoraid",
+      "legacyMoves": []
     },
     {
       "dex": 224,
@@ -6481,7 +6746,8 @@
         "OCTAZOOKA"
       ],
       "name": "章魚桶",
-      "id": "octillery"
+      "id": "octillery",
+      "legacyMoves": []
     },
     {
       "dex": 225,
@@ -6510,7 +6776,6 @@
         "ICE_SHARD",
         "QUICK_ATTACK"
       ],
-      "shadow": true,
       "name": "信使鳥",
       "id": "delibird"
     },
@@ -6537,7 +6802,8 @@
         "BUBBLE_BEAM"
       ],
       "name": "巨翅飛魚",
-      "id": "mantine"
+      "id": "mantine",
+      "legacyMoves": []
     },
     {
       "dex": 227,
@@ -6560,7 +6826,8 @@
         "SKY_ATTACK"
       ],
       "name": "盔甲鳥",
-      "id": "skarmory"
+      "id": "skarmory",
+      "legacyMoves": []
     },
     {
       "dex": 228,
@@ -6584,9 +6851,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "戴魯比",
-      "id": "houndour"
+      "id": "houndour",
+      "legacyMoves": []
     },
     {
       "dex": 229,
@@ -6611,9 +6878,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "黑魯加",
-      "id": "houndoom"
+      "id": "houndoom",
+      "legacyMoves": []
     },
     {
       "dex": 230,
@@ -6637,11 +6904,14 @@
         "OUTRAGE",
         "OCTAZOOKA"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "WATER_GUN"
       ],
       "name": "刺龍王",
-      "id": "kingdra"
+      "id": "kingdra",
+      "legacyMoves": [
+        "WATER_GUN"
+      ]
     },
     {
       "dex": 231,
@@ -6663,7 +6933,8 @@
         "ROCK_SLIDE"
       ],
       "name": "小小象",
-      "id": "phanpy"
+      "id": "phanpy",
+      "legacyMoves": []
     },
     {
       "dex": 232,
@@ -6687,7 +6958,8 @@
         "PLAY_ROUGH"
       ],
       "name": "頓甲",
-      "id": "donphan"
+      "id": "donphan",
+      "legacyMoves": []
     },
     {
       "dex": 233,
@@ -6711,9 +6983,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "多邊獸Ⅱ",
-      "id": "porygon2"
+      "id": "porygon2",
+      "legacyMoves": []
     },
     {
       "dex": 234,
@@ -6736,9 +7008,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "驚角鹿",
-      "id": "stantler"
+      "id": "stantler",
+      "legacyMoves": []
     },
     {
       "dex": 235,
@@ -6930,7 +7202,8 @@
         "METEOR_MASH"
       ],
       "name": "圖圖犬",
-      "id": "smeargle"
+      "id": "smeargle",
+      "legacyMoves": []
     },
     {
       "dex": 236,
@@ -6952,7 +7225,8 @@
         "ROCK_SLIDE"
       ],
       "name": "無畏小子",
-      "id": "tyrogue"
+      "id": "tyrogue",
+      "legacyMoves": []
     },
     {
       "dex": 237,
@@ -6974,7 +7248,8 @@
         "STONE_EDGE"
       ],
       "name": "戰舞郎",
-      "id": "hitmontop"
+      "id": "hitmontop",
+      "legacyMoves": []
     },
     {
       "dex": 238,
@@ -6997,11 +7272,14 @@
         "ICE_PUNCH",
         "PSYSHOCK"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FROST_BREATH"
       ],
       "name": "迷唇娃",
-      "id": "smoochum"
+      "id": "smoochum",
+      "legacyMoves": [
+        "FROST_BREATH"
+      ]
     },
     {
       "dex": 239,
@@ -7023,11 +7301,14 @@
         "THUNDER_PUNCH",
         "THUNDERBOLT"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "THUNDERBOLT"
       ],
       "name": "電擊怪",
-      "id": "elekid"
+      "id": "elekid",
+      "legacyMoves": [
+        "THUNDERBOLT"
+      ]
     },
     {
       "dex": 240,
@@ -7049,11 +7330,14 @@
         "FLAME_BURST",
         "FLAMETHROWER"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FLAMETHROWER"
       ],
       "name": "鴨嘴寶寶",
-      "id": "magby"
+      "id": "magby",
+      "legacyMoves": [
+        "FLAMETHROWER"
+      ]
     },
     {
       "dex": 241,
@@ -7077,7 +7361,8 @@
         "THUNDERBOLT"
       ],
       "name": "大奶罐",
-      "id": "miltank"
+      "id": "miltank",
+      "legacyMoves": []
     },
     {
       "dex": 242,
@@ -7099,7 +7384,8 @@
         "PSYCHIC"
       ],
       "name": "幸福蛋",
-      "id": "blissey"
+      "id": "blissey",
+      "legacyMoves": []
     },
     {
       "dex": 243,
@@ -7123,12 +7409,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "tags": [
-        "legendary"
-      ],
-      "shadow": true,
       "name": "雷公",
-      "id": "raikou"
+      "id": "raikou",
+      "legacyMoves": []
     },
     {
       "dex": 244,
@@ -7148,13 +7431,13 @@
         "FIRE_BLAST",
         "FLAMETHROWER",
         "IRON_HEAD",
-        "OVERHEAT"
-      ],
-      "tags": [
-        "legendary"
+        "OVERHEAT",
+        "RETURN",
+        "FRUSTRATION"
       ],
       "name": "炎帝",
-      "id": "entei"
+      "id": "entei",
+      "legacyMoves": []
     },
     {
       "dex": 245,
@@ -7179,10 +7462,11 @@
         "WATER_PULSE"
       ],
       "legacyMoves": [
+        "HIDDEN_POWER",
         "HIDDEN_POWER"
       ],
-      "tags": [
-        "legendary"
+      "eliteMoves": [
+        "HIDDEN_POWER"
       ],
       "name": "水君",
       "id": "suicune"
@@ -7209,9 +7493,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "幼基拉斯",
-      "id": "larvitar"
+      "id": "larvitar",
+      "legacyMoves": []
     },
     {
       "dex": 247,
@@ -7235,9 +7519,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "沙基拉斯",
-      "id": "pupitar"
+      "id": "pupitar",
+      "legacyMoves": []
     },
     {
       "dex": 248,
@@ -7262,12 +7546,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SMACK_DOWN"
       ],
-      "shadow": true,
       "name": "班基拉斯",
-      "id": "tyranitar"
+      "id": "tyranitar",
+      "legacyMoves": [
+        "SMACK_DOWN"
+      ]
     },
     {
       "dex": 249,
@@ -7289,11 +7575,9 @@
         "HYDRO_PUMP",
         "SKY_ATTACK"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "洛奇亞",
-      "id": "lugia"
+      "id": "lugia",
+      "legacyMoves": []
     },
     {
       "dex": 250,
@@ -7316,11 +7600,9 @@
         "FIRE_BLAST",
         "SOLAR_BEAM"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "鳳王",
-      "id": "ho_oh"
+      "id": "ho_oh",
+      "legacyMoves": []
     },
     {
       "dex": 251,
@@ -7343,11 +7625,9 @@
         "PSYCHIC",
         "SEED_BOMB"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "時拉比",
-      "id": "celebi"
+      "id": "celebi",
+      "legacyMoves": []
     },
     {
       "dex": 252,
@@ -7369,7 +7649,8 @@
         "GRASS_KNOT"
       ],
       "name": "木守宮",
-      "id": "treecko"
+      "id": "treecko",
+      "legacyMoves": []
     },
     {
       "dex": 253,
@@ -7391,7 +7672,8 @@
         "LEAF_BLADE"
       ],
       "name": "森林蜥蜴",
-      "id": "grovyle"
+      "id": "grovyle",
+      "legacyMoves": []
     },
     {
       "dex": 254,
@@ -7414,11 +7696,14 @@
         "FRENZY_PLANT",
         "DRAGON_CLAW"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FRENZY_PLANT"
       ],
       "name": "蜥蜴王",
-      "id": "sceptile"
+      "id": "sceptile",
+      "legacyMoves": [
+        "FRENZY_PLANT"
+      ]
     },
     {
       "dex": 255,
@@ -7440,7 +7725,8 @@
         "ROCK_TOMB"
       ],
       "name": "火稚雞",
-      "id": "torchic"
+      "id": "torchic",
+      "legacyMoves": []
     },
     {
       "dex": 256,
@@ -7463,7 +7749,8 @@
         "ROCK_SLIDE"
       ],
       "name": "力壯雞",
-      "id": "combusken"
+      "id": "combusken",
+      "legacyMoves": []
     },
     {
       "dex": 257,
@@ -7488,12 +7775,16 @@
         "BLAST_BURN",
         "BLAZE_KICK"
       ],
-      "legacyMoves": [
-        "STONE_EDGE",
-        "BLAST_BURN"
+      "eliteMoves": [
+        "BLAST_BURN",
+        "STONE_EDGE"
       ],
       "name": "火焰雞",
-      "id": "blaziken"
+      "id": "blaziken",
+      "legacyMoves": [
+        "BLAST_BURN",
+        "STONE_EDGE"
+      ]
     },
     {
       "dex": 258,
@@ -7516,9 +7807,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "水躍魚",
-      "id": "mudkip"
+      "id": "mudkip",
+      "legacyMoves": []
     },
     {
       "dex": 259,
@@ -7542,9 +7833,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "沼躍魚",
-      "id": "marshtomp"
+      "id": "marshtomp",
+      "legacyMoves": []
     },
     {
       "dex": 260,
@@ -7570,12 +7861,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "HYDRO_CANNON"
       ],
-      "shadow": true,
       "name": "巨沼怪",
-      "id": "swampert"
+      "id": "swampert",
+      "legacyMoves": [
+        "HYDRO_CANNON"
+      ]
     },
     {
       "dex": 261,
@@ -7597,7 +7890,8 @@
         "POISON_FANG"
       ],
       "name": "土狼犬",
-      "id": "poochyena"
+      "id": "poochyena",
+      "legacyMoves": []
     },
     {
       "dex": 262,
@@ -7621,7 +7915,8 @@
         "POISON_FANG"
       ],
       "name": "大狼犬",
-      "id": "mightyena"
+      "id": "mightyena",
+      "legacyMoves": []
     },
     {
       "dex": 263,
@@ -7643,7 +7938,8 @@
         "THUNDERBOLT"
       ],
       "name": "蛇紋熊",
-      "id": "zigzagoon"
+      "id": "zigzagoon",
+      "legacyMoves": []
     },
     {
       "dex": 263,
@@ -7665,11 +7961,9 @@
         "GRASS_KNOT",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "galarian"
-      ],
       "name": "蛇紋熊 伽勒爾型態",
-      "id": "zigzagoon_galarian"
+      "id": "zigzagoon_galarian",
+      "legacyMoves": []
     },
     {
       "dex": 264,
@@ -7691,7 +7985,8 @@
         "THUNDER"
       ],
       "name": "直衝熊",
-      "id": "linoone"
+      "id": "linoone",
+      "legacyMoves": []
     },
     {
       "dex": 264,
@@ -7713,11 +8008,9 @@
         "GRASS_KNOT",
         "THUNDER"
       ],
-      "tags": [
-        "galarian"
-      ],
       "name": "直衝熊 伽勒爾型態",
-      "id": "linoone_galarian"
+      "id": "linoone_galarian",
+      "legacyMoves": []
     },
     {
       "dex": 265,
@@ -7737,7 +8030,8 @@
         "STRUGGLE"
       ],
       "name": "刺尾蟲",
-      "id": "wurmple"
+      "id": "wurmple",
+      "legacyMoves": []
     },
     {
       "dex": 266,
@@ -7757,7 +8051,8 @@
         "STRUGGLE"
       ],
       "name": "甲殼繭",
-      "id": "silcoon"
+      "id": "silcoon",
+      "legacyMoves": []
     },
     {
       "dex": 267,
@@ -7780,7 +8075,8 @@
         "SILVER_WIND"
       ],
       "name": "狩獵鳳蝶",
-      "id": "beautifly"
+      "id": "beautifly",
+      "legacyMoves": []
     },
     {
       "dex": 268,
@@ -7800,7 +8096,8 @@
         "STRUGGLE"
       ],
       "name": "盾甲繭",
-      "id": "cascoon"
+      "id": "cascoon",
+      "legacyMoves": []
     },
     {
       "dex": 269,
@@ -7823,7 +8120,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "毒粉蛾",
-      "id": "dustox"
+      "id": "dustox",
+      "legacyMoves": []
     },
     {
       "dex": 270,
@@ -7845,7 +8143,8 @@
         "ENERGY_BALL"
       ],
       "name": "蓮葉童子",
-      "id": "lotad"
+      "id": "lotad",
+      "legacyMoves": []
     },
     {
       "dex": 271,
@@ -7868,7 +8167,8 @@
         "ICE_BEAM"
       ],
       "name": "蓮帽小童",
-      "id": "lombre"
+      "id": "lombre",
+      "legacyMoves": []
     },
     {
       "dex": 272,
@@ -7888,11 +8188,13 @@
       "chargedMoves": [
         "BLIZZARD",
         "HYDRO_PUMP",
+        "ENERGY_BALL",
         "ICE_BEAM",
         "SOLAR_BEAM"
       ],
       "name": "樂天河童",
-      "id": "ludicolo"
+      "id": "ludicolo",
+      "legacyMoves": []
     },
     {
       "dex": 273,
@@ -7915,9 +8217,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "橡實果",
-      "id": "seedot"
+      "id": "seedot",
+      "legacyMoves": []
     },
     {
       "dex": 274,
@@ -7941,9 +8243,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "長鼻葉",
-      "id": "nuzleaf"
+      "id": "nuzleaf",
+      "legacyMoves": []
     },
     {
       "dex": 275,
@@ -7969,9 +8271,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "狡猾天狗",
-      "id": "shiftry"
+      "id": "shiftry",
+      "legacyMoves": []
     },
     {
       "dex": 276,
@@ -7992,7 +8294,8 @@
         "AERIAL_ACE"
       ],
       "name": "傲骨燕",
-      "id": "taillow"
+      "id": "taillow",
+      "legacyMoves": []
     },
     {
       "dex": 277,
@@ -8015,7 +8318,8 @@
         "SKY_ATTACK"
       ],
       "name": "大王燕",
-      "id": "swellow"
+      "id": "swellow",
+      "legacyMoves": []
     },
     {
       "dex": 278,
@@ -8038,7 +8342,8 @@
         "WATER_PULSE"
       ],
       "name": "長翅鷗",
-      "id": "wingull"
+      "id": "wingull",
+      "legacyMoves": []
     },
     {
       "dex": 279,
@@ -8061,7 +8366,8 @@
         "HYDRO_PUMP"
       ],
       "name": "大嘴鷗",
-      "id": "pelipper"
+      "id": "pelipper",
+      "legacyMoves": []
     },
     {
       "dex": 280,
@@ -8085,9 +8391,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "拉魯拉絲",
-      "id": "ralts"
+      "id": "ralts",
+      "legacyMoves": []
     },
     {
       "dex": 281,
@@ -8111,9 +8417,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "奇魯莉安",
-      "id": "kirlia"
+      "id": "kirlia",
+      "legacyMoves": []
     },
     {
       "dex": 282,
@@ -8139,12 +8445,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SYNCHRONOISE"
       ],
-      "shadow": true,
       "name": "沙奈朵",
-      "id": "gardevoir"
+      "id": "gardevoir",
+      "legacyMoves": [
+        "SYNCHRONOISE"
+      ]
     },
     {
       "dex": 283,
@@ -8167,7 +8475,8 @@
         "SIGNAL_BEAM"
       ],
       "name": "溜溜糖球",
-      "id": "surskit"
+      "id": "surskit",
+      "legacyMoves": []
     },
     {
       "dex": 284,
@@ -8191,7 +8500,8 @@
         "BUBBLE_BEAM"
       ],
       "name": "雨翅蛾",
-      "id": "masquerain"
+      "id": "masquerain",
+      "legacyMoves": []
     },
     {
       "dex": 285,
@@ -8213,7 +8523,8 @@
         "SEED_BOMB"
       ],
       "name": "蘑蘑菇",
-      "id": "shroomish"
+      "id": "shroomish",
+      "legacyMoves": []
     },
     {
       "dex": 286,
@@ -8236,11 +8547,14 @@
         "SEED_BOMB",
         "SLUDGE_BOMB"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "GRASS_KNOT"
       ],
       "name": "斗笠菇",
-      "id": "breloom"
+      "id": "breloom",
+      "legacyMoves": [
+        "GRASS_KNOT"
+      ]
     },
     {
       "dex": 287,
@@ -8261,7 +8575,8 @@
         "NIGHT_SLASH"
       ],
       "name": "懶人獺",
-      "id": "slakoth"
+      "id": "slakoth",
+      "legacyMoves": []
     },
     {
       "dex": 288,
@@ -8283,7 +8598,8 @@
         "BULLDOZE"
       ],
       "name": "過動猿",
-      "id": "vigoroth"
+      "id": "vigoroth",
+      "legacyMoves": []
     },
     {
       "dex": 289,
@@ -8304,8 +8620,14 @@
         "PLAY_ROUGH",
         "BODY_SLAM"
       ],
+      "eliteMoves": [
+        "BODY_SLAM"
+      ],
       "name": "請假王",
-      "id": "slaking"
+      "id": "slaking",
+      "legacyMoves": [
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 290,
@@ -8328,7 +8650,8 @@
         "NIGHT_SLASH"
       ],
       "name": "土居忍士",
-      "id": "nincada"
+      "id": "nincada",
+      "legacyMoves": []
     },
     {
       "dex": 291,
@@ -8351,7 +8674,8 @@
         "SHADOW_BALL"
       ],
       "name": "鐵面忍者",
-      "id": "ninjask"
+      "id": "ninjask",
+      "legacyMoves": []
     },
     {
       "dex": 292,
@@ -8366,15 +8690,22 @@
       ],
       "fastMoves": [
         "BUG_BITE",
-        "SHADOW_CLAW"
+        "SHADOW_CLAW",
+        "STRUGGLE_BUG"
       ],
       "chargedMoves": [
         "AERIAL_ACE",
         "DIG",
         "SHADOW_SNEAK"
       ],
+      "eliteMoves": [
+        "STRUGGLE_BUG"
+      ],
       "name": "脫殼忍者",
-      "id": "shedinja"
+      "id": "shedinja",
+      "legacyMoves": [
+        "STRUGGLE_BUG"
+      ]
     },
     {
       "dex": 293,
@@ -8396,7 +8727,8 @@
         "STOMP"
       ],
       "name": "咕妞妞",
-      "id": "whismur"
+      "id": "whismur",
+      "legacyMoves": []
     },
     {
       "dex": 294,
@@ -8444,7 +8776,8 @@
         "FIRE_BLAST"
       ],
       "name": "爆音怪",
-      "id": "exploud"
+      "id": "exploud",
+      "legacyMoves": []
     },
     {
       "dex": 296,
@@ -8466,7 +8799,8 @@
         "LOW_SWEEP"
       ],
       "name": "幕下力士",
-      "id": "makuhita"
+      "id": "makuhita",
+      "legacyMoves": []
     },
     {
       "dex": 297,
@@ -8489,7 +8823,8 @@
         "SUPER_POWER"
       ],
       "name": "鐵掌力士",
-      "id": "hariyama"
+      "id": "hariyama",
+      "legacyMoves": []
     },
     {
       "dex": 298,
@@ -8512,7 +8847,8 @@
         "ICE_BEAM"
       ],
       "name": "露力麗",
-      "id": "azurill"
+      "id": "azurill",
+      "legacyMoves": []
     },
     {
       "dex": 299,
@@ -8534,7 +8870,8 @@
         "THUNDERBOLT"
       ],
       "name": "朝北鼻",
-      "id": "nosepass"
+      "id": "nosepass",
+      "legacyMoves": []
     },
     {
       "dex": 300,
@@ -8556,7 +8893,8 @@
         "WILD_CHARGE"
       ],
       "name": "向尾喵",
-      "id": "skitty"
+      "id": "skitty",
+      "legacyMoves": []
     },
     {
       "dex": 301,
@@ -8579,7 +8917,8 @@
         "WILD_CHARGE"
       ],
       "name": "優雅貓",
-      "id": "delcatty"
+      "id": "delcatty",
+      "legacyMoves": []
     },
     {
       "dex": 302,
@@ -8603,9 +8942,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "勾魂眼",
-      "id": "sableye"
+      "id": "sableye",
+      "legacyMoves": []
     },
     {
       "dex": 303,
@@ -8632,9 +8971,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "大嘴娃",
-      "id": "mawile"
+      "id": "mawile",
+      "legacyMoves": []
     },
     {
       "dex": 304,
@@ -8657,7 +8996,8 @@
         "ROCK_TOMB"
       ],
       "name": "可可多拉",
-      "id": "aron"
+      "id": "aron",
+      "legacyMoves": []
     },
     {
       "dex": 305,
@@ -8680,7 +9020,8 @@
         "ROCK_SLIDE"
       ],
       "name": "可多拉",
-      "id": "lairon"
+      "id": "lairon",
+      "legacyMoves": []
     },
     {
       "dex": 306,
@@ -8704,7 +9045,8 @@
         "THUNDER"
       ],
       "name": "波士可多拉",
-      "id": "aggron"
+      "id": "aggron",
+      "legacyMoves": []
     },
     {
       "dex": 307,
@@ -8727,7 +9069,8 @@
         "PSYSHOCK"
       ],
       "name": "瑪沙那",
-      "id": "meditite"
+      "id": "meditite",
+      "legacyMoves": []
     },
     {
       "dex": 308,
@@ -8751,7 +9094,8 @@
         "POWER_UP_PUNCH"
       ],
       "name": "恰雷姆",
-      "id": "medicham"
+      "id": "medicham",
+      "legacyMoves": []
     },
     {
       "dex": 309,
@@ -8773,7 +9117,8 @@
         "THUNDERBOLT"
       ],
       "name": "落雷獸",
-      "id": "electrike"
+      "id": "electrike",
+      "legacyMoves": []
     },
     {
       "dex": 310,
@@ -8795,7 +9140,8 @@
         "WILD_CHARGE"
       ],
       "name": "雷電獸",
-      "id": "manectric"
+      "id": "manectric",
+      "legacyMoves": []
     },
     {
       "dex": 311,
@@ -8818,7 +9164,8 @@
         "GRASS_KNOT"
       ],
       "name": "正電拍拍",
-      "id": "plusle"
+      "id": "plusle",
+      "legacyMoves": []
     },
     {
       "dex": 312,
@@ -8841,7 +9188,8 @@
         "GRASS_KNOT"
       ],
       "name": "負電拍拍",
-      "id": "minun"
+      "id": "minun",
+      "legacyMoves": []
     },
     {
       "dex": 313,
@@ -8863,7 +9211,8 @@
         "THUNDERBOLT"
       ],
       "name": "電螢蟲",
-      "id": "volbeat"
+      "id": "volbeat",
+      "legacyMoves": []
     },
     {
       "dex": 314,
@@ -8885,7 +9234,8 @@
         "SILVER_WIND"
       ],
       "name": "甜甜螢",
-      "id": "illumise"
+      "id": "illumise",
+      "legacyMoves": []
     },
     {
       "dex": 315,
@@ -8908,7 +9258,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "毒薔薇",
-      "id": "roselia"
+      "id": "roselia",
+      "legacyMoves": []
     },
     {
       "dex": 316,
@@ -8930,7 +9281,8 @@
         "SLUDGE"
       ],
       "name": "溶食獸",
-      "id": "gulpin"
+      "id": "gulpin",
+      "legacyMoves": []
     },
     {
       "dex": 317,
@@ -8953,7 +9305,8 @@
         "ACID_SPRAY"
       ],
       "name": "吞食獸",
-      "id": "swalot"
+      "id": "swalot",
+      "legacyMoves": []
     },
     {
       "dex": 318,
@@ -8977,9 +9330,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "利牙魚",
-      "id": "carvanha"
+      "id": "carvanha",
+      "legacyMoves": []
     },
     {
       "dex": 319,
@@ -9003,9 +9356,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "巨牙鯊",
-      "id": "sharpedo"
+      "id": "sharpedo",
+      "legacyMoves": []
     },
     {
       "dex": 320,
@@ -9027,7 +9380,8 @@
         "WATER_PULSE"
       ],
       "name": "吼吼鯨",
-      "id": "wailmer"
+      "id": "wailmer",
+      "legacyMoves": []
     },
     {
       "dex": 321,
@@ -9049,7 +9403,8 @@
         "SURF"
       ],
       "name": "吼鯨王",
-      "id": "wailord"
+      "id": "wailord",
+      "legacyMoves": []
     },
     {
       "dex": 322,
@@ -9072,7 +9427,8 @@
         "STOMP"
       ],
       "name": "呆火駝",
-      "id": "numel"
+      "id": "numel",
+      "legacyMoves": []
     },
     {
       "dex": 323,
@@ -9096,7 +9452,8 @@
         "EARTH_POWER"
       ],
       "name": "噴火駝",
-      "id": "camerupt"
+      "id": "camerupt",
+      "legacyMoves": []
     },
     {
       "dex": 324,
@@ -9117,11 +9474,9 @@
         "OVERHEAT",
         "SOLAR_BEAM"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "煤炭龜",
-      "id": "torkoal"
+      "id": "torkoal",
+      "legacyMoves": []
     },
     {
       "dex": 325,
@@ -9143,7 +9498,8 @@
         "SHADOW_BALL"
       ],
       "name": "跳跳豬",
-      "id": "spoink"
+      "id": "spoink",
+      "legacyMoves": []
     },
     {
       "dex": 326,
@@ -9165,7 +9521,8 @@
         "SHADOW_BALL"
       ],
       "name": "噗噗豬",
-      "id": "grumpig"
+      "id": "grumpig",
+      "legacyMoves": []
     },
     {
       "dex": 327,
@@ -9187,7 +9544,8 @@
         "ROCK_TOMB"
       ],
       "name": "晃晃斑",
-      "id": "spinda"
+      "id": "spinda",
+      "legacyMoves": []
     },
     {
       "dex": 328,
@@ -9210,9 +9568,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "大顎蟻",
-      "id": "trapinch"
+      "id": "trapinch",
+      "legacyMoves": []
     },
     {
       "dex": 329,
@@ -9236,9 +9594,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "超音波幼蟲",
-      "id": "vibrava"
+      "id": "vibrava",
+      "legacyMoves": []
     },
     {
       "dex": 330,
@@ -9263,12 +9621,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "EARTH_POWER"
       ],
-      "shadow": true,
       "name": "沙漠蜻蜓",
-      "id": "flygon"
+      "id": "flygon",
+      "legacyMoves": [
+        "EARTH_POWER"
+      ]
     },
     {
       "dex": 331,
@@ -9291,9 +9651,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "刺球仙人掌",
-      "id": "cacnea"
+      "id": "cacnea",
+      "legacyMoves": []
     },
     {
       "dex": 332,
@@ -9317,9 +9677,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "夢歌仙人掌",
-      "id": "cacturne"
+      "id": "cacturne",
+      "legacyMoves": []
     },
     {
       "dex": 333,
@@ -9342,7 +9702,8 @@
         "ICE_BEAM"
       ],
       "name": "青綿鳥",
-      "id": "swablu"
+      "id": "swablu",
+      "legacyMoves": []
     },
     {
       "dex": 334,
@@ -9365,7 +9726,8 @@
         "SKY_ATTACK"
       ],
       "name": "七夕青鳥",
-      "id": "altaria"
+      "id": "altaria",
+      "legacyMoves": []
     },
     {
       "dex": 335,
@@ -9387,7 +9749,8 @@
         "NIGHT_SLASH"
       ],
       "name": "貓鼬斬",
-      "id": "zangoose"
+      "id": "zangoose",
+      "legacyMoves": []
     },
     {
       "dex": 336,
@@ -9409,7 +9772,8 @@
         "WRAP"
       ],
       "name": "飯匙蛇",
-      "id": "seviper"
+      "id": "seviper",
+      "legacyMoves": []
     },
     {
       "dex": 337,
@@ -9432,7 +9796,8 @@
         "ROCK_SLIDE"
       ],
       "name": "月石",
-      "id": "lunatone"
+      "id": "lunatone",
+      "legacyMoves": []
     },
     {
       "dex": 338,
@@ -9455,7 +9820,8 @@
         "SOLAR_BEAM"
       ],
       "name": "太陽岩",
-      "id": "solrock"
+      "id": "solrock",
+      "legacyMoves": []
     },
     {
       "dex": 339,
@@ -9478,7 +9844,8 @@
         "MUD_BOMB"
       ],
       "name": "泥泥鰍",
-      "id": "barboach"
+      "id": "barboach",
+      "legacyMoves": []
     },
     {
       "dex": 340,
@@ -9501,7 +9868,8 @@
         "WATER_PULSE"
       ],
       "name": "鯰魚王",
-      "id": "whiscash"
+      "id": "whiscash",
+      "legacyMoves": []
     },
     {
       "dex": 341,
@@ -9523,7 +9891,8 @@
         "VICE_GRIP"
       ],
       "name": "龍蝦小兵",
-      "id": "corphish"
+      "id": "corphish",
+      "legacyMoves": []
     },
     {
       "dex": 342,
@@ -9547,7 +9916,8 @@
         "CRABHAMMER"
       ],
       "name": "鐵螯龍蝦",
-      "id": "crawdaunt"
+      "id": "crawdaunt",
+      "legacyMoves": []
     },
     {
       "dex": 343,
@@ -9570,7 +9940,8 @@
         "PSYBEAM"
       ],
       "name": "天秤偶",
-      "id": "baltoy"
+      "id": "baltoy",
+      "legacyMoves": []
     },
     {
       "dex": 344,
@@ -9595,7 +9966,8 @@
         "EARTH_POWER"
       ],
       "name": "念力土偶",
-      "id": "claydol"
+      "id": "claydol",
+      "legacyMoves": []
     },
     {
       "dex": 345,
@@ -9610,12 +9982,16 @@
       ],
       "fastMoves": [
         "ACID",
-        "INFESTATION"
+        "INFESTATION",
+        "BULLET_SEED"
       ],
       "chargedMoves": [
         "ANCIENT_POWER",
         "GRASS_KNOT",
         "MIRROR_COAT"
+      ],
+      "legacyMoves": [
+        "BULLET_SEED"
       ],
       "name": "觸手百合",
       "id": "lileep"
@@ -9633,7 +10009,8 @@
       ],
       "fastMoves": [
         "ACID",
-        "INFESTATION"
+        "INFESTATION",
+        "BULLET_SEED"
       ],
       "chargedMoves": [
         "BULLDOZE",
@@ -9641,7 +10018,8 @@
         "STONE_EDGE"
       ],
       "name": "搖籃百合",
-      "id": "cradily"
+      "id": "cradily",
+      "legacyMoves": []
     },
     {
       "dex": 347,
@@ -9664,7 +10042,8 @@
         "CROSS_POISON"
       ],
       "name": "太古羽蟲",
-      "id": "anorith"
+      "id": "anorith",
+      "legacyMoves": []
     },
     {
       "dex": 348,
@@ -9687,7 +10066,8 @@
         "WATER_PULSE"
       ],
       "name": "太古盔甲",
-      "id": "armaldo"
+      "id": "armaldo",
+      "legacyMoves": []
     },
     {
       "dex": 349,
@@ -9707,7 +10087,8 @@
         "MIRROR_COAT"
       ],
       "name": "醜醜魚",
-      "id": "feebas"
+      "id": "feebas",
+      "legacyMoves": []
     },
     {
       "dex": 350,
@@ -9729,7 +10110,8 @@
         "SURF"
       ],
       "name": "美納斯",
-      "id": "milotic"
+      "id": "milotic",
+      "legacyMoves": []
     },
     {
       "dex": 351,
@@ -9751,7 +10133,8 @@
         "WEATHER_BALL_ROCK"
       ],
       "name": "飄浮泡泡",
-      "id": "castform"
+      "id": "castform",
+      "legacyMoves": []
     },
     {
       "dex": 351,
@@ -9773,7 +10156,8 @@
         "WEATHER_BALL_WATER"
       ],
       "name": "飄浮泡泡 雨天型態",
-      "id": "castform_rainy"
+      "id": "castform_rainy",
+      "legacyMoves": []
     },
     {
       "dex": 351,
@@ -9795,7 +10179,8 @@
         "WEATHER_BALL_ICE"
       ],
       "name": "飄浮泡泡 雪型態",
-      "id": "castform_snowy"
+      "id": "castform_snowy",
+      "legacyMoves": []
     },
     {
       "dex": 351,
@@ -9817,7 +10202,8 @@
         "WEATHER_BALL_FIRE"
       ],
       "name": "飄浮泡泡 晴天型態",
-      "id": "castform_sunny"
+      "id": "castform_sunny",
+      "legacyMoves": []
     },
     {
       "dex": 352,
@@ -9842,7 +10228,8 @@
         "THUNDER"
       ],
       "name": "變隱龍",
-      "id": "kecleon"
+      "id": "kecleon",
+      "legacyMoves": []
     },
     {
       "dex": 353,
@@ -9865,9 +10252,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "怨影娃娃",
-      "id": "shuppet"
+      "id": "shuppet",
+      "legacyMoves": []
     },
     {
       "dex": 354,
@@ -9890,9 +10277,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "詛咒娃娃",
-      "id": "banette"
+      "id": "banette",
+      "legacyMoves": []
     },
     {
       "dex": 355,
@@ -9915,9 +10302,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "夜巡靈",
-      "id": "duskull"
+      "id": "duskull",
+      "legacyMoves": []
     },
     {
       "dex": 356,
@@ -9940,9 +10327,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "彷徨夜靈",
-      "id": "dusclops"
+      "id": "dusclops",
+      "legacyMoves": []
     },
     {
       "dex": 357,
@@ -9964,11 +10351,9 @@
         "LEAF_BLADE",
         "STOMP"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "熱帶龍",
-      "id": "tropius"
+      "id": "tropius",
+      "legacyMoves": []
     },
     {
       "dex": 358,
@@ -9990,7 +10375,8 @@
         "SHADOW_BALL"
       ],
       "name": "風鈴鈴",
-      "id": "chimecho"
+      "id": "chimecho",
+      "legacyMoves": []
     },
     {
       "dex": 359,
@@ -10013,9 +10399,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "阿勃梭魯",
-      "id": "absol"
+      "id": "absol",
+      "legacyMoves": []
     },
     {
       "dex": 360,
@@ -10035,7 +10421,8 @@
         "MIRROR_COAT"
       ],
       "name": "小果然",
-      "id": "wynaut"
+      "id": "wynaut",
+      "legacyMoves": []
     },
     {
       "dex": 361,
@@ -10057,7 +10444,8 @@
         "SHADOW_BALL"
       ],
       "name": "雪童子",
-      "id": "snorunt"
+      "id": "snorunt",
+      "legacyMoves": []
     },
     {
       "dex": 362,
@@ -10079,7 +10467,8 @@
         "SHADOW_BALL"
       ],
       "name": "冰鬼護",
-      "id": "glalie"
+      "id": "glalie",
+      "legacyMoves": []
     },
     {
       "dex": 363,
@@ -10102,7 +10491,8 @@
         "WATER_PULSE"
       ],
       "name": "海豹球",
-      "id": "spheal"
+      "id": "spheal",
+      "legacyMoves": []
     },
     {
       "dex": 364,
@@ -10125,7 +10515,8 @@
         "WATER_PULSE"
       ],
       "name": "海魔獅",
-      "id": "sealeo"
+      "id": "sealeo",
+      "legacyMoves": []
     },
     {
       "dex": 365,
@@ -10148,7 +10539,8 @@
         "WATER_PULSE"
       ],
       "name": "帝牙海獅",
-      "id": "walrein"
+      "id": "walrein",
+      "legacyMoves": []
     },
     {
       "dex": 366,
@@ -10169,7 +10561,8 @@
         "WATER_PULSE"
       ],
       "name": "珍珠貝",
-      "id": "clamperl"
+      "id": "clamperl",
+      "legacyMoves": []
     },
     {
       "dex": 367,
@@ -10191,7 +10584,8 @@
         "ICE_BEAM"
       ],
       "name": "獵斑魚",
-      "id": "huntail"
+      "id": "huntail",
+      "legacyMoves": []
     },
     {
       "dex": 368,
@@ -10213,7 +10607,8 @@
         "WATER_PULSE"
       ],
       "name": "櫻花魚",
-      "id": "gorebyss"
+      "id": "gorebyss",
+      "legacyMoves": []
     },
     {
       "dex": 369,
@@ -10235,11 +10630,9 @@
         "AQUA_TAIL",
         "HYDRO_PUMP"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "古空棘魚",
-      "id": "relicanth"
+      "id": "relicanth",
+      "legacyMoves": []
     },
     {
       "dex": 370,
@@ -10261,7 +10654,8 @@
         "WATER_PULSE"
       ],
       "name": "愛心魚",
-      "id": "luvdisc"
+      "id": "luvdisc",
+      "legacyMoves": []
     },
     {
       "dex": 371,
@@ -10284,9 +10678,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "寶貝龍",
-      "id": "bagon"
+      "id": "bagon",
+      "legacyMoves": []
     },
     {
       "dex": 372,
@@ -10309,9 +10703,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "甲殼龍",
-      "id": "shelgon"
+      "id": "shelgon",
+      "legacyMoves": []
     },
     {
       "dex": 373,
@@ -10337,9 +10731,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
+      "eliteMoves": [
+        "OUTRAGE"
+      ],
       "name": "暴飛龍",
-      "id": "salamence"
+      "id": "salamence",
+      "legacyMoves": [
+        "OUTRAGE"
+      ]
     },
     {
       "dex": 374,
@@ -10360,9 +10759,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "鐵啞鈴",
-      "id": "beldum"
+      "id": "beldum",
+      "legacyMoves": []
     },
     {
       "dex": 375,
@@ -10386,9 +10785,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "金屬怪",
-      "id": "metang"
+      "id": "metang",
+      "legacyMoves": []
     },
     {
       "dex": 376,
@@ -10413,12 +10812,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "METEOR_MASH"
       ],
-      "shadow": true,
       "name": "巨金怪",
-      "id": "metagross"
+      "id": "metagross",
+      "legacyMoves": [
+        "METEOR_MASH"
+      ]
     },
     {
       "dex": 377,
@@ -10440,11 +10841,9 @@
         "STONE_EDGE",
         "ZAP_CANNON"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "雷吉洛克",
-      "id": "regirock"
+      "id": "regirock",
+      "legacyMoves": []
     },
     {
       "dex": 378,
@@ -10466,11 +10865,9 @@
         "EARTHQUAKE",
         "FOCUS_BLAST"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "雷吉艾斯",
-      "id": "regice"
+      "id": "regice",
+      "legacyMoves": []
     },
     {
       "dex": 379,
@@ -10492,11 +10889,9 @@
         "FOCUS_BLAST",
         "HYPER_BEAM"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "雷吉斯奇魯",
-      "id": "registeel"
+      "id": "registeel",
+      "legacyMoves": []
     },
     {
       "dex": 380,
@@ -10519,11 +10914,9 @@
         "PSYCHIC",
         "THUNDER"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "拉帝亞斯",
-      "id": "latias"
+      "id": "latias",
+      "legacyMoves": []
     },
     {
       "dex": 381,
@@ -10545,11 +10938,9 @@
         "PSYCHIC",
         "SOLAR_BEAM"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "拉帝歐斯",
-      "id": "latios"
+      "id": "latios",
+      "legacyMoves": []
     },
     {
       "dex": 382,
@@ -10570,11 +10961,9 @@
         "THUNDER",
         "SURF"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "蓋歐卡",
-      "id": "kyogre"
+      "id": "kyogre",
+      "legacyMoves": []
     },
     {
       "dex": 383,
@@ -10595,11 +10984,9 @@
         "FIRE_BLAST",
         "SOLAR_BEAM"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "固拉多",
-      "id": "groudon"
+      "id": "groudon",
+      "legacyMoves": []
     },
     {
       "dex": 384,
@@ -10621,11 +11008,9 @@
         "ANCIENT_POWER",
         "OUTRAGE"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "烈空坐",
-      "id": "rayquaza"
+      "id": "rayquaza",
+      "legacyMoves": []
     },
     {
       "dex": 385,
@@ -10647,11 +11032,9 @@
         "DOOM_DESIRE",
         "PSYCHIC"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "基拉祈",
-      "id": "jirachi"
+      "id": "jirachi",
+      "legacyMoves": []
     },
     {
       "dex": 386,
@@ -10672,11 +11055,9 @@
         "PSYCHO_BOOST",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "代歐奇希斯",
-      "id": "deoxys"
+      "id": "deoxys",
+      "legacyMoves": []
     },
     {
       "dex": 386,
@@ -10697,11 +11078,9 @@
         "PSYCHO_BOOST",
         "ZAP_CANNON"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "代歐奇希斯 攻擊型",
-      "id": "deoxys_attack"
+      "id": "deoxys_attack",
+      "legacyMoves": []
     },
     {
       "dex": 386,
@@ -10722,11 +11101,9 @@
         "ROCK_SLIDE",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "代歐奇希斯 防禦型",
-      "id": "deoxys_defense"
+      "id": "deoxys_defense",
+      "legacyMoves": []
     },
     {
       "dex": 386,
@@ -10747,11 +11124,9 @@
         "SWIFT",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "代歐奇希斯 速度型",
-      "id": "deoxys_speed"
+      "id": "deoxys_speed",
+      "legacyMoves": []
     },
     {
       "dex": 387,
@@ -10774,9 +11149,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "草苗龜",
-      "id": "turtwig"
+      "id": "turtwig",
+      "legacyMoves": []
     },
     {
       "dex": 388,
@@ -10799,9 +11174,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "樹林龜",
-      "id": "grotle"
+      "id": "grotle",
+      "legacyMoves": []
     },
     {
       "dex": 389,
@@ -10827,12 +11202,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "FRENZY_PLANT"
       ],
-      "shadow": true,
       "name": "土台龜",
-      "id": "torterra"
+      "id": "torterra",
+      "legacyMoves": [
+        "FRENZY_PLANT"
+      ]
     },
     {
       "dex": 390,
@@ -10851,13 +11228,11 @@
       "chargedMoves": [
         "FLAME_CHARGE",
         "FLAME_WHEEL",
-        "FLAMETHROWER",
-        "RETURN",
-        "FRUSTRATION"
+        "FLAMETHROWER"
       ],
-      "shadow": true,
       "name": "小火焰猴",
-      "id": "chimchar"
+      "id": "chimchar",
+      "legacyMoves": []
     },
     {
       "dex": 391,
@@ -10877,13 +11252,11 @@
       "chargedMoves": [
         "FLAME_WHEEL",
         "FLAMETHROWER",
-        "LOW_SWEEP",
-        "RETURN",
-        "FRUSTRATION"
+        "LOW_SWEEP"
       ],
-      "shadow": true,
       "name": "猛火猴",
-      "id": "monferno"
+      "id": "monferno",
+      "legacyMoves": []
     },
     {
       "dex": 392,
@@ -10904,16 +11277,16 @@
         "CLOSE_COMBAT",
         "FLAMETHROWER",
         "SOLAR_BEAM",
-        "BLAST_BURN",
-        "RETURN",
-        "FRUSTRATION"
-      ],
-      "legacyMoves": [
         "BLAST_BURN"
       ],
-      "shadow": true,
+      "eliteMoves": [
+        "BLAST_BURN"
+      ],
       "name": "烈焰猴",
-      "id": "infernape"
+      "id": "infernape",
+      "legacyMoves": [
+        "BLAST_BURN"
+      ]
     },
     {
       "dex": 393,
@@ -10935,7 +11308,8 @@
         "ICY_WIND"
       ],
       "name": "波加曼",
-      "id": "piplup"
+      "id": "piplup",
+      "legacyMoves": []
     },
     {
       "dex": 394,
@@ -10957,7 +11331,8 @@
         "ICY_WIND"
       ],
       "name": "波皇子",
-      "id": "prinplup"
+      "id": "prinplup",
+      "legacyMoves": []
     },
     {
       "dex": 395,
@@ -10980,11 +11355,14 @@
         "HYDRO_PUMP",
         "HYDRO_CANNON"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "HYDRO_CANNON"
       ],
       "name": "帝王拿波",
-      "id": "empoleon"
+      "id": "empoleon",
+      "legacyMoves": [
+        "HYDRO_CANNON"
+      ]
     },
     {
       "dex": 396,
@@ -11006,7 +11384,8 @@
         "BRAVE_BIRD"
       ],
       "name": "姆克兒",
-      "id": "starly"
+      "id": "starly",
+      "legacyMoves": []
     },
     {
       "dex": 397,
@@ -11029,7 +11408,8 @@
         "HEAT_WAVE"
       ],
       "name": "姆克鳥",
-      "id": "staravia"
+      "id": "staravia",
+      "legacyMoves": []
     },
     {
       "dex": 398,
@@ -11052,7 +11432,8 @@
         "HEAT_WAVE"
       ],
       "name": "姆克鷹",
-      "id": "staraptor"
+      "id": "staraptor",
+      "legacyMoves": []
     },
     {
       "dex": 399,
@@ -11074,7 +11455,8 @@
         "HYPER_FANG"
       ],
       "name": "大牙狸",
-      "id": "bidoof"
+      "id": "bidoof",
+      "legacyMoves": []
     },
     {
       "dex": 400,
@@ -11097,7 +11479,8 @@
         "SURF"
       ],
       "name": "大尾狸",
-      "id": "bibarel"
+      "id": "bibarel",
+      "legacyMoves": []
     },
     {
       "dex": 401,
@@ -11117,7 +11500,8 @@
         "STRUGGLE"
       ],
       "name": "圓法師",
-      "id": "kricketot"
+      "id": "kricketot",
+      "legacyMoves": []
     },
     {
       "dex": 402,
@@ -11139,7 +11523,8 @@
         "X_SCISSOR"
       ],
       "name": "音箱蟀",
-      "id": "kricketune"
+      "id": "kricketune",
+      "legacyMoves": []
     },
     {
       "dex": 403,
@@ -11161,7 +11546,8 @@
         "THUNDERBOLT"
       ],
       "name": "小貓怪",
-      "id": "shinx"
+      "id": "shinx",
+      "legacyMoves": []
     },
     {
       "dex": 404,
@@ -11183,7 +11569,8 @@
         "WILD_CHARGE"
       ],
       "name": "勒克貓",
-      "id": "luxio"
+      "id": "luxio",
+      "legacyMoves": []
     },
     {
       "dex": 405,
@@ -11206,7 +11593,8 @@
         "WILD_CHARGE"
       ],
       "name": "倫琴貓",
-      "id": "luxray"
+      "id": "luxray",
+      "legacyMoves": []
     },
     {
       "dex": 406,
@@ -11228,7 +11616,8 @@
         "GRASS_KNOT"
       ],
       "name": "含羞苞",
-      "id": "budew"
+      "id": "budew",
+      "legacyMoves": []
     },
     {
       "dex": 407,
@@ -11252,7 +11641,8 @@
         "SOLAR_BEAM"
       ],
       "name": "羅絲雷朵",
-      "id": "roserade"
+      "id": "roserade",
+      "legacyMoves": []
     },
     {
       "dex": 408,
@@ -11274,7 +11664,8 @@
         "ROCK_TOMB"
       ],
       "name": "頭蓋龍",
-      "id": "cranidos"
+      "id": "cranidos",
+      "legacyMoves": []
     },
     {
       "dex": 409,
@@ -11296,7 +11687,8 @@
         "ROCK_SLIDE"
       ],
       "name": "戰槌龍",
-      "id": "rampardos"
+      "id": "rampardos",
+      "legacyMoves": []
     },
     {
       "dex": 410,
@@ -11319,7 +11711,8 @@
         "ROCK_TOMB"
       ],
       "name": "盾甲龍",
-      "id": "shieldon"
+      "id": "shieldon",
+      "legacyMoves": []
     },
     {
       "dex": 411,
@@ -11342,7 +11735,8 @@
         "STONE_EDGE"
       ],
       "name": "護城龍",
-      "id": "bastiodon"
+      "id": "bastiodon",
+      "legacyMoves": []
     },
     {
       "dex": 412,
@@ -11362,7 +11756,8 @@
         "STRUGGLE"
       ],
       "name": "結草兒 草木蓑衣",
-      "id": "burmy_plant"
+      "id": "burmy_plant",
+      "legacyMoves": []
     },
     {
       "dex": 412,
@@ -11382,7 +11777,8 @@
         "STRUGGLE"
       ],
       "name": "結草兒 砂土蓑衣",
-      "id": "burmy_sandy"
+      "id": "burmy_sandy",
+      "legacyMoves": []
     },
     {
       "dex": 412,
@@ -11402,7 +11798,8 @@
         "STRUGGLE"
       ],
       "name": "結草兒 垃圾蓑衣",
-      "id": "burmy_trash"
+      "id": "burmy_trash",
+      "legacyMoves": []
     },
     {
       "dex": 413,
@@ -11425,7 +11822,8 @@
         "PSYBEAM"
       ],
       "name": "結草貴婦 草木蓑衣",
-      "id": "wormadam_plant"
+      "id": "wormadam_plant",
+      "legacyMoves": []
     },
     {
       "dex": 413,
@@ -11448,7 +11846,8 @@
         "PSYBEAM"
       ],
       "name": "結草貴婦 砂土蓑衣",
-      "id": "wormadam_sandy"
+      "id": "wormadam_sandy",
+      "legacyMoves": []
     },
     {
       "dex": 413,
@@ -11471,7 +11870,8 @@
         "PSYBEAM"
       ],
       "name": "結草貴婦 垃圾蓑衣",
-      "id": "wormadam_trash"
+      "id": "wormadam_trash",
+      "legacyMoves": []
     },
     {
       "dex": 414,
@@ -11494,7 +11894,8 @@
         "PSYBEAM"
       ],
       "name": "紳士蛾",
-      "id": "mothim"
+      "id": "mothim",
+      "legacyMoves": []
     },
     {
       "dex": 415,
@@ -11514,7 +11915,8 @@
         "BUG_BUZZ"
       ],
       "name": "三蜜蜂",
-      "id": "combee"
+      "id": "combee",
+      "legacyMoves": []
     },
     {
       "dex": 416,
@@ -11540,7 +11942,8 @@
         "FELL_STINGER"
       ],
       "name": "蜂女王",
-      "id": "vespiquen"
+      "id": "vespiquen",
+      "legacyMoves": []
     },
     {
       "dex": 417,
@@ -11561,11 +11964,9 @@
         "THUNDER_PUNCH",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "帕奇利茲",
-      "id": "pachirisu"
+      "id": "pachirisu",
+      "legacyMoves": []
     },
     {
       "dex": 418,
@@ -11587,7 +11988,8 @@
         "WATER_PULSE"
       ],
       "name": "泳圈鼬",
-      "id": "buizel"
+      "id": "buizel",
+      "legacyMoves": []
     },
     {
       "dex": 419,
@@ -11609,7 +12011,8 @@
         "SWIFT"
       ],
       "name": "浮潛鼬",
-      "id": "floatzel"
+      "id": "floatzel",
+      "legacyMoves": []
     },
     {
       "dex": 420,
@@ -11657,7 +12060,8 @@
         "SOLAR_BEAM"
       ],
       "name": "櫻花兒 花苞型態",
-      "id": "cherrim_overcast"
+      "id": "cherrim_overcast",
+      "legacyMoves": []
     },
     {
       "dex": 421,
@@ -11676,10 +12080,12 @@
       "chargedMoves": [
         "DAZZLING_GLEAM",
         "HYPER_BEAM",
-        "SOLAR_BEAM"
+        "SOLAR_BEAM",
+        "WEATHER_BALL_FIRE"
       ],
       "name": "櫻花兒 盛開型態",
-      "id": "cherrim_sunny"
+      "id": "cherrim_sunny",
+      "legacyMoves": []
     },
     {
       "dex": 422,
@@ -11701,7 +12107,8 @@
         "WATER_PULSE"
       ],
       "name": "無殼海兔 東海型態",
-      "id": "shellos_east_sea"
+      "id": "shellos_east_sea",
+      "legacyMoves": []
     },
     {
       "dex": 422,
@@ -11723,7 +12130,8 @@
         "WATER_PULSE"
       ],
       "name": "無殼海兔 西海型態",
-      "id": "shellos_west_sea"
+      "id": "shellos_west_sea",
+      "legacyMoves": []
     },
     {
       "dex": 423,
@@ -11799,7 +12207,8 @@
         "LOW_SWEEP"
       ],
       "name": "雙尾怪手",
-      "id": "ambipom"
+      "id": "ambipom",
+      "legacyMoves": []
     },
     {
       "dex": 425,
@@ -11822,7 +12231,8 @@
         "SHADOW_BALL"
       ],
       "name": "飄飄球",
-      "id": "drifloon"
+      "id": "drifloon",
+      "legacyMoves": []
     },
     {
       "dex": 426,
@@ -11845,7 +12255,8 @@
         "SHADOW_BALL"
       ],
       "name": "隨風球",
-      "id": "drifblim"
+      "id": "drifblim",
+      "legacyMoves": []
     },
     {
       "dex": 427,
@@ -11866,7 +12277,8 @@
         "SWIFT"
       ],
       "name": "捲捲耳",
-      "id": "buneary"
+      "id": "buneary",
+      "legacyMoves": []
     },
     {
       "dex": 428,
@@ -11888,7 +12300,8 @@
         "HYPER_BEAM"
       ],
       "name": "長耳兔",
-      "id": "lopunny"
+      "id": "lopunny",
+      "legacyMoves": []
     },
     {
       "dex": 429,
@@ -11911,9 +12324,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "夢妖魔",
-      "id": "mismagius"
+      "id": "mismagius",
+      "legacyMoves": []
     },
     {
       "dex": 430,
@@ -11934,13 +12347,11 @@
         "BRAVE_BIRD",
         "DARK_PULSE",
         "PSYCHIC",
-        "SKY_ATTACK",
-        "RETURN",
-        "FRUSTRATION"
+        "SKY_ATTACK"
       ],
-      "shadow": true,
       "name": "烏鴉頭頭",
-      "id": "honchkrow"
+      "id": "honchkrow",
+      "legacyMoves": []
     },
     {
       "dex": 431,
@@ -11962,7 +12373,8 @@
         "THUNDERBOLT"
       ],
       "name": "魅力喵",
-      "id": "glameow"
+      "id": "glameow",
+      "legacyMoves": []
     },
     {
       "dex": 432,
@@ -11984,7 +12396,8 @@
         "THUNDER"
       ],
       "name": "東施喵",
-      "id": "purugly"
+      "id": "purugly",
+      "legacyMoves": []
     },
     {
       "dex": 433,
@@ -12006,7 +12419,8 @@
         "WRAP"
       ],
       "name": "鈴鐺響",
-      "id": "chingling"
+      "id": "chingling",
+      "legacyMoves": []
     },
     {
       "dex": 434,
@@ -12029,7 +12443,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "臭鼬噗",
-      "id": "stunky"
+      "id": "stunky",
+      "legacyMoves": []
     },
     {
       "dex": 435,
@@ -12052,7 +12467,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "坦克臭鼬",
-      "id": "skuntank"
+      "id": "skuntank",
+      "legacyMoves": []
     },
     {
       "dex": 436,
@@ -12075,7 +12491,8 @@
         "PSYSHOCK"
       ],
       "name": "銅鏡怪",
-      "id": "bronzor"
+      "id": "bronzor",
+      "legacyMoves": []
     },
     {
       "dex": 437,
@@ -12100,7 +12517,8 @@
         "PSYSHOCK"
       ],
       "name": "青銅鐘",
-      "id": "bronzong"
+      "id": "bronzong",
+      "legacyMoves": []
     },
     {
       "dex": 438,
@@ -12122,7 +12540,8 @@
         "ROCK_TOMB"
       ],
       "name": "盆才怪",
-      "id": "bonsly"
+      "id": "bonsly",
+      "legacyMoves": []
     },
     {
       "dex": 439,
@@ -12145,7 +12564,8 @@
         "PSYSHOCK"
       ],
       "name": "魔尼尼",
-      "id": "mime_jr"
+      "id": "mime_jr",
+      "legacyMoves": []
     },
     {
       "dex": 440,
@@ -12165,7 +12585,8 @@
         "PSYCHIC"
       ],
       "name": "小福蛋",
-      "id": "happiny"
+      "id": "happiny",
+      "legacyMoves": []
     },
     {
       "dex": 441,
@@ -12187,11 +12608,9 @@
         "NIGHT_SHADE",
         "SKY_ATTACK"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "聒噪鳥",
-      "id": "chatot"
+      "id": "chatot",
+      "legacyMoves": []
     },
     {
       "dex": 442,
@@ -12214,7 +12633,8 @@
         "SHADOW_SNEAK"
       ],
       "name": "花岩怪",
-      "id": "spiritomb"
+      "id": "spiritomb",
+      "legacyMoves": []
     },
     {
       "dex": 443,
@@ -12234,13 +12654,11 @@
       "chargedMoves": [
         "BODY_SLAM",
         "DIG",
-        "TWISTER",
-        "RETURN",
-        "FRUSTRATION"
+        "TWISTER"
       ],
-      "shadow": true,
       "name": "圓陸鯊",
-      "id": "gible"
+      "id": "gible",
+      "legacyMoves": []
     },
     {
       "dex": 444,
@@ -12260,13 +12678,11 @@
       "chargedMoves": [
         "DIG",
         "FLAMETHROWER",
-        "TWISTER",
-        "RETURN",
-        "FRUSTRATION"
+        "TWISTER"
       ],
-      "shadow": true,
       "name": "尖牙陸鯊",
-      "id": "gabite"
+      "id": "gabite",
+      "legacyMoves": []
     },
     {
       "dex": 445,
@@ -12287,13 +12703,11 @@
         "EARTHQUAKE",
         "FIRE_BLAST",
         "OUTRAGE",
-        "SAND_TOMB",
-        "RETURN",
-        "FRUSTRATION"
+        "SAND_TOMB"
       ],
-      "shadow": true,
       "name": "烈咬陸鯊",
-      "id": "garchomp"
+      "id": "garchomp",
+      "legacyMoves": []
     },
     {
       "dex": 446,
@@ -12315,7 +12729,8 @@
         "GUNK_SHOT"
       ],
       "name": "小卡比獸",
-      "id": "munchlax"
+      "id": "munchlax",
+      "legacyMoves": []
     },
     {
       "dex": 447,
@@ -12337,7 +12752,8 @@
         "LOW_SWEEP"
       ],
       "name": "利歐路",
-      "id": "riolu"
+      "id": "riolu",
+      "legacyMoves": []
     },
     {
       "dex": 448,
@@ -12362,7 +12778,8 @@
         "AURA_SPHERE"
       ],
       "name": "路卡利歐",
-      "id": "lucario"
+      "id": "lucario",
+      "legacyMoves": []
     },
     {
       "dex": 449,
@@ -12381,13 +12798,11 @@
       "chargedMoves": [
         "BODY_SLAM",
         "DIG",
-        "ROCK_TOMB",
-        "RETURN",
-        "FRUSTRATION"
+        "ROCK_TOMB"
       ],
-      "shadow": true,
       "name": "沙河馬",
-      "id": "hippopotas"
+      "id": "hippopotas",
+      "legacyMoves": []
     },
     {
       "dex": 450,
@@ -12409,13 +12824,11 @@
         "BODY_SLAM",
         "EARTHQUAKE",
         "STONE_EDGE",
-        "EARTH_POWER",
-        "RETURN",
-        "FRUSTRATION"
+        "EARTH_POWER"
       ],
-      "shadow": true,
       "name": "河馬獸",
-      "id": "hippowdon"
+      "id": "hippowdon",
+      "legacyMoves": []
     },
     {
       "dex": 451,
@@ -12438,7 +12851,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "鉗尾蠍",
-      "id": "skorupi"
+      "id": "skorupi",
+      "legacyMoves": []
     },
     {
       "dex": 452,
@@ -12464,7 +12878,8 @@
         "FELL_STINGER"
       ],
       "name": "龍王蠍",
-      "id": "drapion"
+      "id": "drapion",
+      "legacyMoves": []
     },
     {
       "dex": 453,
@@ -12487,7 +12902,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "不良蛙",
-      "id": "croagunk"
+      "id": "croagunk",
+      "legacyMoves": []
     },
     {
       "dex": 454,
@@ -12510,7 +12926,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "毒骷蛙",
-      "id": "toxicroak"
+      "id": "toxicroak",
+      "legacyMoves": []
     },
     {
       "dex": 455,
@@ -12531,11 +12948,9 @@
         "ENERGY_BALL",
         "POWER_WHIP"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "尖牙籠",
-      "id": "carnivine"
+      "id": "carnivine",
+      "legacyMoves": []
     },
     {
       "dex": 456,
@@ -12557,7 +12972,8 @@
         "WATER_PULSE"
       ],
       "name": "螢光魚",
-      "id": "finneon"
+      "id": "finneon",
+      "legacyMoves": []
     },
     {
       "dex": 457,
@@ -12579,7 +12995,8 @@
         "WATER_PULSE"
       ],
       "name": "霓虹魚",
-      "id": "lumineon"
+      "id": "lumineon",
+      "legacyMoves": []
     },
     {
       "dex": 458,
@@ -12602,7 +13019,8 @@
         "WATER_PULSE"
       ],
       "name": "小球飛魚",
-      "id": "mantyke"
+      "id": "mantyke",
+      "legacyMoves": []
     },
     {
       "dex": 459,
@@ -12626,9 +13044,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "雪笠怪",
-      "id": "snover"
+      "id": "snover",
+      "legacyMoves": []
     },
     {
       "dex": 460,
@@ -12652,9 +13070,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "暴雪王",
-      "id": "abomasnow"
+      "id": "abomasnow",
+      "legacyMoves": []
     },
     {
       "dex": 461,
@@ -12679,9 +13097,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "瑪狃拉",
-      "id": "weavile"
+      "id": "weavile",
+      "legacyMoves": []
     },
     {
       "dex": 462,
@@ -12706,9 +13124,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "自爆磁怪",
-      "id": "magnezone"
+      "id": "magnezone",
+      "legacyMoves": []
     },
     {
       "dex": 463,
@@ -12731,11 +13149,14 @@
         "SHADOW_BALL",
         "BODY_SLAM"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "BODY_SLAM"
       ],
       "name": "大舌舔",
-      "id": "lickilicky"
+      "id": "lickilicky",
+      "legacyMoves": [
+        "BODY_SLAM"
+      ]
     },
     {
       "dex": 464,
@@ -12758,16 +13179,16 @@
         "SURF",
         "SKULL_BASH",
         "SUPER_POWER",
-        "ROCK_WRECKER",
-        "RETURN",
-        "FRUSTRATION"
-      ],
-      "legacyMoves": [
         "ROCK_WRECKER"
       ],
-      "shadow": true,
+      "eliteMoves": [
+        "ROCK_WRECKER"
+      ],
       "name": "超甲狂犀",
-      "id": "rhyperior"
+      "id": "rhyperior",
+      "legacyMoves": [
+        "ROCK_WRECKER"
+      ]
     },
     {
       "dex": 465,
@@ -12785,12 +13206,14 @@
       ],
       "chargedMoves": [
         "ANCIENT_POWER",
+        "ROCK_SLIDE",
         "SLUDGE_BOMB",
         "SOLAR_BEAM",
         "POWER_WHIP"
       ],
       "name": "巨蔓藤",
-      "id": "tangrowth"
+      "id": "tangrowth",
+      "legacyMoves": []
     },
     {
       "dex": 466,
@@ -12814,9 +13237,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "電擊魔獸",
-      "id": "electivire"
+      "id": "electivire",
+      "legacyMoves": []
     },
     {
       "dex": 467,
@@ -12840,9 +13263,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "鴨嘴炎獸",
-      "id": "magmortar"
+      "id": "magmortar",
+      "legacyMoves": []
     },
     {
       "dex": 468,
@@ -12867,7 +13290,8 @@
         "FLAMETHROWER"
       ],
       "name": "波克基斯",
-      "id": "togekiss"
+      "id": "togekiss",
+      "legacyMoves": []
     },
     {
       "dex": 469,
@@ -12890,7 +13314,8 @@
         "BUG_BUZZ"
       ],
       "name": "遠古巨蜓",
-      "id": "yanmega"
+      "id": "yanmega",
+      "legacyMoves": []
     },
     {
       "dex": 470,
@@ -12912,11 +13337,14 @@
         "SOLAR_BEAM",
         "LAST_RESORT"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LAST_RESORT"
       ],
       "name": "葉伊布",
-      "id": "leafeon"
+      "id": "leafeon",
+      "legacyMoves": [
+        "LAST_RESORT"
+      ]
     },
     {
       "dex": 471,
@@ -12938,11 +13366,14 @@
         "ICY_WIND",
         "LAST_RESORT"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "LAST_RESORT"
       ],
       "name": "冰伊布",
-      "id": "glaceon"
+      "id": "glaceon",
+      "legacyMoves": [
+        "LAST_RESORT"
+      ]
     },
     {
       "dex": 472,
@@ -12966,7 +13397,8 @@
         "SAND_TOMB"
       ],
       "name": "天蠍王",
-      "id": "gliscor"
+      "id": "gliscor",
+      "legacyMoves": []
     },
     {
       "dex": 473,
@@ -12989,11 +13421,14 @@
         "STONE_EDGE",
         "ANCIENT_POWER"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "ANCIENT_POWER"
       ],
       "name": "象牙豬",
-      "id": "mamoswine"
+      "id": "mamoswine",
+      "legacyMoves": [
+        "ANCIENT_POWER"
+      ]
     },
     {
       "dex": 474,
@@ -13018,9 +13453,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "多邊獸Ｚ",
-      "id": "porygon_z"
+      "id": "porygon_z",
+      "legacyMoves": []
     },
     {
       "dex": 475,
@@ -13046,12 +13481,14 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "legacyMoves": [
+      "eliteMoves": [
         "SYNCHRONOISE"
       ],
-      "shadow": true,
       "name": "艾路雷朵",
-      "id": "gallade"
+      "id": "gallade",
+      "legacyMoves": [
+        "SYNCHRONOISE"
+      ]
     },
     {
       "dex": 476,
@@ -13074,7 +13511,8 @@
         "THUNDERBOLT"
       ],
       "name": "大朝北鼻",
-      "id": "probopass"
+      "id": "probopass",
+      "legacyMoves": []
     },
     {
       "dex": 477,
@@ -13097,9 +13535,9 @@
         "RETURN",
         "FRUSTRATION"
       ],
-      "shadow": true,
       "name": "黑夜魔靈",
-      "id": "dusknoir"
+      "id": "dusknoir",
+      "legacyMoves": []
     },
     {
       "dex": 478,
@@ -13122,7 +13560,8 @@
         "SHADOW_BALL"
       ],
       "name": "雪妖女",
-      "id": "froslass"
+      "id": "froslass",
+      "legacyMoves": []
     },
     {
       "dex": 479,
@@ -13145,7 +13584,8 @@
         "THUNDERBOLT"
       ],
       "name": "洛托姆 洛托姆的樣子",
-      "id": "rotom"
+      "id": "rotom",
+      "legacyMoves": []
     },
     {
       "dex": 479,
@@ -13168,7 +13608,8 @@
         "THUNDERBOLT"
       ],
       "name": "洛托姆 旋轉洛托姆",
-      "id": "rotom_fan"
+      "id": "rotom_fan",
+      "legacyMoves": []
     },
     {
       "dex": 479,
@@ -13191,7 +13632,8 @@
         "THUNDERBOLT"
       ],
       "name": "洛托姆 結冰洛托姆",
-      "id": "rotom_frost"
+      "id": "rotom_frost",
+      "legacyMoves": []
     },
     {
       "dex": 479,
@@ -13214,7 +13656,8 @@
         "THUNDERBOLT"
       ],
       "name": "洛托姆 加熱洛托姆",
-      "id": "rotom_heat"
+      "id": "rotom_heat",
+      "legacyMoves": []
     },
     {
       "dex": 479,
@@ -13237,7 +13680,8 @@
         "THUNDERBOLT"
       ],
       "name": "洛托姆 切割洛托姆",
-      "id": "rotom_mow"
+      "id": "rotom_mow",
+      "legacyMoves": []
     },
     {
       "dex": 479,
@@ -13260,7 +13704,8 @@
         "THUNDERBOLT"
       ],
       "name": "洛托姆 清洗洛托姆",
-      "id": "rotom_wash"
+      "id": "rotom_wash",
+      "legacyMoves": []
     },
     {
       "dex": 480,
@@ -13281,11 +13726,9 @@
         "SWIFT",
         "THUNDER"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "由克希",
-      "id": "uxie"
+      "id": "uxie",
+      "legacyMoves": []
     },
     {
       "dex": 481,
@@ -13306,11 +13749,9 @@
         "FUTURE_SIGHT",
         "SWIFT"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "艾姆利多",
-      "id": "mesprit"
+      "id": "mesprit",
+      "legacyMoves": []
     },
     {
       "dex": 482,
@@ -13331,11 +13772,9 @@
         "FUTURE_SIGHT",
         "SWIFT"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "亞克諾姆",
-      "id": "azelf"
+      "id": "azelf",
+      "legacyMoves": []
     },
     {
       "dex": 483,
@@ -13357,11 +13796,9 @@
         "IRON_HEAD",
         "THUNDER"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "帝牙盧卡",
-      "id": "dialga"
+      "id": "dialga",
+      "legacyMoves": []
     },
     {
       "dex": 484,
@@ -13383,11 +13820,9 @@
         "FIRE_BLAST",
         "HYDRO_PUMP"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "帕路奇亞",
-      "id": "palkia"
+      "id": "palkia",
+      "legacyMoves": []
     },
     {
       "dex": 485,
@@ -13410,11 +13845,9 @@
         "STONE_EDGE",
         "FLAMETHROWER"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "席多藍恩",
-      "id": "heatran"
+      "id": "heatran",
+      "legacyMoves": []
     },
     {
       "dex": 486,
@@ -13435,11 +13868,9 @@
         "FOCUS_BLAST",
         "THUNDER"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "雷吉奇卡斯",
-      "id": "regigigas"
+      "id": "regigigas",
+      "legacyMoves": []
     },
     {
       "dex": 487,
@@ -13461,11 +13892,9 @@
         "DRAGON_CLAW",
         "SHADOW_SNEAK"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "騎拉帝納 別種型態",
-      "id": "giratina_altered"
+      "id": "giratina_altered",
+      "legacyMoves": []
     },
     {
       "dex": 487,
@@ -13487,11 +13916,9 @@
         "DRAGON_PULSE",
         "SHADOW_BALL"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "騎拉帝納 起源型態",
-      "id": "giratina_origin"
+      "id": "giratina_origin",
+      "legacyMoves": []
     },
     {
       "dex": 488,
@@ -13512,11 +13939,9 @@
         "FUTURE_SIGHT",
         "MOONBLAST"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "克雷色利亞",
-      "id": "cresselia"
+      "id": "cresselia",
+      "legacyMoves": []
     },
     {
       "dex": 489,
@@ -13538,7 +13963,8 @@
         "WATER_PULSE"
       ],
       "name": "霏歐納",
-      "id": "phione"
+      "id": "phione",
+      "legacyMoves": []
     },
     {
       "dex": 490,
@@ -13560,7 +13986,8 @@
         "SURF"
       ],
       "name": "瑪納霏",
-      "id": "manaphy"
+      "id": "manaphy",
+      "legacyMoves": []
     },
     {
       "dex": 491,
@@ -13581,11 +14008,9 @@
         "FOCUS_BLAST",
         "SHADOW_BALL"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "達克萊伊",
-      "id": "darkrai"
+      "id": "darkrai",
+      "legacyMoves": []
     },
     {
       "dex": 492,
@@ -13607,7 +14032,8 @@
         "SOLAR_BEAM"
       ],
       "name": "謝米 陸上型態",
-      "id": "shaymin_land"
+      "id": "shaymin_land",
+      "legacyMoves": []
     },
     {
       "dex": 492,
@@ -13630,7 +14056,8 @@
         "SOLAR_BEAM"
       ],
       "name": "謝米 天空型態",
-      "id": "shaymin_sky"
+      "id": "shaymin_sky",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13652,7 +14079,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯",
-      "id": "arceus"
+      "id": "arceus",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13674,7 +14102,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 蟲屬性",
-      "id": "arceus_bug"
+      "id": "arceus_bug",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13696,7 +14125,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 惡屬性",
-      "id": "arceus_dark"
+      "id": "arceus_dark",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13718,7 +14148,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 龍屬性",
-      "id": "arceus_dragon"
+      "id": "arceus_dragon",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13740,7 +14171,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 電屬性",
-      "id": "arceus_electric"
+      "id": "arceus_electric",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13762,7 +14194,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 妖精屬性",
-      "id": "arceus_fairy"
+      "id": "arceus_fairy",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13784,7 +14217,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 格鬥屬性",
-      "id": "arceus_fighting"
+      "id": "arceus_fighting",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13806,7 +14240,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 火屬性",
-      "id": "arceus_fire"
+      "id": "arceus_fire",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13828,7 +14263,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 飛行屬性",
-      "id": "arceus_flying"
+      "id": "arceus_flying",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13850,7 +14286,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 幽靈屬性",
-      "id": "arceus_ghost"
+      "id": "arceus_ghost",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13872,7 +14309,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 草屬性",
-      "id": "arceus_grass"
+      "id": "arceus_grass",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13894,7 +14332,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 地面屬性",
-      "id": "arceus_ground"
+      "id": "arceus_ground",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13916,7 +14355,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 冰屬性",
-      "id": "arceus_ice"
+      "id": "arceus_ice",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13938,7 +14378,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 毒屬性",
-      "id": "arceus_poison"
+      "id": "arceus_poison",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13960,7 +14401,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 超能力屬性",
-      "id": "arceus_psychic"
+      "id": "arceus_psychic",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -13982,7 +14424,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 岩石屬性",
-      "id": "arceus_rock"
+      "id": "arceus_rock",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -14004,7 +14447,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 鋼屬性",
-      "id": "arceus_steel"
+      "id": "arceus_steel",
+      "legacyMoves": []
     },
     {
       "dex": 493,
@@ -14026,7 +14470,8 @@
         "OUTRAGE"
       ],
       "name": "阿爾宙斯 水屬性",
-      "id": "arceus_water"
+      "id": "arceus_water",
+      "legacyMoves": []
     },
     {
       "dex": 494,
@@ -14049,7 +14494,8 @@
         "PSYCHIC"
       ],
       "name": "比克提尼",
-      "id": "victini"
+      "id": "victini",
+      "legacyMoves": []
     },
     {
       "dex": 495,
@@ -14071,7 +14517,8 @@
         "WRAP"
       ],
       "name": "藤藤蛇",
-      "id": "snivy"
+      "id": "snivy",
+      "legacyMoves": []
     },
     {
       "dex": 496,
@@ -14093,7 +14540,8 @@
         "WRAP"
       ],
       "name": "青藤蛇",
-      "id": "servine"
+      "id": "servine",
+      "legacyMoves": []
     },
     {
       "dex": 497,
@@ -14115,7 +14563,8 @@
         "AERIAL_ACE"
       ],
       "name": "君主蛇",
-      "id": "serperior"
+      "id": "serperior",
+      "legacyMoves": []
     },
     {
       "dex": 498,
@@ -14137,7 +14586,8 @@
         "BODY_SLAM"
       ],
       "name": "暖暖豬",
-      "id": "tepig"
+      "id": "tepig",
+      "legacyMoves": []
     },
     {
       "dex": 499,
@@ -14160,7 +14610,8 @@
         "ROCK_TOMB"
       ],
       "name": "炒炒豬",
-      "id": "pignite"
+      "id": "pignite",
+      "legacyMoves": []
     },
     {
       "dex": 500,
@@ -14183,7 +14634,8 @@
         "FOCUS_BLAST"
       ],
       "name": "炎武王",
-      "id": "emboar"
+      "id": "emboar",
+      "legacyMoves": []
     },
     {
       "dex": 501,
@@ -14205,7 +14657,8 @@
         "NIGHT_SLASH"
       ],
       "name": "水水獺",
-      "id": "oshawott"
+      "id": "oshawott",
+      "legacyMoves": []
     },
     {
       "dex": 502,
@@ -14227,7 +14680,8 @@
         "X_SCISSOR"
       ],
       "name": "雙刃丸",
-      "id": "dewott"
+      "id": "dewott",
+      "legacyMoves": []
     },
     {
       "dex": 503,
@@ -14249,7 +14703,8 @@
         "MEGAHORN"
       ],
       "name": "大劍鬼",
-      "id": "samurott"
+      "id": "samurott",
+      "legacyMoves": []
     },
     {
       "dex": 504,
@@ -14271,7 +14726,8 @@
         "GRASS_KNOT"
       ],
       "name": "探探鼠",
-      "id": "patrat"
+      "id": "patrat",
+      "legacyMoves": []
     },
     {
       "dex": 505,
@@ -14293,7 +14749,8 @@
         "GRASS_KNOT"
       ],
       "name": "步哨鼠",
-      "id": "watchog"
+      "id": "watchog",
+      "legacyMoves": []
     },
     {
       "dex": 506,
@@ -14315,7 +14772,8 @@
         "DIG"
       ],
       "name": "小約克",
-      "id": "lillipup"
+      "id": "lillipup",
+      "legacyMoves": []
     },
     {
       "dex": 507,
@@ -14337,7 +14795,8 @@
         "DIG"
       ],
       "name": "哈約克",
-      "id": "herdier"
+      "id": "herdier",
+      "legacyMoves": []
     },
     {
       "dex": 508,
@@ -14360,7 +14819,8 @@
         "CRUNCH"
       ],
       "name": "長毛狗",
-      "id": "stoutland"
+      "id": "stoutland",
+      "legacyMoves": []
     },
     {
       "dex": 509,
@@ -14382,7 +14842,8 @@
         "DARK_PULSE"
       ],
       "name": "扒手貓",
-      "id": "purrloin"
+      "id": "purrloin",
+      "legacyMoves": []
     },
     {
       "dex": 510,
@@ -14404,7 +14865,8 @@
         "DARK_PULSE"
       ],
       "name": "酷豹",
-      "id": "liepard"
+      "id": "liepard",
+      "legacyMoves": []
     },
     {
       "dex": 511,
@@ -14426,7 +14888,8 @@
         "CRUNCH"
       ],
       "name": "花椰猴",
-      "id": "pansage"
+      "id": "pansage",
+      "legacyMoves": []
     },
     {
       "dex": 512,
@@ -14448,7 +14911,8 @@
         "CRUNCH"
       ],
       "name": "花椰猿",
-      "id": "simisage"
+      "id": "simisage",
+      "legacyMoves": []
     },
     {
       "dex": 513,
@@ -14470,7 +14934,8 @@
         "CRUNCH"
       ],
       "name": "爆香猴",
-      "id": "pansear"
+      "id": "pansear",
+      "legacyMoves": []
     },
     {
       "dex": 514,
@@ -14492,7 +14957,8 @@
         "CRUNCH"
       ],
       "name": "爆香猿",
-      "id": "simisear"
+      "id": "simisear",
+      "legacyMoves": []
     },
     {
       "dex": 515,
@@ -14514,7 +14980,8 @@
         "CRUNCH"
       ],
       "name": "冷水猴",
-      "id": "panpour"
+      "id": "panpour",
+      "legacyMoves": []
     },
     {
       "dex": 516,
@@ -14536,7 +15003,8 @@
         "CRUNCH"
       ],
       "name": "冷水猿",
-      "id": "simipour"
+      "id": "simipour",
+      "legacyMoves": []
     },
     {
       "dex": 517,
@@ -14558,7 +15026,8 @@
         "PSYSHOCK"
       ],
       "name": "食夢夢",
-      "id": "munna"
+      "id": "munna",
+      "legacyMoves": []
     },
     {
       "dex": 518,
@@ -14580,7 +15049,8 @@
         "PSYSHOCK"
       ],
       "name": "夢夢蝕",
-      "id": "musharna"
+      "id": "musharna",
+      "legacyMoves": []
     },
     {
       "dex": 519,
@@ -14603,7 +15073,8 @@
         "AIR_CUTTER"
       ],
       "name": "豆豆鴿",
-      "id": "pidove"
+      "id": "pidove",
+      "legacyMoves": []
     },
     {
       "dex": 520,
@@ -14626,7 +15097,8 @@
         "SKY_ATTACK"
       ],
       "name": "咕咕鴿",
-      "id": "tranquill"
+      "id": "tranquill",
+      "legacyMoves": []
     },
     {
       "dex": 521,
@@ -14649,7 +15121,8 @@
         "SKY_ATTACK"
       ],
       "name": "高傲雉雞",
-      "id": "unfezant"
+      "id": "unfezant",
+      "legacyMoves": []
     },
     {
       "dex": 522,
@@ -14671,7 +15144,8 @@
         "THUNDERBOLT"
       ],
       "name": "斑斑馬",
-      "id": "blitzle"
+      "id": "blitzle",
+      "legacyMoves": []
     },
     {
       "dex": 523,
@@ -14693,7 +15167,8 @@
         "WILD_CHARGE"
       ],
       "name": "雷電斑馬",
-      "id": "zebstrika"
+      "id": "zebstrika",
+      "legacyMoves": []
     },
     {
       "dex": 524,
@@ -14715,7 +15190,8 @@
         "STONE_EDGE"
       ],
       "name": "石丸子",
-      "id": "roggenrola"
+      "id": "roggenrola",
+      "legacyMoves": []
     },
     {
       "dex": 525,
@@ -14737,7 +15213,8 @@
         "STONE_EDGE"
       ],
       "name": "地幔岩",
-      "id": "boldore"
+      "id": "boldore",
+      "legacyMoves": []
     },
     {
       "dex": 526,
@@ -14760,7 +15237,8 @@
         "HEAVY_SLAM"
       ],
       "name": "龐岩怪",
-      "id": "gigalith"
+      "id": "gigalith",
+      "legacyMoves": []
     },
     {
       "dex": 527,
@@ -14783,7 +15261,8 @@
         "PSYSHOCK"
       ],
       "name": "滾滾蝙蝠",
-      "id": "woobat"
+      "id": "woobat",
+      "legacyMoves": []
     },
     {
       "dex": 528,
@@ -14806,7 +15285,8 @@
         "FUTURE_SIGHT"
       ],
       "name": "心蝙蝠",
-      "id": "swoobat"
+      "id": "swoobat",
+      "legacyMoves": []
     },
     {
       "dex": 529,
@@ -14828,7 +15308,8 @@
         "DRILL_RUN"
       ],
       "name": "螺釘地鼠",
-      "id": "drilbur"
+      "id": "drilbur",
+      "legacyMoves": []
     },
     {
       "dex": 530,
@@ -14852,7 +15333,8 @@
         "IRON_HEAD"
       ],
       "name": "龍頭地鼠",
-      "id": "excadrill"
+      "id": "excadrill",
+      "legacyMoves": []
     },
     {
       "dex": 531,
@@ -14874,7 +15356,8 @@
         "HYPER_BEAM"
       ],
       "name": "差不多娃娃",
-      "id": "audino"
+      "id": "audino",
+      "legacyMoves": []
     },
     {
       "dex": 532,
@@ -14896,7 +15379,8 @@
         "ROCK_TOMB"
       ],
       "name": "搬運小匠",
-      "id": "timburr"
+      "id": "timburr",
+      "legacyMoves": []
     },
     {
       "dex": 533,
@@ -14918,7 +15402,8 @@
         "STONE_EDGE"
       ],
       "name": "鐵骨土人",
-      "id": "gurdurr"
+      "id": "gurdurr",
+      "legacyMoves": []
     },
     {
       "dex": 534,
@@ -14940,7 +15425,8 @@
         "STONE_EDGE"
       ],
       "name": "修建老匠",
-      "id": "conkeldurr"
+      "id": "conkeldurr",
+      "legacyMoves": []
     },
     {
       "dex": 535,
@@ -14962,7 +15448,8 @@
         "SLUDGE_WAVE"
       ],
       "name": "圓蝌蚪",
-      "id": "tympole"
+      "id": "tympole",
+      "legacyMoves": []
     },
     {
       "dex": 536,
@@ -14985,7 +15472,8 @@
         "SLUDGE_WAVE"
       ],
       "name": "藍蟾蜍",
-      "id": "palpitoad"
+      "id": "palpitoad",
+      "legacyMoves": []
     },
     {
       "dex": 537,
@@ -15008,7 +15496,8 @@
         "SLUDGE_BOMB"
       ],
       "name": "蟾蜍王",
-      "id": "seismitoad"
+      "id": "seismitoad",
+      "legacyMoves": []
     },
     {
       "dex": 538,
@@ -15030,7 +15519,8 @@
         "BODY_SLAM"
       ],
       "name": "投摔鬼",
-      "id": "throh"
+      "id": "throh",
+      "legacyMoves": []
     },
     {
       "dex": 539,
@@ -15052,7 +15542,8 @@
         "BODY_SLAM"
       ],
       "name": "打擊鬼",
-      "id": "sawk"
+      "id": "sawk",
+      "legacyMoves": []
     },
     {
       "dex": 540,
@@ -15075,7 +15566,8 @@
         "SILVER_WIND"
       ],
       "name": "蟲寶包",
-      "id": "sewaddle"
+      "id": "sewaddle",
+      "legacyMoves": []
     },
     {
       "dex": 541,
@@ -15098,7 +15590,8 @@
         "SILVER_WIND"
       ],
       "name": "寶包繭",
-      "id": "swadloon"
+      "id": "swadloon",
+      "legacyMoves": []
     },
     {
       "dex": 542,
@@ -15121,7 +15614,8 @@
         "SILVER_WIND"
       ],
       "name": "保母蟲",
-      "id": "leavanny"
+      "id": "leavanny",
+      "legacyMoves": []
     },
     {
       "dex": 543,
@@ -15144,7 +15638,8 @@
         "GYRO_BALL"
       ],
       "name": "百足蜈蚣",
-      "id": "venipede"
+      "id": "venipede",
+      "legacyMoves": []
     },
     {
       "dex": 544,
@@ -15167,7 +15662,8 @@
         "GYRO_BALL"
       ],
       "name": "車輪毬",
-      "id": "whirlipede"
+      "id": "whirlipede",
+      "legacyMoves": []
     },
     {
       "dex": 545,
@@ -15191,7 +15687,8 @@
         "X_SCISSOR"
       ],
       "name": "蜈蚣王",
-      "id": "scolipede"
+      "id": "scolipede",
+      "legacyMoves": []
     },
     {
       "dex": 546,
@@ -15214,7 +15711,8 @@
         "GRASS_KNOT"
       ],
       "name": "木棉球",
-      "id": "cottonee"
+      "id": "cottonee",
+      "legacyMoves": []
     },
     {
       "dex": 547,
@@ -15237,7 +15735,8 @@
         "MOONBLAST"
       ],
       "name": "風妖精",
-      "id": "whimsicott"
+      "id": "whimsicott",
+      "legacyMoves": []
     },
     {
       "dex": 548,
@@ -15258,7 +15757,8 @@
         "SEED_BOMB"
       ],
       "name": "百合根娃娃",
-      "id": "petilil"
+      "id": "petilil",
+      "legacyMoves": []
     },
     {
       "dex": 549,
@@ -15280,7 +15780,8 @@
         "SOLAR_BEAM"
       ],
       "name": "裙兒小姐",
-      "id": "lilligant"
+      "id": "lilligant",
+      "legacyMoves": []
     },
     {
       "dex": 550,
@@ -15302,7 +15803,8 @@
         "MUDDY_WATER"
       ],
       "name": "野蠻鱸魚",
-      "id": "basculin"
+      "id": "basculin",
+      "legacyMoves": []
     },
     {
       "dex": 551,
@@ -15325,7 +15827,8 @@
         "BULLDOZE"
       ],
       "name": "黑眼鱷",
-      "id": "sandile"
+      "id": "sandile",
+      "legacyMoves": []
     },
     {
       "dex": 552,
@@ -15348,7 +15851,8 @@
         "BULLDOZE"
       ],
       "name": "混混鱷",
-      "id": "krokorok"
+      "id": "krokorok",
+      "legacyMoves": []
     },
     {
       "dex": 553,
@@ -15371,7 +15875,8 @@
         "OUTRAGE"
       ],
       "name": "流氓鱷",
-      "id": "krookodile"
+      "id": "krookodile",
+      "legacyMoves": []
     },
     {
       "dex": 554,
@@ -15392,7 +15897,8 @@
         "FLAME_CHARGE"
       ],
       "name": "火紅不倒翁",
-      "id": "darumaka"
+      "id": "darumaka",
+      "legacyMoves": []
     },
     {
       "dex": 555,
@@ -15415,7 +15921,8 @@
         "ROCK_SLIDE"
       ],
       "name": "達摩狒狒 普通型態",
-      "id": "darmanitan_standard"
+      "id": "darmanitan_standard",
+      "legacyMoves": []
     },
     {
       "dex": 555,
@@ -15439,7 +15946,8 @@
         "ROCK_SLIDE"
       ],
       "name": "達摩狒狒 達摩型態",
-      "id": "darmanitan_zen"
+      "id": "darmanitan_zen",
+      "legacyMoves": []
     },
     {
       "dex": 556,
@@ -15461,7 +15969,8 @@
         "SOLAR_BEAM"
       ],
       "name": "沙鈴仙人掌",
-      "id": "maractus"
+      "id": "maractus",
+      "legacyMoves": []
     },
     {
       "dex": 557,
@@ -15484,7 +15993,8 @@
         "ROCK_TOMB"
       ],
       "name": "石居蟹",
-      "id": "dwebble"
+      "id": "dwebble",
+      "legacyMoves": []
     },
     {
       "dex": 558,
@@ -15507,7 +16017,8 @@
         "ROCK_SLIDE"
       ],
       "name": "岩殿居蟹",
-      "id": "crustle"
+      "id": "crustle",
+      "legacyMoves": []
     },
     {
       "dex": 559,
@@ -15530,7 +16041,8 @@
         "FOUL_PLAY"
       ],
       "name": "滑滑小子",
-      "id": "scraggy"
+      "id": "scraggy",
+      "legacyMoves": []
     },
     {
       "dex": 560,
@@ -15553,7 +16065,8 @@
         "FOUL_PLAY"
       ],
       "name": "頭巾混混",
-      "id": "scrafty"
+      "id": "scrafty",
+      "legacyMoves": []
     },
     {
       "dex": 561,
@@ -15577,7 +16090,8 @@
         "SIGNAL_BEAM"
       ],
       "name": "象徵鳥",
-      "id": "sigilyph"
+      "id": "sigilyph",
+      "legacyMoves": []
     },
     {
       "dex": 562,
@@ -15599,7 +16113,8 @@
         "OMINOUS_WIND"
       ],
       "name": "哭哭面具",
-      "id": "yamask"
+      "id": "yamask",
+      "legacyMoves": []
     },
     {
       "dex": 563,
@@ -15621,7 +16136,8 @@
         "PSYCHIC"
       ],
       "name": "死神棺",
-      "id": "cofagrigus"
+      "id": "cofagrigus",
+      "legacyMoves": []
     },
     {
       "dex": 564,
@@ -15644,7 +16160,8 @@
         "BODY_SLAM"
       ],
       "name": "原蓋海龜",
-      "id": "tirtouga"
+      "id": "tirtouga",
+      "legacyMoves": []
     },
     {
       "dex": 565,
@@ -15667,7 +16184,8 @@
         "BODY_SLAM"
       ],
       "name": "肋骨海龜",
-      "id": "carracosta"
+      "id": "carracosta",
+      "legacyMoves": []
     },
     {
       "dex": 566,
@@ -15690,7 +16208,8 @@
         "CRUNCH"
       ],
       "name": "始祖小鳥",
-      "id": "archen"
+      "id": "archen",
+      "legacyMoves": []
     },
     {
       "dex": 567,
@@ -15713,7 +16232,8 @@
         "CRUNCH"
       ],
       "name": "始祖大鳥",
-      "id": "archeops"
+      "id": "archeops",
+      "legacyMoves": []
     },
     {
       "dex": 568,
@@ -15735,7 +16255,8 @@
         "GUNK_SHOT"
       ],
       "name": "破破袋",
-      "id": "trubbish"
+      "id": "trubbish",
+      "legacyMoves": []
     },
     {
       "dex": 569,
@@ -15758,7 +16279,8 @@
         "BODY_SLAM"
       ],
       "name": "灰塵山",
-      "id": "garbodor"
+      "id": "garbodor",
+      "legacyMoves": []
     },
     {
       "dex": 570,
@@ -15780,7 +16302,8 @@
         "DARK_PULSE"
       ],
       "name": "索羅亞",
-      "id": "zorua"
+      "id": "zorua",
+      "legacyMoves": []
     },
     {
       "dex": 571,
@@ -15802,7 +16325,8 @@
         "FLAMETHROWER"
       ],
       "name": "索羅亞克",
-      "id": "zoroark"
+      "id": "zoroark",
+      "legacyMoves": []
     },
     {
       "dex": 572,
@@ -15824,7 +16348,8 @@
         "AQUA_TAIL"
       ],
       "name": "泡沫栗鼠",
-      "id": "minccino"
+      "id": "minccino",
+      "legacyMoves": []
     },
     {
       "dex": 573,
@@ -15846,7 +16371,8 @@
         "AQUA_TAIL"
       ],
       "name": "奇諾栗鼠",
-      "id": "cinccino"
+      "id": "cinccino",
+      "legacyMoves": []
     },
     {
       "dex": 574,
@@ -15868,7 +16394,8 @@
         "PSYCHIC"
       ],
       "name": "哥德寶寶",
-      "id": "gothita"
+      "id": "gothita",
+      "legacyMoves": []
     },
     {
       "dex": 575,
@@ -15890,7 +16417,8 @@
         "PSYCHIC"
       ],
       "name": "哥德小童",
-      "id": "gothorita"
+      "id": "gothorita",
+      "legacyMoves": []
     },
     {
       "dex": 576,
@@ -15912,7 +16440,8 @@
         "PSYCHIC"
       ],
       "name": "哥德小姐",
-      "id": "gothitelle"
+      "id": "gothitelle",
+      "legacyMoves": []
     },
     {
       "dex": 577,
@@ -15934,7 +16463,8 @@
         "THUNDER"
       ],
       "name": "單卵細胞球",
-      "id": "solosis"
+      "id": "solosis",
+      "legacyMoves": []
     },
     {
       "dex": 578,
@@ -15956,7 +16486,8 @@
         "THUNDER"
       ],
       "name": "雙卵細胞球",
-      "id": "duosion"
+      "id": "duosion",
+      "legacyMoves": []
     },
     {
       "dex": 579,
@@ -15978,7 +16509,8 @@
         "THUNDER"
       ],
       "name": "人造細胞卵",
-      "id": "reuniclus"
+      "id": "reuniclus",
+      "legacyMoves": []
     },
     {
       "dex": 580,
@@ -16001,7 +16533,8 @@
         "BRAVE_BIRD"
       ],
       "name": "鴨寶寶",
-      "id": "ducklett"
+      "id": "ducklett",
+      "legacyMoves": []
     },
     {
       "dex": 581,
@@ -16024,7 +16557,8 @@
         "HURRICANE"
       ],
       "name": "舞天鵝",
-      "id": "swanna"
+      "id": "swanna",
+      "legacyMoves": []
     },
     {
       "dex": 582,
@@ -16046,7 +16580,8 @@
         "SIGNAL_BEAM"
       ],
       "name": "迷你冰",
-      "id": "vanillite"
+      "id": "vanillite",
+      "legacyMoves": []
     },
     {
       "dex": 583,
@@ -16068,7 +16603,8 @@
         "SIGNAL_BEAM"
       ],
       "name": "多多冰",
-      "id": "vanillish"
+      "id": "vanillish",
+      "legacyMoves": []
     },
     {
       "dex": 584,
@@ -16090,7 +16626,8 @@
         "SIGNAL_BEAM"
       ],
       "name": "雙倍多多冰",
-      "id": "vanilluxe"
+      "id": "vanilluxe",
+      "legacyMoves": []
     },
     {
       "dex": 585,
@@ -16113,7 +16650,8 @@
         "WILD_CHARGE"
       ],
       "name": "四季鹿",
-      "id": "deerling"
+      "id": "deerling",
+      "legacyMoves": []
     },
     {
       "dex": 585,
@@ -16136,7 +16674,8 @@
         "WILD_CHARGE"
       ],
       "name": "四季鹿 秋天型態",
-      "id": "deerling_autumn"
+      "id": "deerling_autumn",
+      "legacyMoves": []
     },
     {
       "dex": 585,
@@ -16159,7 +16698,8 @@
         "WILD_CHARGE"
       ],
       "name": "四季鹿 春天型態",
-      "id": "deerling_spring"
+      "id": "deerling_spring",
+      "legacyMoves": []
     },
     {
       "dex": 585,
@@ -16182,7 +16722,8 @@
         "WILD_CHARGE"
       ],
       "name": "四季鹿 夏天型態",
-      "id": "deerling_summer"
+      "id": "deerling_summer",
+      "legacyMoves": []
     },
     {
       "dex": 585,
@@ -16205,7 +16746,8 @@
         "WILD_CHARGE"
       ],
       "name": "四季鹿 冬天型態",
-      "id": "deerling_winter"
+      "id": "deerling_winter",
+      "legacyMoves": []
     },
     {
       "dex": 586,
@@ -16229,7 +16771,8 @@
         "HYPER_BEAM"
       ],
       "name": "萌芽鹿",
-      "id": "sawsbuck"
+      "id": "sawsbuck",
+      "legacyMoves": []
     },
     {
       "dex": 586,
@@ -16253,7 +16796,8 @@
         "HYPER_BEAM"
       ],
       "name": "萌芽鹿 秋天型態",
-      "id": "sawsbuck_autumn"
+      "id": "sawsbuck_autumn",
+      "legacyMoves": []
     },
     {
       "dex": 586,
@@ -16277,7 +16821,8 @@
         "HYPER_BEAM"
       ],
       "name": "萌芽鹿 春天型態",
-      "id": "sawsbuck_spring"
+      "id": "sawsbuck_spring",
+      "legacyMoves": []
     },
     {
       "dex": 586,
@@ -16301,7 +16846,8 @@
         "HYPER_BEAM"
       ],
       "name": "萌芽鹿 夏天型態",
-      "id": "sawsbuck_summer"
+      "id": "sawsbuck_summer",
+      "legacyMoves": []
     },
     {
       "dex": 586,
@@ -16325,7 +16871,8 @@
         "HYPER_BEAM"
       ],
       "name": "萌芽鹿 冬天型態",
-      "id": "sawsbuck_winter"
+      "id": "sawsbuck_winter",
+      "legacyMoves": []
     },
     {
       "dex": 587,
@@ -16348,7 +16895,8 @@
         "THUNDERBOLT"
       ],
       "name": "電飛鼠",
-      "id": "emolga"
+      "id": "emolga",
+      "legacyMoves": []
     },
     {
       "dex": 588,
@@ -16371,7 +16919,8 @@
         "AERIAL_ACE"
       ],
       "name": "蓋蓋蟲",
-      "id": "karrablast"
+      "id": "karrablast",
+      "legacyMoves": []
     },
     {
       "dex": 589,
@@ -16395,7 +16944,8 @@
         "AERIAL_ACE"
       ],
       "name": "騎士蝸牛",
-      "id": "escavalier"
+      "id": "escavalier",
+      "legacyMoves": []
     },
     {
       "dex": 590,
@@ -16418,7 +16968,8 @@
         "GRASS_KNOT"
       ],
       "name": "哎呀球菇",
-      "id": "foongus"
+      "id": "foongus",
+      "legacyMoves": []
     },
     {
       "dex": 591,
@@ -16441,7 +16992,8 @@
         "GRASS_KNOT"
       ],
       "name": "敗露球菇",
-      "id": "amoonguss"
+      "id": "amoonguss",
+      "legacyMoves": []
     },
     {
       "dex": 592,
@@ -16464,7 +17016,8 @@
         "OMINOUS_WIND"
       ],
       "name": "輕飄飄",
-      "id": "frillish"
+      "id": "frillish",
+      "legacyMoves": []
     },
     {
       "dex": 593,
@@ -16487,7 +17040,8 @@
         "BUBBLE_BEAM"
       ],
       "name": "胖嘟嘟",
-      "id": "jellicent"
+      "id": "jellicent",
+      "legacyMoves": []
     },
     {
       "dex": 594,
@@ -16509,7 +17063,8 @@
         "PSYCHIC"
       ],
       "name": "保母曼波",
-      "id": "alomomola"
+      "id": "alomomola",
+      "legacyMoves": []
     },
     {
       "dex": 595,
@@ -16532,7 +17087,8 @@
         "DISCHARGE"
       ],
       "name": "電電蟲",
-      "id": "joltik"
+      "id": "joltik",
+      "legacyMoves": []
     },
     {
       "dex": 596,
@@ -16556,7 +17112,8 @@
         "ENERGY_BALL"
       ],
       "name": "電蜘蛛",
-      "id": "galvantula"
+      "id": "galvantula",
+      "legacyMoves": []
     },
     {
       "dex": 597,
@@ -16579,7 +17136,8 @@
         "IRON_HEAD"
       ],
       "name": "種子鐵球",
-      "id": "ferroseed"
+      "id": "ferroseed",
+      "legacyMoves": []
     },
     {
       "dex": 598,
@@ -16604,7 +17162,8 @@
         "MIRROR_SHOT"
       ],
       "name": "堅果啞鈴",
-      "id": "ferrothorn"
+      "id": "ferrothorn",
+      "legacyMoves": []
     },
     {
       "dex": 599,
@@ -16626,7 +17185,8 @@
         "ZAP_CANNON"
       ],
       "name": "齒輪兒",
-      "id": "klink"
+      "id": "klink",
+      "legacyMoves": []
     },
     {
       "dex": 600,
@@ -16648,7 +17208,8 @@
         "ZAP_CANNON"
       ],
       "name": "齒輪組",
-      "id": "klang"
+      "id": "klang",
+      "legacyMoves": []
     },
     {
       "dex": 601,
@@ -16671,7 +17232,8 @@
         "MIRROR_SHOT"
       ],
       "name": "齒輪怪",
-      "id": "klinklang"
+      "id": "klinklang",
+      "legacyMoves": []
     },
     {
       "dex": 602,
@@ -16691,7 +17253,8 @@
         "STRUGGLE"
       ],
       "name": "麻麻小魚",
-      "id": "tynamo"
+      "id": "tynamo",
+      "legacyMoves": []
     },
     {
       "dex": 603,
@@ -16713,7 +17276,8 @@
         "DISCHARGE"
       ],
       "name": "麻麻鰻",
-      "id": "eelektrik"
+      "id": "eelektrik",
+      "legacyMoves": []
     },
     {
       "dex": 604,
@@ -16736,7 +17300,8 @@
         "DRAGON_CLAW"
       ],
       "name": "麻麻鰻魚王",
-      "id": "eelektross"
+      "id": "eelektross",
+      "legacyMoves": []
     },
     {
       "dex": 605,
@@ -16758,7 +17323,8 @@
         "PSYCHIC"
       ],
       "name": "小灰怪",
-      "id": "elgyem"
+      "id": "elgyem",
+      "legacyMoves": []
     },
     {
       "dex": 606,
@@ -16780,7 +17346,8 @@
         "PSYCHIC"
       ],
       "name": "大宇怪",
-      "id": "beheeyem"
+      "id": "beheeyem",
+      "legacyMoves": []
     },
     {
       "dex": 607,
@@ -16803,7 +17370,8 @@
         "HEAT_WAVE"
       ],
       "name": "燭光靈",
-      "id": "litwick"
+      "id": "litwick",
+      "legacyMoves": []
     },
     {
       "dex": 608,
@@ -16826,7 +17394,8 @@
         "HEAT_WAVE"
       ],
       "name": "燈火幽靈",
-      "id": "lampent"
+      "id": "lampent",
+      "legacyMoves": []
     },
     {
       "dex": 609,
@@ -16849,7 +17418,8 @@
         "OVERHEAT"
       ],
       "name": "水晶燈火靈",
-      "id": "chandelure"
+      "id": "chandelure",
+      "legacyMoves": []
     },
     {
       "dex": 610,
@@ -16871,7 +17441,8 @@
         "DRAGON_PULSE"
       ],
       "name": "牙牙",
-      "id": "axew"
+      "id": "axew",
+      "legacyMoves": []
     },
     {
       "dex": 611,
@@ -16893,7 +17464,8 @@
         "NIGHT_SLASH"
       ],
       "name": "斧牙龍",
-      "id": "fraxure"
+      "id": "fraxure",
+      "legacyMoves": []
     },
     {
       "dex": 612,
@@ -16916,7 +17488,8 @@
         "EARTHQUAKE"
       ],
       "name": "雙斧戰龍",
-      "id": "haxorus"
+      "id": "haxorus",
+      "legacyMoves": []
     },
     {
       "dex": 613,
@@ -16938,7 +17511,8 @@
         "PLAY_ROUGH"
       ],
       "name": "噴嚏熊",
-      "id": "cubchoo"
+      "id": "cubchoo",
+      "legacyMoves": []
     },
     {
       "dex": 614,
@@ -16960,7 +17534,8 @@
         "PLAY_ROUGH"
       ],
       "name": "凍原熊",
-      "id": "beartic"
+      "id": "beartic",
+      "legacyMoves": []
     },
     {
       "dex": 615,
@@ -16983,7 +17558,8 @@
         "WATER_PULSE"
       ],
       "name": "幾何雪花",
-      "id": "cryogonal"
+      "id": "cryogonal",
+      "legacyMoves": []
     },
     {
       "dex": 616,
@@ -17005,7 +17581,8 @@
         "SIGNAL_BEAM"
       ],
       "name": "小嘴蝸",
-      "id": "shelmet"
+      "id": "shelmet",
+      "legacyMoves": []
     },
     {
       "dex": 617,
@@ -17028,7 +17605,8 @@
         "FOCUS_BLAST"
       ],
       "name": "敏捷蟲",
-      "id": "accelgor"
+      "id": "accelgor",
+      "legacyMoves": []
     },
     {
       "dex": 618,
@@ -17051,7 +17629,8 @@
         "MUDDY_WATER"
       ],
       "name": "泥巴魚",
-      "id": "stunfisk"
+      "id": "stunfisk",
+      "legacyMoves": []
     },
     {
       "dex": 619,
@@ -17073,7 +17652,8 @@
         "FOCUS_BLAST"
       ],
       "name": "功夫鼬",
-      "id": "mienfoo"
+      "id": "mienfoo",
+      "legacyMoves": []
     },
     {
       "dex": 620,
@@ -17095,7 +17675,8 @@
         "STONE_EDGE"
       ],
       "name": "師父鼬",
-      "id": "mienshao"
+      "id": "mienshao",
+      "legacyMoves": []
     },
     {
       "dex": 621,
@@ -17117,7 +17698,8 @@
         "HYPER_BEAM"
       ],
       "name": "赤面龍",
-      "id": "druddigon"
+      "id": "druddigon",
+      "legacyMoves": []
     },
     {
       "dex": 622,
@@ -17140,7 +17722,8 @@
         "NIGHT_SHADE"
       ],
       "name": "泥偶小人",
-      "id": "golett"
+      "id": "golett",
+      "legacyMoves": []
     },
     {
       "dex": 623,
@@ -17163,7 +17746,8 @@
         "EARTH_POWER"
       ],
       "name": "泥偶巨人",
-      "id": "golurk"
+      "id": "golurk",
+      "legacyMoves": []
     },
     {
       "dex": 624,
@@ -17186,7 +17770,8 @@
         "X_SCISSOR"
       ],
       "name": "駒刀小兵",
-      "id": "pawniard"
+      "id": "pawniard",
+      "legacyMoves": []
     },
     {
       "dex": 625,
@@ -17210,7 +17795,8 @@
         "FOCUS_BLAST"
       ],
       "name": "劈斬司令",
-      "id": "bisharp"
+      "id": "bisharp",
+      "legacyMoves": []
     },
     {
       "dex": 626,
@@ -17233,7 +17819,8 @@
         "EARTHQUAKE"
       ],
       "name": "爆炸頭水牛",
-      "id": "bouffalant"
+      "id": "bouffalant",
+      "legacyMoves": []
     },
     {
       "dex": 627,
@@ -17256,7 +17843,8 @@
         "ROCK_TOMB"
       ],
       "name": "毛頭小鷹",
-      "id": "rufflet"
+      "id": "rufflet",
+      "legacyMoves": []
     },
     {
       "dex": 628,
@@ -17279,7 +17867,8 @@
         "ROCK_SLIDE"
       ],
       "name": "勇士雄鷹",
-      "id": "braviary"
+      "id": "braviary",
+      "legacyMoves": []
     },
     {
       "dex": 629,
@@ -17302,7 +17891,8 @@
         "FOUL_PLAY"
       ],
       "name": "禿鷹丫頭",
-      "id": "vullaby"
+      "id": "vullaby",
+      "legacyMoves": []
     },
     {
       "dex": 630,
@@ -17326,7 +17916,8 @@
         "SHADOW_BALL"
       ],
       "name": "禿鷹娜",
-      "id": "mandibuzz"
+      "id": "mandibuzz",
+      "legacyMoves": []
     },
     {
       "dex": 631,
@@ -17347,11 +17938,9 @@
         "THUNDER_PUNCH",
         "POWER_UP_PUNCH"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "熔蟻獸",
-      "id": "heatmor"
+      "id": "heatmor",
+      "legacyMoves": []
     },
     {
       "dex": 632,
@@ -17373,11 +17962,9 @@
         "IRON_HEAD",
         "STONE_EDGE"
       ],
-      "tags": [
-        "regional"
-      ],
       "name": "鐵蟻",
-      "id": "durant"
+      "id": "durant",
+      "legacyMoves": []
     },
     {
       "dex": 633,
@@ -17400,7 +17987,8 @@
         "BODY_SLAM"
       ],
       "name": "單首龍",
-      "id": "deino"
+      "id": "deino",
+      "legacyMoves": []
     },
     {
       "dex": 634,
@@ -17423,7 +18011,8 @@
         "BODY_SLAM"
       ],
       "name": "雙首暴龍",
-      "id": "zweilous"
+      "id": "zweilous",
+      "legacyMoves": []
     },
     {
       "dex": 635,
@@ -17446,7 +18035,8 @@
         "FLASH_CANNON"
       ],
       "name": "三首惡龍",
-      "id": "hydreigon"
+      "id": "hydreigon",
+      "legacyMoves": []
     },
     {
       "dex": 636,
@@ -17469,7 +18059,8 @@
         "FLAME_WHEEL"
       ],
       "name": "燃燒蟲",
-      "id": "larvesta"
+      "id": "larvesta",
+      "legacyMoves": []
     },
     {
       "dex": 637,
@@ -17493,7 +18084,8 @@
         "HURRICANE"
       ],
       "name": "火神蛾",
-      "id": "volcarona"
+      "id": "volcarona",
+      "legacyMoves": []
     },
     {
       "dex": 638,
@@ -17513,13 +18105,17 @@
       "chargedMoves": [
         "CLOSE_COMBAT",
         "IRON_HEAD",
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "SACRED_SWORD"
       ],
-      "tags": [
-        "legendary"
+      "eliteMoves": [
+        "SACRED_SWORD"
       ],
       "name": "勾帕路翁",
-      "id": "cobalion"
+      "id": "cobalion",
+      "legacyMoves": [
+        "SACRED_SWORD"
+      ]
     },
     {
       "dex": 639,
@@ -17541,11 +18137,9 @@
         "EARTHQUAKE",
         "ROCK_SLIDE"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "代拉基翁",
-      "id": "terrakion"
+      "id": "terrakion",
+      "legacyMoves": []
     },
     {
       "dex": 640,
@@ -17567,11 +18161,9 @@
         "LEAF_BLADE",
         "STONE_EDGE"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "畢力吉翁",
-      "id": "virizion"
+      "id": "virizion",
+      "legacyMoves": []
     },
     {
       "dex": 641,
@@ -17593,11 +18185,9 @@
         "HYPER_BEAM",
         "HURRICANE"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "龍捲雲 化身型態",
-      "id": "tornadus_incarnate"
+      "id": "tornadus_incarnate",
+      "legacyMoves": []
     },
     {
       "dex": 641,
@@ -17619,11 +18209,9 @@
         "HYPER_BEAM",
         "HURRICANE"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "龍捲雲 靈獸型態",
-      "id": "tornadus_therian"
+      "id": "tornadus_therian",
+      "legacyMoves": []
     },
     {
       "dex": 642,
@@ -17646,11 +18234,9 @@
         "BRICK_BREAK",
         "THUNDER_PUNCH"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "雷電雲 化身型態",
-      "id": "thundurus_incarnate"
+      "id": "thundurus_incarnate",
+      "legacyMoves": []
     },
     {
       "dex": 642,
@@ -17673,11 +18259,9 @@
         "BRICK_BREAK",
         "THUNDER_PUNCH"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "雷電雲 靈獸型態",
-      "id": "thundurus_therian"
+      "id": "thundurus_therian",
+      "legacyMoves": []
     },
     {
       "dex": 643,
@@ -17700,11 +18284,9 @@
         "DRACO_METEOR",
         "STONE_EDGE"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "萊希拉姆",
-      "id": "reshiram"
+      "id": "reshiram",
+      "legacyMoves": []
     },
     {
       "dex": 644,
@@ -17727,11 +18309,9 @@
         "FLASH_CANNON",
         "CRUNCH"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "捷克羅姆",
-      "id": "zekrom"
+      "id": "zekrom",
+      "legacyMoves": []
     },
     {
       "dex": 645,
@@ -17754,11 +18334,9 @@
         "ROCK_SLIDE",
         "FOCUS_BLAST"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "土地雲 化身型態",
-      "id": "landorus_incarnate"
+      "id": "landorus_incarnate",
+      "legacyMoves": []
     },
     {
       "dex": 645,
@@ -17781,11 +18359,9 @@
         "ROCK_SLIDE",
         "FOCUS_BLAST"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "土地雲 靈獸型態",
-      "id": "landorus_therian"
+      "id": "landorus_therian",
+      "legacyMoves": []
     },
     {
       "dex": 646,
@@ -17808,11 +18384,9 @@
         "ICY_WIND",
         "DRACO_METEOR"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "酋雷姆 一般型態",
-      "id": "kyurem_normal"
+      "id": "kyurem_normal",
+      "legacyMoves": []
     },
     {
       "dex": 646,
@@ -17835,11 +18409,9 @@
         "STONE_EDGE",
         "OUTRAGE"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "酋雷姆 闇黑型態",
-      "id": "kyurem_black"
+      "id": "kyurem_black",
+      "legacyMoves": []
     },
     {
       "dex": 646,
@@ -17862,11 +18434,9 @@
         "ANCIENT_POWER",
         "FOCUS_BLAST"
       ],
-      "tags": [
-        "legendary"
-      ],
       "name": "酋雷姆 焰白型態",
-      "id": "kyurem_white"
+      "id": "kyurem_white",
+      "legacyMoves": []
     },
     {
       "dex": 647,
@@ -17890,7 +18460,8 @@
         "X_SCISSOR"
       ],
       "name": "凱路迪歐 平常型態",
-      "id": "keldeo_ordinary"
+      "id": "keldeo_ordinary",
+      "legacyMoves": []
     },
     {
       "dex": 647,
@@ -17914,7 +18485,8 @@
         "X_SCISSOR"
       ],
       "name": "凱路迪歐 覺悟型態",
-      "id": "keldeo_resolute"
+      "id": "keldeo_resolute",
+      "legacyMoves": []
     },
     {
       "dex": 648,
@@ -17938,7 +18510,8 @@
         "HYPER_BEAM"
       ],
       "name": "美洛耶塔 歌聲型態",
-      "id": "meloetta_aria"
+      "id": "meloetta_aria",
+      "legacyMoves": []
     },
     {
       "dex": 648,
@@ -17962,7 +18535,8 @@
         "HYPER_BEAM"
       ],
       "name": "美洛耶塔 舞步型態",
-      "id": "meloetta_pirouette"
+      "id": "meloetta_pirouette",
+      "legacyMoves": []
     },
     {
       "dex": 649,
@@ -17985,7 +18559,8 @@
         "HYPER_BEAM"
       ],
       "name": "蓋諾賽克特",
-      "id": "genesect"
+      "id": "genesect",
+      "legacyMoves": []
     },
     {
       "dex": 649,
@@ -18008,7 +18583,8 @@
         "FLAMETHROWER"
       ],
       "name": "蓋諾賽克特 火焰卡帶",
-      "id": "genesect_burn"
+      "id": "genesect_burn",
+      "legacyMoves": []
     },
     {
       "dex": 649,
@@ -18031,7 +18607,8 @@
         "ICE_BEAM"
       ],
       "name": "蓋諾賽克特 冰凍卡帶",
-      "id": "genesect_chill"
+      "id": "genesect_chill",
+      "legacyMoves": []
     },
     {
       "dex": 649,
@@ -18054,7 +18631,8 @@
         "GUNK_SHOT"
       ],
       "name": "蓋諾賽克特 水流卡帶",
-      "id": "genesect_douse"
+      "id": "genesect_douse",
+      "legacyMoves": []
     },
     {
       "dex": 649,
@@ -18077,7 +18655,8 @@
         "ZAP_CANNON"
       ],
       "name": "蓋諾賽克特 閃電卡帶",
-      "id": "genesect_shock"
+      "id": "genesect_shock",
+      "legacyMoves": []
     },
     {
       "dex": 808,
@@ -18096,11 +18675,9 @@
         "FLASH_CANNON",
         "THUNDERBOLT"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "美錄坦",
-      "id": "meltan"
+      "id": "meltan",
+      "legacyMoves": []
     },
     {
       "dex": 809,
@@ -18122,11 +18699,9 @@
         "THUNDERBOLT",
         "SUPER_POWER"
       ],
-      "tags": [
-        "mythical"
-      ],
       "name": "美錄梅塔",
-      "id": "melmetal"
+      "id": "melmetal",
+      "legacyMoves": []
     }
   ],
   "moves": [
@@ -18185,7 +18760,7 @@
       "moveId": "ANCIENT_POWER",
       "name": "原始之力",
       "type": "rock",
-      "power": 70,
+      "power": 45,
       "energy": 45,
       "energyGain": 0,
       "buffs": [
@@ -18388,7 +18963,7 @@
       "type": "grass",
       "power": 5,
       "energy": 0,
-      "energyGain": 11,
+      "energyGain": 13,
       "turn": 3
     },
     {
@@ -18672,8 +19247,14 @@
       "name": "能量球",
       "type": "grass",
       "power": 90,
-      "energy": 60,
+      "energy": 55,
       "energyGain": 0,
+      "buffs": [
+        0,
+        -1
+      ],
+      "buffTarget": "opponent",
+      "buffApplyChance": 0.1,
       "turn": 1
     },
     {
@@ -18796,6 +19377,15 @@
       "type": "steel",
       "power": 110,
       "energy": 65,
+      "energyGain": 0,
+      "turn": 1
+    },
+    {
+      "moveId": "FLYING_PRESS",
+      "name": "飛身重壓",
+      "type": "fighting",
+      "power": 90,
+      "energy": 40,
       "energyGain": 0,
       "turn": 1
     },
@@ -19110,7 +19700,7 @@
       "energy": 40,
       "energyGain": 0,
       "buffs": [
-        -1,
+        -2,
         0
       ],
       "buffTarget": "opponent",
@@ -19316,8 +19906,8 @@
       "moveId": "OMINOUS_WIND",
       "name": "奇異之風",
       "type": "ghost",
-      "power": 50,
-      "energy": 40,
+      "power": 45,
+      "energy": 45,
       "energyGain": 0,
       "buffs": [
         2,
@@ -19649,6 +20239,15 @@
       "turn": 1
     },
     {
+      "moveId": "SACRED_SWORD",
+      "name": "聖劍",
+      "type": "fighting",
+      "power": 60,
+      "energy": 35,
+      "energyGain": 0,
+      "turn": 1
+    },
+    {
       "moveId": "SAND_TOMB",
       "name": "流沙地獄",
       "type": "ground",
@@ -19739,7 +20338,7 @@
       "moveId": "SILVER_WIND",
       "name": "銀色旋風",
       "type": "bug",
-      "power": 70,
+      "power": 45,
       "energy": 45,
       "energyGain": 0,
       "buffs": [
